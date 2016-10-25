@@ -1,0 +1,10 @@
+% Encoding: UTF-8
+
+@Book{ergen2012signal,
+  title     = {Signal and image denoising using wavelet transform},
+  publisher = {INTECH Open Access Publisher},
+  year      = {2012},
+  author    = {Ergen, Burhan},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

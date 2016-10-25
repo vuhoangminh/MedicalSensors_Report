@@ -21,7 +21,6 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
-\usepackage[T1]{fontenc}
 \usepackage[font=small, labelfont=bf]{caption}
 \usepackage{fourier}
 \usepackage[protrusion=true, expansion=true]{microtype}
@@ -29,6 +28,8 @@
 \usepackage{sectsty}
 \usepackage{url, lipsum}
 
+\usepackage[english]{babel}
+%\pagenumbering{roman}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \onehalfspacing
@@ -43,7 +44,9 @@
 \setlength\headheight{15pt}
 \fancyhead[L]{Medical Sensors Report}
 \fancyhead[R]{University of Burgundy}
-\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+%\fancyfoot[R]{Page \thepage\ of \pageref{LastPage}}
+\fancyfoot[C]{\thepage}
+%\pagenumbering{roman}
 %-------------------------------------------------------------------------------
 % TITLE PAGE
 %-------------------------------------------------------------------------------
@@ -77,7 +80,9 @@
 
 %Chapter 5 - conclusion
 \include{chapter-5}
+\cite{ergen2012signal}
 
+I want to cite this paper \cite{cui2015application}
 
 
 
@@ -87,5 +92,7 @@
 %-------------------------------------------------------------------------------
 \newpage
 \section*{References}
+\bibliography{ref} 
+\bibliographystyle{ieeetr}
 
 \end{document}

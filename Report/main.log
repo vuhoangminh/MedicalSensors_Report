@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  25 OCT 2016 17:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  25 OCT 2016 18:44
 entering extended mode
 **./main.tex
 (main.tex
@@ -512,13 +512,6 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count99
 \@thisrulewidth=\dimen134
 )
-("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
-
-("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fourier.st
 y"
 Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
@@ -852,52 +845,52 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 51.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 54.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 54.
 
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd
 "
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 51.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 51.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 54.
 
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd
 "
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 51.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 51.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 54.
 
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd
 "
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 54.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 54.
  ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Try loading font information for T1+fla on input line 51.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for T1+fla on input line 54.
  ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lato\t1fla.fd"
 File: t1fla.fd 2011/12/25 Fontinst v1.933 font definitions for T1/fla.
 )
@@ -937,7 +930,7 @@ File: t1fla.fd 2011/12/25 Fontinst v1.933 font definitions for T1/fla.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 51.
+(lastpage)             ! on input line 54.
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -1006,7 +999,7 @@ G,.JBIG2,.JB2,.eps]
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 51.
+LaTeX Info: Redefining \microtypecontext on input line 54.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1168,38 +1161,41 @@ Chapter 5.
 
 
 
-] 
+] [12
+
+] (main.bbl [13]) 
 AED: lastpage setting LastPage
-[12
+[14
 
 ] (main.aux (titlepage.aux) (chapter-1.aux) (chapter-2.aux) (section-HMT.aux) (
 section-wavelet.aux) (section-contourlet.aux) (section-imagedenoising.aux)
 (section-imagesegmentation.aux) (chapter-3.aux) (chapter-4.aux) (chapter-5.aux)
 ) ) 
 Here is how much of TeX's memory you used:
- 7350 strings out of 493334
- 114662 string characters out of 3130222
- 304676 words of memory out of 3000000
- 10513 multiletter control sequences out of 15000+200000
- 151873 words of font info for 165 fonts, out of 3000000 for 9000
+ 7393 strings out of 493334
+ 115147 string characters out of 3130222
+ 304556 words of memory out of 3000000
+ 10522 multiletter control sequences out of 15000+200000
+ 159032 words of font info for 189 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,10n,43p,431b,207s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lato/lato-
-02.enc}{C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontna
-me/8r.enc}{C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lat
-o/lato-01.enc}<C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+01.enc}{C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lato/l
+ato-02.enc}{C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fo
+ntname/8r.enc}<C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
 lic/lato/Lato-Bol.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/lato/Lato-Reg.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/fourier/fourier-bb.pfb><C:/Users/minhm/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/minhm/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Use
-rs/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-m
-s.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopi
-a/putr8a.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adob
-e/utopia/putri8a.pfb>
-Output written on main.pdf (13 pages, 69423 bytes).
+/fonts/type1/public/lato/Lato-RegIta.pfb><C:/Users/minhm/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Users/minhm/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Users/m
+inhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.
+pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourie
+r/fourier-ms.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+adobe/utopia/putr8a.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/adobe/utopia/putri8a.pfb>
+Output written on main.pdf (15 pages, 87258 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 94 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 38401 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 46593 words of extra memory for PDF output out of 51595 (max. 10000000)
 
