@@ -7,4 +7,14 @@
   author    = {Ergen, Burhan},
 }
 
+@Article{cui2015application,
+  author    = {Cui, Dong and Liu, Minmin and Hu, Lei and Liu, Keju and Guo, Yongxin and Jiao, Qing},
+  title     = {The Application of Wavelet-Domain Hidden Markov Tree Model in Diabetic Retinal Image Denoising},
+  journal   = {The open biomedical engineering journal},
+  year      = {2015},
+  volume    = {9},
+  pages     = {194},
+  publisher = {Bentham Science Publishers},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

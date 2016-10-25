@@ -1,5 +1,8 @@
 \begin{thebibliography}{1}
 
+\bibitem{leewavelet}
+T.-H.~H. Lee, ``Wavelet analysis for image processing,''
+
 \bibitem{ergen2012signal}
 B.~Ergen, {\em Signal and image denoising using wavelet transform}.
 \newblock INTECH Open Access Publisher, 2012.
