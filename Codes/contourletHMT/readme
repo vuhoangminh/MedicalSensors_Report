@@ -1,0 +1,144 @@
+Contourlet Hidden Markov Tree (HMT) toolbox (ver. 1.0)
+
+Duncan D.-Y. Po, June 2003
+
+This directory contains the MATLAB files that fit a hidden Markov tree model
+to the contourlet coefficients of images. The files require the contourlet
+Toolbox by Minh N. Do, which can be downloaded from here:
+
+http://www.ifp.uiuc.edu/~minhdo/software/
+
+In addition, the Image Processing Toolbox is also required.
+
+To use the toolbox, you will first need to compile the mex files
+in the package. This can be easily done by typing on MATLAB 
+command window
+>> mex <filename>.cc pdfbthmt.cc tree.cc matrix.cc utils.cc
+
+where <filename> is each of the following:
+pdfbcalc_KLD
+pdfbest_KLD
+pdfbgen_tdata
+pdfbprotrain_thmt
+pdfbtrain_thmt  
+dump_pdfbmodel_to_file
+load_pdfbmodel_from_file
+
+Note that you will have to run the above command for each of the 
+above mex files. Also, note these are C++ files. Make sure you
+are using a C++ compiler (not a C compiler such as lcc) when
+using the mex command.
+
+
+Assumptions:
+1. For all the functions, the image is assumed to be stored as 8-bit unsigned 
+integers (uint8).
+2. For all the functions, the image is assumed to be square.
+
+There are 4 main functions in this toolbox: train HMT model, denoise, texture 
+retrieval, and generate data according to HMT model.
+
+1.) Training
+file: pdfbtrainimagethmt (Pyramidal directional filter bank train image tied
+                          hidden Markov tree)
+This file trains an HMT model to fit an image. For example, if we have an 
+image 'lena.gif' in directory '/dir', then
+
+	[model, stateprob] = pdfbtrainimagethmt('/dir/lena', 'gif', '', 0.01)     
+
+trains an HMT model on that image to within an error in model parameter of 0.01
+per tree. The resulting model is in the output 'model'. By default, this 
+file uses a contourlet transform with '9-7' pyramidal filter and 'pkva' 
+directional filter, decomposing the image to 4 scales with 4 directions in the
+two coarser scales and 8 directions in the two finer scales. The HMT model 
+assumes the contourlet coefficients to be distributed between two states 
+and in each state the coefficients have a mean of zero. These attributes can 
+all be modified by modifying the first few lines of this file. The output
+'stateprob' contains the probabilities for each coefficient to be in each of
+the two states. This output is useful for denoising.
+If we have an existing model 'mymodel' already in memory and we want to 
+start the training using this model, then we can use
+
+	[model, stateprob] = pdfbtrainimagethmt('/dir/lena', 'gif', 'mymodel', 0.01)  
+
+This can be used to speed up the training process, if the existing model is
+available. 
+For other available pyramidal and directional filter names for the contourlet 
+transform, see functions dfilter and pfilters, respectively, in the 
+contourlet toolbox.
+
+
+
+2.) Denoising
+file: pdfbdenoiseimage (Pyramidal Directional Filter Bank Denoise Image)
+This file takes in a noisy image and denoises the image based on a given HMT model
+and an estimated noise power. For example, if we have an image noisylena.gif in 
+path /dir/, and estimate the noise power to be 0.01 (noise power is normalized to
+lie between 0 and 1 always), then we can first train an HMT model on the image 
+(see (1) above) to obtain its model and stateprob. Then we can denoise the image
+as follows   
+
+	cleanimage = pdfbdenoiseimage( model, stateprob, 0.01, '', '/dir/noisylena', 'gif')
+
+The output cleanimage contains the denoised image. By default, this file assumes
+the HMT model is trained using the '9-7' pyramidal filter and the 'pkva' 
+directional filter. Other filters can be used by changing the first two lines 
+of this file. 
+
+
+
+3.) Texture Retrieval
+file: pdfbclassify_texture (Pyramidal Directional Filter Bank Classify Texture)
+This file takes a query texture image and search through a texture image database 
+to find the most similar texture images. 
+For example, we have a database of 64 texture images in tdb:
+
+	tdb = {'texture1', 'texture2', ..., 'texture64'}
+
+The image files of these textures (texture1.gif, texture2.gif, ..., texture64.gif)
+are located in the path /tdir/. Suppose the HMT models of these 64 textures are 
+already stored in the path /mdir/. Now we want to search through this database to find
+the most similar textures to a texture65.gif. We can do this by
+
+	kld = pdfbclassify_texture('texture65', 'gif', tdb, '/tdir', '/mdir', 0)
+
+Now suppose we don't have the HMT models of the database textures. We can still perform
+texture retrieval and the program will train the HMT models for the database textures
+and save them. Suppose we want to save the database texture HMT models in the directory
+/mdir2/. Then
+
+	kld = pdfbclassify_texture('texture65', 'gif', tdb, '/tdir', '/mdir2', 1)
+
+Note that the output kld is an array of Kublick-Liebler distance between the query
+texture and every texture in the database in the order specified in tdb. i
+
+
+
+4.) Generate Data
+file: pdfbgentdata (Pyramidal Directional Filter Bank Generate Tree Data)
+This file uses an existing model to generate random data in tree structure. 
+For example we have an HMT model 'hmtmodel' in memory and we want to generate a random
+HMT with root level size of 64, then
+
+	tree = pdfbgentdata(hmtmodel, 64)
+
+
+Notes:
+There are also other utility files in this toolbox. Their usage can be found by 
+typing 'help <function name>' in matlab prompt. They are:
+contourlet.m
+contourlet2tree.m
+contournc.m
+dump_pdfbimagemodel.m
+generate_model.m
+load_pdfbimagemodel.m
+pdfbcalc_imagekld.m
+pdfbcreate_equiv_models.m
+pdfbflip_model.m
+pdfbtestall_imagekld.m
+pdfbtrainthmt.m
+tree2contourlet.m
+type3detransform.m
+type3transform.m
+type4detransform.m
+type4transform.m         
