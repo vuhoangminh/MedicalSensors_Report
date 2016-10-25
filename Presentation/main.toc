@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Literature Review}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Hidden Markov Tree}{6}{0}{2}
+\beamer@subsectionintoc {2}{2}{Wavelet Transform}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{Contourlet Transform}{7}{0}{2}
+\beamer@subsectionintoc {2}{4}{PET Denoising}{7}{0}{2}
+\beamer@subsectionintoc {2}{5}{PET/CT Segmentation}{7}{0}{2}
+\beamer@sectionintoc {3}{Result}{7}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{8}{0}{4}
