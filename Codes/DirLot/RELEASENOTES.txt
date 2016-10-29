@@ -1,0 +1,124 @@
+* Release notes on DirLOT Toolbox
+
+- DirLOT20130901
+
+-- Minor revision: Simulink models in 'embedded' folder were fixed.
+
+- DirLOT20130201
+
+-- Major revision
+--- quickstart.m was revised to add performance evaluation of deblurring. 
+
+-- Minor revision
+--- Added sample codes for APSIPA2012
+
+- DirLOT20121101
+
+-- Major revision
+--- Newly introduced some classes defined as System objects, 
+    which are available for code generation and embedded implementation 
+    on BeagleBoard-xM and PandaBoard-ES. See folder 'embedded.'
+
+- DirLOT20120501
+
+-- Minor revision
+--- Introduced a batch script 'mybuild' to generate some MEX codes.
+--- Added sample codes for ICASSP2012 
+--- Added sample codes for PCS2012
+--- Renamed mytest2008a.m to mytest.m
+
+- DirLOT20111201
+
+-- Major revision
+--- Separable GenLOT classes were newly introduced. See folder 'genlot.'
+--- Class AmplitudeErrorEnergy was introduced.
+--- Class SubbandSpecification was modified to provide a new method 
+    AmplitudeSpecification().
+--- Testing frame work mlunit_2008a was experimentaly introduced.
+-- Minor revision
+--- quickstart.m was revised to evaluate PSNRs.
+--- Some codes in samples were revised.
+--- Dependencies on the deprecated class LpPuFb2d were reduced. 
+--- Files mexcodes/supportExtensionHorizontal.m and 
+    mexcodes/supportExtensionVertical.m were renamed to correct the spel. 
+
+- DirLOT20111101
+
+-- Minor revision: a bug in mexcodes/supportExtentionVertical.m was fixed.
+
+- DirLot20110818
+
+-- ForwardDirLot.m and InverseDirLot.m were modified for acceleration.
+-- The subband assignment in SubbandSpecification.m was revised.
+-- Many sample scripts were appended.
+
+- DirLot20110112
+
+-- Bugs in PSNR calcuation were fixed. 
+   The following codes contained the bugs:
+
+ samples/icip2009/main_icip2009dct.m
+ samples/icip2009/main_icip2009dirlot.m
+ samples/icip2009/main_icip2009dwt97.m
+ dirlot/DirectionalDwtQuantizer.m
+ dirlot/DirectionalDwtQuantizerTest.m
+ dirlot/UniformSubbandQuanizer.m
+ dirlot/UniformSubbandQuantizerTest.m
+ appendix/Dwt97Quantizer.m
+ appendix/Dwt97QuantizerTest.m
+
+The calcuation should have been written as 
+
+ sI=im2uint8(I);
+ sX=im2uint8(X);
+ psnr = 10*log10( (255^2)*numel(sI)/sum((int16(sI(:))-int16(sX(:))).^2));
+
+although it was wrongly implemented as  
+
+ sI=im2uint8(I);
+ sX=im2uint8(X);
+ psnr = 10*log10( (255^2)*numel(sI)/sum((sI(:)-sX(:)).^2));
+
+- DirLot20101201
+
+-- Design with trend vanishing moments (TVMs) was supported.
+-- Implementation of class LpPuFb2d was divided into four
+   classes LpPuFb2dVm0, LpPuFb2dVm1, LpPuFb2dVm2 and LpPuFb2dTvm in
+   terms of the vanishing moment condition. Class LpPuFb2d was
+   modified as a bridge to these new classes for maintaining the
+   compatibity with the previous releases.
+-- Many sample scripts were appended.
+
+- DirLot20100313 
+
+-- A synchronization problem in parallel computing of 'ga' and
+   'fmincon' was fixed.
+
+- DirLot20100107 
+
+-- Class LpPuFb2d was modified so that a cell format of parameter
+   matrix set can be accepted.
+
+- DirLot20091221 
+
+-- Working with Genetic Algorithm and Parallel Computing Toolbox
+   became available for the design process.
+
+- DirLot20091210 
+
+-- Dependency of class LpPuFb2d on class PolyPhaseMatrix2d was reduced
+   for acceleration of the design process.
+
+- DirLot20091130 
+
+-- Functions im2col and col2im were used instead of function colfilt.
+-- Revised for supporting MATLAB releases from R2008a to R2009a again.
+
+- DirLot20091129 
+
+-- ForwardDirLot.m and InverseDirLot.m were modified for acceleration
+   by removing the dependency on BlockWiseAnalyzer.m and
+   BlockWiseSynthesizer.m.
+
+% SVN identifier:
+% $Id: RELEASENOTES.txt 382 2013-08-30 23:44:54Z sho $

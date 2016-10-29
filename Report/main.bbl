@@ -1,16 +1,30 @@
 \begin{thebibliography}{1}
 
+\bibitem{lipson2010optical}
+A.~Lipson, S.~G. Lipson, and H.~Lipson, {\em Optical physics}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem{lovis2014ehealth}
+C.~Lovis, B.~S{\'e}roussi, and A.~Hasman, {\em EHealth-For Continuity of Care:
+  Proceedings of MIE2014}, vol.~205.
+\newblock IOS Press, 2014.
+
+\bibitem{yan2014machinery}
+J.~Yan, {\em Machinery Prognostics and Prognosis Oriented Maintenance
+  Management}.
+\newblock John Wiley \& Sons, 2014.
+
 \bibitem{leewavelet}
 T.-H.~H. Lee, ``Wavelet analysis for image processing,''
-
-\bibitem{ergen2012signal}
-B.~Ergen, {\em Signal and image denoising using wavelet transform}.
-\newblock INTECH Open Access Publisher, 2012.
 
 \bibitem{cui2015application}
 D.~Cui, M.~Liu, L.~Hu, K.~Liu, Y.~Guo, and Q.~Jiao, ``The application of
   wavelet-domain hidden markov tree model in diabetic retinal image
   denoising,'' {\em The open biomedical engineering journal}, vol.~9, p.~194,
   2015.
+
+\bibitem{ergen2012signal}
+B.~Ergen, {\em Signal and image denoising using wavelet transform}.
+\newblock INTECH Open Access Publisher, 2012.
 
 \end{thebibliography}

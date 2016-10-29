@@ -13,7 +13,7 @@
 
 \documentclass[a4paper,11pt]{report}
 \usepackage[parfill]{parskip}
-\usepackage[default]{lato}
+%\usepackage[default]{lato}
 %\usepackage{kpfonts}%  for math    
 \usepackage{libertine}%  serif and sans serif
 %\usepackage[scaled=0.85]{beramono}%% mono
@@ -21,6 +21,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper]{geometry}
+\usepackage[toc]{glossaries}
 \usepackage[myheadings]{fullpage}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -31,8 +32,19 @@
 \usepackage[english]{babel}
 \usepackage{sectsty}
 \usepackage{url, lipsum}
+\usepackage{enumitem}
+\usepackage{amsmath}
 
 \usepackage[english]{babel}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
 %\pagenumbering{roman}
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
@@ -54,6 +66,7 @@
 %-------------------------------------------------------------------------------
 % TITLE PAGE
 %-------------------------------------------------------------------------------
+\include{glossaries}
 
 \begin{document}
 	

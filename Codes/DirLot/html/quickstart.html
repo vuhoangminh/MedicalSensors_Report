@@ -1,0 +1,796 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Quick Start of DirLOT Toolbox</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-04-15"><meta name="DC.source" content="quickstart.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>Quick Start of DirLOT Toolbox</h1><!--introduction--><p>A brief introduction to directional lapped orthogonal transforms</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#1">Readme file</a></li><li><a href="#2">Preparation</a></li><li><a href="#3">Sample codes</a></li><li><a href="#4">Original image for denoising and deblurring.</a></li><li><a href="#5">Define PSNR</a></li><li><a href="#6">Selection of DirLOT bases</a></li><li><a href="#7">Instantiation of forward and inverse transform objects</a></li><li><a href="#8">Display basis images</a></li><li><a href="#9">Access to basis images</a></li><li><a href="#10">Open MATLAB pool</a></li><li><a href="#11">Build MEX files</a></li><li><a href="#12">Produce observation by adding noise</a></li><li><a href="#13">Main process of simple heuristic shrinkage</a></li><li><a href="#14">Reconstruction of denoised image</a></li><li><a href="#15">Compare denoising performances</a></li><li><a href="#16">Setting parameters for deblurring</a></li><li><a href="#17">Preperation of measurement process</a></li><li><a href="#18">Produce observation by blurring and adding noises</a></li><li><a href="#19">Main process of ISTA-based image restoration</a></li><li><a href="#20">Compare deblurring performances</a></li><li><a href="#21">Release notes</a></li></ul></div><h2>Readme file<a name="1"></a></h2><p>README.txt contains some informations on DirLOT Toolbox.</p><pre class="codeinput">type(<span class="string">'README.txt'</span>)
+</pre><pre class="codeoutput">
+* MATLAB class definitions for directional lapped orthogonal transforms
+
+---
+
+NOTICE: SaivDr Package contains fast and stable implementation of DirLOTs. 
+Please see the folder 'examples/dirlot' in the package.
+
+ http://www.mathworks.com/matlabcentral/fileexchange/45084-saivdr-package
+
+---
+
+- Release DirLOT20130201
+
+** Requirements
+
+- MATLAB R2011b or later, 
+-- Image Processing Toolbox
+-- Optimization Toolbox
+
+** Recomended
+
+-- Global Optimization Toolbox 
+-- Parallel Computing Toolbox
+-- Wavelet Toolbox 
+-- MATLAB Coder
+
+** Brief introduction
+
+1. Change directory to where this file contains on MATLAB.
+
+2. Set the path by using the following command:
+
+ &gt;&gt; setpath
+
+3. If MATLAB Coder is available, it is recommended to first 
+   generate MEX codes for the M-files in the 'mexcode' directory. 
+   The M-file script 'mybuild,'  which you can find at the top directory 
+   of this toolbox, does the task as a batch file.
+
+ &gt;&gt; mybuild
+
+4. Change directory to 'sample' and run an M-file of which name begins
+   with 'main,' such as
+
+ &gt;&gt; main_tip2011td
+
+   and then run an M-file of which name begins with 'disp,' such as
+
+ &gt;&gt; disp_denoisingresults
+
+** References 
+
+- Natsuki Aizawa and Shogo Muramatsu, ''FISTA-Based Image Restoration
+  with Multiple DirLOTs," Proc. of IWAIT 2013, pp.642-647, Jan. 2013.
+
+- Shogo Muramatsu, Natsuki Aizawa and Masahiro Yukawa, ''Image Restoration 
+  with Union of Directional Orthonormal DWTs,'' Proc. of APSIPA ASC 2012, 
+  Dec. 2012.
+
+- Shogo Muramatsu, ''SURE-LET Image Denoising with Multiple
+  Directional LOTs,'' Proc. of PCS2012, May 2012
+
+- Shogo Muramatsu, Dandan Han, Tomoya Kobayashi and Hisakazu Kikuchi,
+  ''Directional Lapped Orthogonal Transform: Theory and Design,'' IEEE
+  Trans. on Image Proc., Vol.21, No.5, pp.2434-2448, 
+  DOI: 10.1109/TIP.2011.2182055, May 2012
+
+- Shogo Muramatsu,Tomoya Kobayashi, Minoru Hiki and Hisakazu Kikuchi,
+  ''Block-wise Implementation of 2-D Non-separable Linear-phase
+  Paraunitary Filter Banks,'' IEEE Trans. on Image Proc., Vol.21, No.4,
+  pp.2314-2318, DOI: 10.1109/TIP.2011.2181527, April 2012
+
+- Shogo Muramatsu and Dandan Han ''Image Denoising with Union of
+  Directional Orthonormal DWTs,'' IEEE Proc. of ICASSP, pp.1089-1092,
+  Mar. 2012.
+
+- Shogo Muramatsu, Dandan Han and Hisakazu Kikuchi, 
+  ''SURE-LET Image Denoising with Directional LOTs,''
+   Proc. of APSIPA ASC 2011, THu-PM.PS1.9, Oct. 2011
+
+- Shogo Muramatsu, Tomoya Kobayashi, Dandan Han and Hisakazu Kikuchi, 
+  ''Design Method of Directional GenLOT with Trend Vanishing Moments,''
+   Proc. of APSIPA ASC 2010, pp.692-701, Dec. 2010
+
+- Shogo Muramatsu, Dandan Han, Tomoya Kobayashi and Hisakazu Kikuchi, 
+  ''Theoretical Analysis of Trend Vanishing Moments for Directional
+  Orthogonal Transforms, ''
+  Proc. of PCS2010, pp.130-133, Dec. 2010
+
+- Tomoya Kobayashi, Shogo Muramatsu and Hisakazu Kikuchi, 
+  ''2-D Nonseparable GenLOT with Trend Vanishing Moments, ''
+  IEEE Proc. of ICIP2010, pp.385-388, Sep. 2010.
+
+- Shogo Muramatsu and Minoru Hiki, 
+  ''Block-Wise Implementation of Directional GenLOT,''
+  IEEE Proc. of ICIP2009, pp.3977-3980, Nov. 2009
+
+- Tomoya Kobayashi, Shogo Muramatsu and Hisakazu Kikuchi, 
+  ''Two-Degree Vanishing Moments on 2-D Non-separable GenLOT,''
+  IEEE Proc. of ISPACS2009, pp.248-251, Dec. 2009.
+
+** Contact address: 
+
+   Shogo MURAMATSU,
+   Faculty of Engineering, Niigata University,
+   8050 2-no-cho Ikarashi, Nishi-ku,
+   Niigata, 950-2181, JAPAN
+   Email: shogo@eng.niigata-u.ac.jp
+   LinkedIn: http://www.linkedin.com/pub/shogo-muramatsu/4b/b08/627
+
+** Contributors
+
+- For coding
+-- Tomoya KOBAYASHI, 2008-2010
+-- Shintaro HARA, 2011-
+-- Natsuki AIZAWA, 2011-
+
+- For testing
+-- Haruki MINAGAWA, 2009-2010
+-- Rui WANG, 2009-2011
+-- Dandan HAN, 2009-2012
+-- Saemi CHOI, 2010-2011
+-- Yuya OTA, 2010-
+-- Kazuki TAKEDA, 2010-
+
+% SVN identifier:
+% $Id: README.txt 385 2016-04-15 02:59:04Z sho $
+</pre><h2>Preparation<a name="2"></a></h2><p>Before using DirLOT Toolbox, it is required to set the path to the directories 'dirlot', 'genlot', 'appendix' and 'mexcodes' under this Toolbox. Change the current directory to the top directory of DirLOT Toolbox, and execute the command 'setpath'.</p><pre class="codeinput">setpath
+</pre><h2>Sample codes<a name="3"></a></h2><p>A lot of sample codes are found under directory 'samples.' In the following denoising and deblurring demos, we will use some of sample codes. Please set the path by calling command 'addpath.'</p><pre class="codeinput">addpath(<span class="string">'./samples/tip2012td'</span>)
+</pre><h2>Original image for denoising and deblurring.<a name="4"></a></h2><p>Prepare grayscale picture as an original.</p><pre class="codeinput">clear <span class="string">all</span>
+close <span class="string">all</span>
+src = im2double(imread(<span class="string">'cameraman.tif'</span>));
+f1 = figure(1);
+pf1 = [20 180 1120 500];
+set(f1,<span class="string">'Position'</span>,pf1)
+subplot(2,3,1), imshow(src)
+title(<span class="string">'Original image'</span>)
+drawnow
+</pre><img vspace="5" hspace="5" src="quickstart_01.png" alt=""> <h2>Define PSNR<a name="5"></a></h2><p>Define PSNR to evaluate the denoising results. The peak is set to one.</p><pre class="codeinput">mse  = @(x,y) sum((x(:)-y(:)).^2)/numel(x);
+psnr = @(x,y) -10*log10(mse(x,y));
+</pre><h2>Selection of DirLOT bases<a name="6"></a></h2><p>In this denoising demo, a union of multiple DirLOTs is used. Here, several predesigned bases are selected. If you are interested in the design of DirLOTs, please see the following function:</p><pre>  ./appendix/fcn_dirlot_design_fr.m</pre><pre class="codeinput">idx = 1;
+fname{idx} = <span class="string">'lppufb2dDec22Ord44Alp0.0Dir1Vm2.mat'</span>; idx = idx+1;
+fname{idx} = <span class="string">'lppufb2dDec22Ord44Alp1.7Dir2Vmd030.00.mat'</span>; idx = idx+1;
+fname{idx} = <span class="string">'lppufb2dDec22Ord44Alp1.7Dir1Vmd060.00.mat'</span>; idx = idx+1;
+fname{idx} = <span class="string">'lppufb2dDec22Ord44Alp-1.7Dir1Vmd120.00.mat'</span>; idx = idx+1;
+fname{idx} = <span class="string">'lppufb2dDec22Ord44Alp-1.7Dir2Vmd150.00.mat'</span>;
+</pre><h2>Instantiation of forward and inverse transform objects<a name="7"></a></h2><p>Instantiate forward and inverse transform objects by using the selected bases, and set the boundary operation to the termination mode.</p><pre class="codeinput">nTrx = length(fname); <span class="comment">% Number of bases</span>
+fwdtrx = cell(nTrx,1);
+invtrx = cell(nTrx,1);
+<span class="keyword">for</span> idx = 1:nTrx
+    <span class="comment">% Load pre-designed LpPuFb2d (DirLOT) object</span>
+    load([<span class="string">'./samples/icassp2012/filters/data128x128ampk3l3/ga/'</span> <span class="keyword">...</span>
+        fname{idx} ]); <span class="comment">% Variable lppufb contains a predesigned basis.</span>
+    <span class="comment">% Prepare forward transform object</span>
+    fwdtrx{idx} = ForwardDirLot(lppufb,<span class="string">'termination'</span>);
+    <span class="comment">% Prepare inverse transform Object</span>
+    invtrx{idx} = InverseDirLot(lppufb,<span class="string">'termination'</span>);
+<span class="keyword">end</span>
+</pre><h2>Display basis images<a name="8"></a></h2><p>Let's see the basis images of one of the loaded DirLOTs. Method dispBasisImages() of object 'lppufb,' an instance of class AbstLpPuFb2d, can be used for this purpose.</p><pre class="codeinput">figure(2)
+dispBasisImages(lppufb)
+drawnow
+</pre><img vspace="5" hspace="5" src="quickstart_02.png" alt=""> <h2>Access to basis images<a name="9"></a></h2><p>As well, let us verify the frequency magnitude response of the scaling filter. The impulse response of the k-th basis image of object 'lppufb' can be accessed by the subscription.</p><pre class="codeinput">figure(3)
+freqz2(lppufb(1))
+xlabel(<span class="string">'\omega_x/\pi'</span>,<span class="string">'FontSize'</span>,12,<span class="string">'FontName'</span>,<span class="string">'AvantGrade'</span>)
+ylabel(<span class="string">'\omega_y/\pi'</span>,<span class="string">'FontSize'</span>,12,<span class="string">'FontName'</span>,<span class="string">'AvantGrade'</span>)
+zlabel(<span class="string">'Magnitude'</span>,<span class="string">'FontSize'</span>,12,<span class="string">'FontName'</span>,<span class="string">'AvantGrade'</span>)
+set(gca,<span class="string">'FontSize'</span>,12,<span class="string">'FontName'</span>,<span class="string">'AvantGrade'</span>)
+view(-37.5,60)
+drawnow
+</pre><img vspace="5" hspace="5" src="quickstart_03.png" alt=""> <h2>Open MATLAB pool<a name="10"></a></h2><p>If Parallel Computing Toolbox (PCT) is avilable, it is recommended to open MATLAB pool.</p><pre class="codeinput"><span class="comment">%matlabpool</span>
+</pre><h2>Build MEX files<a name="11"></a></h2><p>If MATLAB Coder is avilable, it is recommended to generate some MEX codes by executing the batch script 'mybuild.'</p><pre class="codeinput"><span class="comment">%mybuild</span>
+</pre><h2>Produce observation by adding noise<a name="12"></a></h2><p>Add noise by using function 'imnoise', which is available from Image Processing Toolbox</p><pre class="codeinput">sigma = 40;
+v = (sigma/255)^2; <span class="comment">% noise variance</span>
+obs = imnoise(src,<span class="string">'gaussian'</span>,0,v); <span class="comment">% Add white Gaussian noise to the original</span>
+figure(f1)
+subplot(2,3,2), imshow(obs)
+title([<span class="string">'Noisy image: PSNR = '</span> num2str(psnr(src,obs),<span class="string">'%6.2f'</span>) <span class="string">' [dB]'</span>])
+drawnow
+</pre><img vspace="5" hspace="5" src="quickstart_04.png" alt=""> <h2>Main process of simple heuristic shrinkage<a name="13"></a></h2><p>Simple heuristic shrinkage is applied to the noisy image. The number of wavelet scales is set to four. The function 'fcn_bayesshrink' realizes the soft-thresholding called BayesShrink.</p><pre class="codeinput">disp(<span class="string">'It takes a few minutes to complete the heuristic shrinkage...'</span>)
+disp(<span class="string">'It is recommended to open matlabpool if PCT is available.'</span>)
+
+nLevels = 4; <span class="comment">% Number of wavelet scales</span>
+<span class="comment">% The following code runs in parallel if MATLAB pool is available.</span>
+<span class="keyword">parfor</span> itrx = 1:nTrx
+    <span class="comment">% Back-Projection (Forward transform)</span>
+    [valueC,valueS] = wavedec2(fwdtrx{itrx},obs,nLevels);
+    <span class="comment">% Shrinkage</span>
+    valueC = fcn_bayesshrink(valueC,valueS);
+    <span class="comment">% Forward-Projection (Inverse transform)</span>
+    u{itrx} = waverec2(invtrx{itrx},valueC,valueS);
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">It takes a few minutes to complete the heuristic shrinkage...
+It is recommended to open matlabpool if PCT is available.
+</pre><h2>Reconstruction of denoised image<a name="14"></a></h2><p>Combine every pictures obtained by the inverse transform.</p><pre class="codeinput">y = 0;
+<span class="keyword">for</span> itrx = 1:nTrx
+    y = y + u{itrx}/nTrx;
+<span class="keyword">end</span>
+</pre><h2>Compare denoising performances<a name="15"></a></h2><p>Comparing denoising performance among four methods: Gaussian filter (imfilter plus fspecial), Wiener filter (wiener2), BayesShrink with single symmetric orthonormal wavelet and simple heuristic shrinkage with mixture of multiple wavelets.</p><pre class="codeinput">g = imfilter(obs,fspecial(<span class="string">'gaussian'</span>,[5 5],1),<span class="string">'symmetric'</span>);
+figure(f1)
+subplot(2,3,3), imshow(g)
+title([<span class="string">'Denosied image (Gaussian filter): PSNR = '</span> <span class="keyword">...</span>
+    num2str(psnr(src,g),<span class="string">'%6.2f'</span>) <span class="string">' [dB]'</span>])
+drawnow
+
+w = wiener2(obs);
+figure(f1)
+subplot(2,3,4), imshow(w)
+title([<span class="string">'Denosied image (Wiener filter): PSNR = '</span> <span class="keyword">...</span>
+    num2str(psnr(src,w),<span class="string">'%6.2f'</span>) <span class="string">' [dB]'</span>])
+drawnow
+
+figure(f1)
+subplot(2,3,5), imshow(u{1})
+title([<span class="string">'Denoised image (Wavelet shrinkage): PSNR = '</span> <span class="keyword">...</span>
+    num2str(psnr(src,u{1}),<span class="string">'%6.2f'</span>) <span class="string">' [dB]'</span>])
+drawnow
+
+figure(f1)
+subplot(2,3,6), imshow(y)
+title([<span class="string">'Denoised image (Heuristic shrinkage): PSNR = '</span> <span class="keyword">...</span>
+    num2str(psnr(src,y),<span class="string">'%6.2f'</span>) <span class="string">' [dB]'</span>])
+drawnow
+</pre><img vspace="5" hspace="5" src="quickstart_05.png" alt=""> <h2>Setting parameters for deblurring<a name="16"></a></h2><pre class="codeinput">psfSigma = 2; <span class="comment">% Std. deviation of PSF</span>
+nseSigma = 5; <span class="comment">% Std. deviation of AWGN</span>
+eps      = 1e-3; <span class="comment">% Permitted error for convergence of ISTA</span>
+lambda   = 0.0045; <span class="comment">% Control parametero fidelity and sparsity</span>
+</pre><h2>Preperation of measurement process<a name="17"></a></h2><pre class="codeinput">psfSize = 2*round(4*psfSigma)+1;
+psf = fspecial(<span class="string">'gaussian'</span>,psfSize,psfSigma);
+linrprocess = @(x) imfilter(x,psf,<span class="string">'conv'</span>,<span class="string">'circ'</span>); <span class="comment">% P</span>
+dualprocess = @(x) imfilter(x,psf,<span class="string">'corr'</span>,<span class="string">'circ'</span>); <span class="comment">% P.'</span>
+</pre><h2>Produce observation by blurring and adding noises<a name="18"></a></h2><pre class="codeinput">obs = imnoise(linrprocess(src),<span class="string">'gaussian'</span>,0,(nseSigma/255)^2);
+f4 = figure(4);
+pf4 = get(f4,<span class="string">'Position'</span>);
+pf4(1:2) = [20 80];
+set(f4,<span class="string">'Position'</span>,pf4)
+subplot(2,2,1), imshow(src);
+title(<span class="string">'Original image'</span>)
+subplot(2,2,2), imshow(obs);
+title(sprintf(<span class="string">'Blurred image&#65306;PSNR = %5.2f [dB]'</span>,psnr(src,obs)))
+</pre><img vspace="5" hspace="5" src="quickstart_06.png" alt=""> <h2>Main process of ISTA-based image restoration<a name="19"></a></h2><p>ISTA-based image restoration is applied to a blurred image. The number of wavelet scales is set to four.</p><pre class="codeinput">disp(<span class="string">'It takes a few minutes to complete ISTA...'</span>)
+disp(<span class="string">'It is recommended to open matlabpool if PCT is available.'</span>)
+
+<span class="comment">% Preprocessing for calculating the max. eigen value of P.'P</span>
+upst = 0*obs;
+upst(1,1) = 1;
+eps_ = 1e-6;
+err_ = Inf;
+<span class="keyword">while</span> ( err_ &gt; eps_ )
+    upre = upst;
+    v    = linrprocess(upre); <span class="comment">% P</span>
+    upst = dualprocess(v);    <span class="comment">% P.'</span>
+    err_ = norm(upst(:)-upre(:))^2/norm(upst(:));
+<span class="keyword">end</span>
+n  = sum(upst(:).'*upst(:));
+d  = sum(upst(:).'*upre(:));
+lc = n/d;
+fprintf(<span class="string">'Lipschitz Const.: %f\n'</span>,lc);
+
+<span class="comment">% Main iteration of ISTA</span>
+softshrink  = @(y,lmd) sign(y).*max(abs(y)-lmd,0);
+[y,s] = udirsowtdec2(dualprocess(obs),nLevels,fwdtrx);
+err = Inf;
+figure(f4)
+subplot(2,2,4), hi = imshow(obs);
+ht = title(sprintf(<span class="string">'Retored image(ISTA)&#65306;PSNR = %5.2f [dB]'</span>,<span class="keyword">...</span>
+    psnr(src,dualprocess(obs))));
+itr = 0;
+psnrs = psnr(src,dualprocess(obs));
+f5 = figure(5);
+pf5 = get(f5,<span class="string">'Position'</span>);
+pf5(1:2) = [pf4(3)+20 80];
+set(f5,<span class="string">'Position'</span>,pf5);
+hp = plot(itr,psnrs);
+xlabel(<span class="string">'# of iterations'</span>)
+ylabel(<span class="string">'PSNR[dB]'</span>)
+<span class="keyword">while</span> ( err &gt; eps )
+    ypre = y;
+    v = linrprocess(udirsowtrec2(ypre,s,invtrx));
+    e = udirsowtdec2(dualprocess(v-obs),nLevels,fwdtrx)/lc;
+    y = softshrink(ypre - e,lambda/lc);
+    err = norm(y(:)-ypre(:))^2/norm(y(:));
+    resIsta = udirsowtrec2(y,s,invtrx);
+    set(hi,<span class="string">'CData'</span>,resIsta)
+    set(ht,<span class="string">'String'</span>,sprintf(<span class="string">'Restored image (ISTA)&#65306;PSNR = %5.2f [dB]'</span>,<span class="keyword">...</span>
+        psnr(src,resIsta)))
+    itr = itr+1;
+    psnrs = [psnrs psnr(src,resIsta)];
+    set(hp,<span class="string">'XData'</span>,0:itr,<span class="string">'YData'</span>,psnrs);
+    drawnow
+<span class="keyword">end</span>
+</pre><pre class="codeoutput">It takes a few minutes to complete ISTA...
+It is recommended to open matlabpool if PCT is available.
+Lipschitz Const.: 0.993507
+</pre><img vspace="5" hspace="5" src="quickstart_07.png" alt=""> <img vspace="5" hspace="5" src="quickstart_08.png" alt=""> <h2>Compare deblurring performances<a name="20"></a></h2><p>Comparing denoising performance among four methods: Gaussian filter (imfilter plus fspecial), Wiener filter (wiener2) and ISTA-based deblurring with a union of DirSOWTs.</p><pre class="codeinput">noise_var = (nseSigma/255)^2;
+estimated_nsr = noise_var / var(src(:));
+resWnr = deconvwnr(obs, psf, estimated_nsr);
+figure(f4)
+subplot(2,2,3), imshow(resWnr);
+title(sprintf(<span class="string">'Restored image (Wiener)&#65306;PSNR = %5.2f [dB]'</span>,<span class="keyword">...</span>
+    psnr(src,resWnr)))
+
+figure(f5)
+hold <span class="string">on</span>
+plot(0:itr,psnr(src,resWnr)*ones(1,itr+1),<span class="string">'r'</span>)
+legend(<span class="string">'ISTA'</span>,<span class="string">'Wiener'</span>,<span class="string">'Location'</span>,<span class="string">'Best'</span>)
+hold <span class="string">off</span>
+
+<span class="comment">%matlabpool close</span>
+</pre><img vspace="5" hspace="5" src="quickstart_09.png" alt=""> <img vspace="5" hspace="5" src="quickstart_10.png" alt=""> <h2>Release notes<a name="21"></a></h2><p>RELEASENOTES.txt contains release notes on DirLOT Toolbox.</p><pre class="codeinput">type(<span class="string">'RELEASENOTES.txt'</span>)
+</pre><pre class="codeoutput">
+* Release notes on DirLOT Toolbox
+
+- DirLOT20130901
+
+-- Minor revision: Simulink models in 'embedded' folder were fixed.
+
+- DirLOT20130201
+
+-- Major revision
+--- quickstart.m was revised to add performance evaluation of deblurring. 
+
+-- Minor revision
+--- Added sample codes for APSIPA2012
+
+- DirLOT20121101
+
+-- Major revision
+--- Newly introduced some classes defined as System objects, 
+    which are available for code generation and embedded implementation 
+    on BeagleBoard-xM and PandaBoard-ES. See folder 'embedded.'
+
+- DirLOT20120501
+
+-- Minor revision
+--- Introduced a batch script 'mybuild' to generate some MEX codes.
+--- Added sample codes for ICASSP2012 
+--- Added sample codes for PCS2012
+--- Renamed mytest2008a.m to mytest.m
+
+- DirLOT20111201
+
+-- Major revision
+--- Separable GenLOT classes were newly introduced. See folder 'genlot.'
+--- Class AmplitudeErrorEnergy was introduced.
+--- Class SubbandSpecification was modified to provide a new method 
+    AmplitudeSpecification().
+--- Testing frame work mlunit_2008a was experimentaly introduced.
+-- Minor revision
+--- quickstart.m was revised to evaluate PSNRs.
+--- Some codes in samples were revised.
+--- Dependencies on the deprecated class LpPuFb2d were reduced. 
+--- Files mexcodes/supportExtensionHorizontal.m and 
+    mexcodes/supportExtensionVertical.m were renamed to correct the spel. 
+
+- DirLOT20111101
+
+-- Minor revision: a bug in mexcodes/supportExtentionVertical.m was fixed.
+
+- DirLot20110818
+
+-- ForwardDirLot.m and InverseDirLot.m were modified for acceleration.
+-- The subband assignment in SubbandSpecification.m was revised.
+-- Many sample scripts were appended.
+
+- DirLot20110112
+
+-- Bugs in PSNR calcuation were fixed. 
+   The following codes contained the bugs:
+
+ samples/icip2009/main_icip2009dct.m
+ samples/icip2009/main_icip2009dirlot.m
+ samples/icip2009/main_icip2009dwt97.m
+ dirlot/DirectionalDwtQuantizer.m
+ dirlot/DirectionalDwtQuantizerTest.m
+ dirlot/UniformSubbandQuanizer.m
+ dirlot/UniformSubbandQuantizerTest.m
+ appendix/Dwt97Quantizer.m
+ appendix/Dwt97QuantizerTest.m
+
+The calcuation should have been written as 
+
+ sI=im2uint8(I);
+ sX=im2uint8(X);
+ psnr = 10*log10( (255^2)*numel(sI)/sum((int16(sI(:))-int16(sX(:))).^2));
+
+although it was wrongly implemented as  
+
+ sI=im2uint8(I);
+ sX=im2uint8(X);
+ psnr = 10*log10( (255^2)*numel(sI)/sum((sI(:)-sX(:)).^2));
+
+- DirLot20101201
+
+-- Design with trend vanishing moments (TVMs) was supported.
+-- Implementation of class LpPuFb2d was divided into four
+   classes LpPuFb2dVm0, LpPuFb2dVm1, LpPuFb2dVm2 and LpPuFb2dTvm in
+   terms of the vanishing moment condition. Class LpPuFb2d was
+   modified as a bridge to these new classes for maintaining the
+   compatibity with the previous releases.
+-- Many sample scripts were appended.
+
+- DirLot20100313 
+
+-- A synchronization problem in parallel computing of 'ga' and
+   'fmincon' was fixed.
+
+- DirLot20100107 
+
+-- Class LpPuFb2d was modified so that a cell format of parameter
+   matrix set can be accepted.
+
+- DirLot20091221 
+
+-- Working with Genetic Algorithm and Parallel Computing Toolbox
+   became available for the design process.
+
+- DirLot20091210 
+
+-- Dependency of class LpPuFb2d on class PolyPhaseMatrix2d was reduced
+   for acceleration of the design process.
+
+- DirLot20091130 
+
+-- Functions im2col and col2im were used instead of function colfilt.
+-- Revised for supporting MATLAB releases from R2008a to R2009a again.
+
+- DirLot20091129 
+
+-- ForwardDirLot.m and InverseDirLot.m were modified for acceleration
+   by removing the dependency on BlockWiseAnalyzer.m and
+   BlockWiseSynthesizer.m.
+
+% SVN identifier:
+% $Id: RELEASENOTES.txt 382 2013-08-30 23:44:54Z sho $
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Quick Start of DirLOT Toolbox
+% A brief introduction to directional lapped orthogonal transforms
+
+%% Readme file
+% README.txt contains some informations on DirLOT Toolbox.
+
+type('README.txt')
+
+%% Preparation
+% Before using DirLOT Toolbox, it is required to set the path to
+% the directories 'dirlot', 'genlot', 'appendix' and 'mexcodes'
+% under this Toolbox. Change the current directory to the top
+% directory of DirLOT Toolbox, and execute the command 'setpath'.
+
+setpath
+
+%% Sample codes
+% A lot of sample codes are found under directory 'samples.'
+% In the following denoising and deblurring demos, we will use 
+% some of sample codes. Please set the path by calling command 'addpath.'
+
+addpath('./samples/tip2012td')
+
+%% Original image for denoising and deblurring.
+% Prepare grayscale picture as an original.
+
+clear all
+close all
+src = im2double(imread('cameraman.tif'));
+f1 = figure(1);
+pf1 = [20 180 1120 500];
+set(f1,'Position',pf1)
+subplot(2,3,1), imshow(src)
+title('Original image')
+drawnow
+
+%% Define PSNR
+% Define PSNR to evaluate the denoising results.
+% The peak is set to one.
+
+mse  = @(x,y) sum((x(:)-y(:)).^2)/numel(x);
+psnr = @(x,y) -10*log10(mse(x,y));
+
+%% Selection of DirLOT bases
+% In this denoising demo, a union of multiple DirLOTs is used.
+% Here, several predesigned bases are selected.
+% If you are interested in the design of DirLOTs, please see the following
+% function:
+%
+%    ./appendix/fcn_dirlot_design_fr.m
+%
+
+idx = 1;
+fname{idx} = 'lppufb2dDec22Ord44Alp0.0Dir1Vm2.mat'; idx = idx+1;
+fname{idx} = 'lppufb2dDec22Ord44Alp1.7Dir2Vmd030.00.mat'; idx = idx+1;
+fname{idx} = 'lppufb2dDec22Ord44Alp1.7Dir1Vmd060.00.mat'; idx = idx+1;
+fname{idx} = 'lppufb2dDec22Ord44Alp-1.7Dir1Vmd120.00.mat'; idx = idx+1;
+fname{idx} = 'lppufb2dDec22Ord44Alp-1.7Dir2Vmd150.00.mat';
+
+%% Instantiation of forward and inverse transform objects
+% Instantiate forward and inverse transform objects by using
+% the selected bases, and set the boundary operation to 
+% the termination mode.
+
+nTrx = length(fname); % Number of bases
+fwdtrx = cell(nTrx,1);
+invtrx = cell(nTrx,1);
+for idx = 1:nTrx
+    % Load pre-designed LpPuFb2d (DirLOT) object
+    load(['./samples/icassp2012/filters/data128x128ampk3l3/ga/' ...
+        fname{idx} ]); % Variable lppufb contains a predesigned basis.
+    % Prepare forward transform object
+    fwdtrx{idx} = ForwardDirLot(lppufb,'termination');
+    % Prepare inverse transform Object
+    invtrx{idx} = InverseDirLot(lppufb,'termination');
+end
+
+%% Display basis images
+% Let's see the basis images of one of the loaded DirLOTs.
+% Method dispBasisImages() of object 'lppufb,'
+% an instance of class AbstLpPuFb2d, can be used for this purpose.
+
+figure(2)
+dispBasisImages(lppufb)
+drawnow
+
+%% Access to basis images
+% As well, let us verify the frequency magnitude response of
+% the scaling filter. The impulse response of the k-th basis
+% image of object 'lppufb' can be accessed by the subscription.
+
+figure(3)
+freqz2(lppufb(1))
+xlabel('\omega_x/\pi','FontSize',12,'FontName','AvantGrade')
+ylabel('\omega_y/\pi','FontSize',12,'FontName','AvantGrade')
+zlabel('Magnitude','FontSize',12,'FontName','AvantGrade')
+set(gca,'FontSize',12,'FontName','AvantGrade')
+view(-37.5,60)
+drawnow
+
+%% Open MATLAB pool
+% If Parallel Computing Toolbox (PCT) is avilable, it is recommended to open
+% MATLAB pool.
+
+%matlabpool
+
+%% Build MEX files
+% If MATLAB Coder is avilable, it is recommended to generate some MEX codes
+% by executing the batch script 'mybuild.'
+
+%mybuild
+
+%% Produce observation by adding noise
+% Add noise by using function 'imnoise', which is available from
+% Image Processing Toolbox
+
+sigma = 40;
+v = (sigma/255)^2; % noise variance
+obs = imnoise(src,'gaussian',0,v); % Add white Gaussian noise to the original
+figure(f1)
+subplot(2,3,2), imshow(obs)
+title(['Noisy image: PSNR = ' num2str(psnr(src,obs),'%6.2f') ' [dB]'])
+drawnow
+
+%% Main process of simple heuristic shrinkage
+% Simple heuristic shrinkage is applied to the noisy image.
+% The number of wavelet scales is set to four.
+% The function 'fcn_bayesshrink' realizes the soft-thresholding
+% called BayesShrink.
+
+disp('It takes a few minutes to complete the heuristic shrinkage...')
+disp('It is recommended to open matlabpool if PCT is available.')
+
+nLevels = 4; % Number of wavelet scales
+% The following code runs in parallel if MATLAB pool is available.
+parfor itrx = 1:nTrx
+    % Back-Projection (Forward transform)
+    [valueC,valueS] = wavedec2(fwdtrx{itrx},obs,nLevels);
+    % Shrinkage
+    valueC = fcn_bayesshrink(valueC,valueS);
+    % Forward-Projection (Inverse transform)
+    u{itrx} = waverec2(invtrx{itrx},valueC,valueS);
+end
+
+%% Reconstruction of denoised image
+% Combine every pictures obtained by the inverse transform.
+
+y = 0;
+for itrx = 1:nTrx
+    y = y + u{itrx}/nTrx;
+end
+
+%% Compare denoising performances
+% Comparing denoising performance among four methods:
+% Gaussian filter (imfilter plus fspecial), Wiener filter (wiener2), 
+% BayesShrink with single symmetric orthonormal wavelet and
+% simple heuristic shrinkage with mixture of multiple wavelets.
+
+g = imfilter(obs,fspecial('gaussian',[5 5],1),'symmetric');
+figure(f1)
+subplot(2,3,3), imshow(g)
+title(['Denosied image (Gaussian filter): PSNR = ' ...
+    num2str(psnr(src,g),'%6.2f') ' [dB]'])
+drawnow
+
+w = wiener2(obs);
+figure(f1)
+subplot(2,3,4), imshow(w)
+title(['Denosied image (Wiener filter): PSNR = ' ...
+    num2str(psnr(src,w),'%6.2f') ' [dB]'])
+drawnow
+
+figure(f1)
+subplot(2,3,5), imshow(u{1})
+title(['Denoised image (Wavelet shrinkage): PSNR = ' ...
+    num2str(psnr(src,u{1}),'%6.2f') ' [dB]'])
+drawnow
+
+figure(f1)
+subplot(2,3,6), imshow(y)
+title(['Denoised image (Heuristic shrinkage): PSNR = ' ...
+    num2str(psnr(src,y),'%6.2f') ' [dB]'])
+drawnow
+
+%% Setting parameters for deblurring
+psfSigma = 2; % Std. deviation of PSF 
+nseSigma = 5; % Std. deviation of AWGN
+eps      = 1e-3; % Permitted error for convergence of ISTA
+lambda   = 0.0045; % Control parametero fidelity and sparsity
+
+%% Preperation of measurement process
+psfSize = 2*round(4*psfSigma)+1;
+psf = fspecial('gaussian',psfSize,psfSigma);
+linrprocess = @(x) imfilter(x,psf,'conv','circ'); % P
+dualprocess = @(x) imfilter(x,psf,'corr','circ'); % P.'
+
+%% Produce observation by blurring and adding noises
+obs = imnoise(linrprocess(src),'gaussian',0,(nseSigma/255)^2);
+f4 = figure(4);
+pf4 = get(f4,'Position');
+pf4(1:2) = [20 80];
+set(f4,'Position',pf4)
+subplot(2,2,1), imshow(src);
+title('Original image')
+subplot(2,2,2), imshow(obs);
+title(sprintf('Blurred image：PSNR = %5.2f [dB]',psnr(src,obs)))
+
+%% Main process of ISTA-based image restoration
+% ISTA-based image restoration is applied to a blurred image.
+% The number of wavelet scales is set to four.
+
+disp('It takes a few minutes to complete ISTA...')
+disp('It is recommended to open matlabpool if PCT is available.')
+
+% Preprocessing for calculating the max. eigen value of P.'P
+upst = 0*obs;
+upst(1,1) = 1;
+eps_ = 1e-6;
+err_ = Inf;
+while ( err_ > eps_ ) 
+    upre = upst;
+    v    = linrprocess(upre); % P
+    upst = dualprocess(v);    % P.'
+    err_ = norm(upst(:)-upre(:))^2/norm(upst(:));
+end
+n  = sum(upst(:).'*upst(:));
+d  = sum(upst(:).'*upre(:));
+lc = n/d;
+fprintf('Lipschitz Const.: %f\n',lc);
+
+% Main iteration of ISTA
+softshrink  = @(y,lmd) sign(y).*max(abs(y)-lmd,0);
+[y,s] = udirsowtdec2(dualprocess(obs),nLevels,fwdtrx);
+err = Inf;
+figure(f4)
+subplot(2,2,4), hi = imshow(obs);
+ht = title(sprintf('Retored image(ISTA)：PSNR = %5.2f [dB]',...
+    psnr(src,dualprocess(obs))));
+itr = 0;
+psnrs = psnr(src,dualprocess(obs));
+f5 = figure(5);
+pf5 = get(f5,'Position');
+pf5(1:2) = [pf4(3)+20 80];
+set(f5,'Position',pf5);
+hp = plot(itr,psnrs);
+xlabel('# of iterations')
+ylabel('PSNR[dB]')
+while ( err > eps ) 
+    ypre = y;
+    v = linrprocess(udirsowtrec2(ypre,s,invtrx));
+    e = udirsowtdec2(dualprocess(v-obs),nLevels,fwdtrx)/lc;
+    y = softshrink(ypre - e,lambda/lc);
+    err = norm(y(:)-ypre(:))^2/norm(y(:));
+    resIsta = udirsowtrec2(y,s,invtrx);
+    set(hi,'CData',resIsta)
+    set(ht,'String',sprintf('Restored image (ISTA)：PSNR = %5.2f [dB]',...
+        psnr(src,resIsta)))
+    itr = itr+1;
+    psnrs = [psnrs psnr(src,resIsta)];
+    set(hp,'XData',0:itr,'YData',psnrs);    
+    drawnow    
+end
+
+%% Compare deblurring performances
+% Comparing denoising performance among four methods:
+% Gaussian filter (imfilter plus fspecial), Wiener filter (wiener2) 
+% and ISTA-based deblurring with a union of DirSOWTs.
+
+noise_var = (nseSigma/255)^2;
+estimated_nsr = noise_var / var(src(:));
+resWnr = deconvwnr(obs, psf, estimated_nsr);
+figure(f4)
+subplot(2,2,3), imshow(resWnr);
+title(sprintf('Restored image (Wiener)：PSNR = %5.2f [dB]',...
+    psnr(src,resWnr)))
+
+figure(f5)
+hold on
+plot(0:itr,psnr(src,resWnr)*ones(1,itr+1),'r')
+legend('ISTA','Wiener','Location','Best')
+hold off
+
+%matlabpool close
+
+%% Release notes
+% RELEASENOTES.txt contains release notes on DirLOT Toolbox.
+
+type('RELEASENOTES.txt')
+##### SOURCE END #####
+--></body></html>
