@@ -1,4 +1,13 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{durand2001statistical}
+J.-B. Durand and P.~Gon{\c{c}}alves, {\em Statistical inference for hidden
+  Markov tree models and application to wavelet trees}.
+\newblock PhD thesis, INRIA, 2001.
+
+\bibitem{jezicagent}
+G.~Jezic, Y.-H.~J. Chen-Burger, R.~J. Howlett, and L.~C. Jain, ``Agent and
+  multi-agent systems: Technology and applications,''
 
 \bibitem{lipson2010optical}
 A.~Lipson, S.~G. Lipson, and H.~Lipson, {\em Optical physics}.
@@ -15,7 +24,7 @@ J.~Yan, {\em Machinery Prognostics and Prognosis Oriented Maintenance
 \newblock John Wiley \& Sons, 2014.
 
 \bibitem{leewavelet}
-T.-H.~H. Lee, ``Wavelet analysis for image processing,''
+T.-H.~H. Lee, ``Wavelet analysis for image processing,'' 2012.
 
 \bibitem{cui2015application}
 D.~Cui, M.~Liu, L.~Hu, K.~Liu, Y.~Guo, and Q.~Jiao, ``The application of
@@ -23,8 +32,41 @@ D.~Cui, M.~Liu, L.~Hu, K.~Liu, Y.~Guo, and Q.~Jiao, ``The application of
   denoising,'' {\em The open biomedical engineering journal}, vol.~9, p.~194,
   2015.
 
-\bibitem{ergen2012signal}
-B.~Ergen, {\em Signal and image denoising using wavelet transform}.
-\newblock INTECH Open Access Publisher, 2012.
+\bibitem{do2005contourlet}
+M.~N. Do and M.~Vetterli, ``The contourlet transform: an efficient directional
+  multiresolution image representation,'' {\em IEEE Transactions on image
+  processing}, vol.~14, no.~12, pp.~2091--2106, 2005.
+
+\bibitem{suresh2014artificial}
+L.~P. Suresh, S.~S. Dash, and B.~K. Panigrahi, ``Artificial intelligence and
+  evolutionary algorithms in engineering systems,'' {\em Proceedings of
+  ICAEES}, vol.~1, 2014.
+
+\bibitem{lu2006new}
+Y.~Lu and M.~N. Do, ``A new contourlet transform with sharp frequency
+  localization,'' in {\em 2006 International Conference on Image Processing},
+  pp.~1629--1632, IEEE, 2006.
+
+\bibitem{verma2013comparative}
+R.~Verma and D.~J. Ali, ``A comparative study of various types of image noise
+  and efficient noise removal techniques,'' {\em International journal of
+  advanced research in computer science and software engineering}, vol.~3,
+  no.~10, pp.~617--622, 2013.
+
+\bibitem{levin2011natural}
+A.~Levin and B.~Nadler, ``Natural image denoising: Optimality and inherent
+  bounds,'' in {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pp.~2833--2840, IEEE, 2011.
+
+\bibitem{hanzouli2013pet}
+H.~Hanzouli, J.~Lapuyade-Lahorgue, E.~Monfrini, G.~Delso, W.~Pieczynski,
+  D.~Visvikis, and M.~Hatt, ``Pet/ct image denoising and segmentation based on
+  a multi observation and a multi scale markov tree model,'' in {\em 2013 IEEE
+  Nuclear Science Symposium and Medical Imaging Conference (2013 NSS/MIC)},
+  pp.~1--4, IEEE, 2013.
+
+\bibitem{rangarajan2002image}
+R.~Rangarajan, R.~Venkataramanan, and S.~Shah, ``Image denoising using
+  wavelets,'' {\em Wavelet and Time Frequencies}, 2002.
 
 \end{thebibliography}

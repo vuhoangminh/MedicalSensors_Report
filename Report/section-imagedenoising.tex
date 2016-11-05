@@ -1,2 +1,106 @@
 \section{PET Image Denoising}
 
+\subsection{Image Denoising}
+Image noise is a random variation of brightness and visible as grains. It may arise
+by the sensor and circuity of a digital camera during the time of capturing or image
+transmission that adds spurious and extraneous information \cite{verma2013comparative}. Noise in image
+is defined as pixels showing false or different intensity values instead of true or
+expected values. Natural image denoising is a process of reducing or removing
+noise from an image. In other words, it is defined as a process of guesstimating an
+original clean version of noise corrupted image \cite{levin2011natural}.
+
+The common types of noise that arises in a image are impulse noise (salt-and-pepper
+noise), amplifier noise (Gaussian noise), shot noise, quantization noise (uniform
+noise), film grain, on-isotropic noise, multiplicative noise (speckle noise) and periodic
+noise. Depending on owning different characteristics, which makes them
+distinguishable, each type of noise is able to afflict image in different context. As
+a result, noise reduction filters are developed to minimize the effects of noise in
+order to ameliorate image processing.
+
+In paper \cite{hanzouli2013pet}, the developed framework was firstly evaluated for \gls{pet} denoising. In this work the multiobservation
+aspect of the proposed \gls{hmt} was exploited in
+order to associate both Wavelets and Contourlets coefficients
+to each voxel. An approach combining both \gls{cd} and \gls{wd}, namely \gls{wcd}, was proposed in order to obtain the optimal performance.
+
+
+
+\subsection{PET Image}
+\gls{pet} is a nuclear medicine, functional imaging technique that is used to observe metabolic processes in the body. The system detects pairs of gamma rays emitted indirectly by a positron-emitting radionuclide (tracer), which is introduced into the body on a biologically active molecule. 
+
+Three-dimensional images of tracer concentration within the body are then constructed by computer analysis. In modern PET-CT scanners, three dimensional imaging is often accomplished with the aid of a CT X-ray scan performed on the patient during the same session, in the same machine.
+
+The examples of \gls{pet} system and \gls{pet} brain image can be seen in Figure \ref{fig:pet_image}.
+
+\begin{figure}[h]
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{fig/pet_machine.jpg}
+		%\caption{\gls{pet} machine}
+		\label{fig:pet_machine}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{fig/pet_brain.jpg}
+		%\caption{\gls{pet} brain image}
+		\label{fig:pet_brain}
+	\end{subfigure}
+	\caption{\gls{pet} system and \gls{pet} brain image}\label{fig:pet_image}
+\end{figure}
+
+
+
+\subsection{Wavelet PET Denoising}
+
+\subsubsection{Concept of denoising}
+A more precise explanation of the wavelet denoising
+procedure can be given as follows. Assume that the
+observed data is \cite{rangarajan2002image}:
+\begin{equation}
+	X(t)=S(t)+N(t)
+\end{equation}
+where $S(t)$ is the uncorrupted signal with additive
+noise $N(t)$. 
+
+Let $W(\cdot)$ and $W^{-1}(\cdot)$ denote the forward
+and inverse wavelet transform operators. Let $D(\cdot, \lambda)$ denote the denoising operator with threshold $\lambda$. 
+
+We intend to denoise $X(t)$ to recover $\hat{S}(t)$ as an estimate
+of $S(t)$. The procedure can be summarized in three
+steps:
+\begin{subequations}
+	\begin{align}
+	Y &= W(X)\\
+	Z &= D(Y,\lambda)\\
+	\hat{S} &= W^{-1}(Z)
+	\end{align}
+\end{subequations}
+while $D(\cdot,\lambda)$ being the thresholding operator and $\lambda$ being the threshold.
+
+\subsubsection{Thresholding}
+In fact, small coefficients are dominated by noise, while coefficients with a large absolute value carry more signal information than noise. Replacing noisy coefficients (small coefficients below a certain threshold value) by zero and an inverse wavelet transform may lead to a reconstruction that has lesser noise \cite{rangarajan2002image}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{fig/hard_soft_thresholding}
+	\caption{Hard and Soft Thresholding}
+	\label{fig:hard_soft_thresholding}
+\end{figure}
+
+Hard threshold is a "keep or kill" procedure and
+is more intuitively appealing. The alternative, soft
+thresholding (whose transfer function is shown in Fig
+4 ), shrinks coefficients above the threshold in absolute
+value.
+
+
+
+\subsection{Contourlet PET Denoising}
+
+\subsection{Wavelet-Contourlet PET Denoising}
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{fig/wavelets_hmt}
+	\caption{\glsdesc{dwt} and \glsdesc{hmt} models}
+	\label{fig:wavelets_hmt}
+\end{figure}

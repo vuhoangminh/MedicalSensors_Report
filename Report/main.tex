@@ -25,7 +25,7 @@
 \usepackage[myheadings]{fullpage}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
-\usepackage{graphicx, wrapfig, subcaption, setspace, booktabs}
+\usepackage{graphicx, wrapfig, caption, subcaption, setspace, booktabs}
 \usepackage[font=small, labelfont=bf]{caption}
 \usepackage{fourier}
 \usepackage[protrusion=true, expansion=true]{microtype}
@@ -34,6 +34,9 @@
 \usepackage{url, lipsum}
 \usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage{float}
+\usepackage[numbers]{natbib}
+%\usepackage[round]{natbib}
 
 \usepackage[english]{babel}
 
@@ -49,8 +52,9 @@
 
 \newcommand{\HRule}[1]{\rule{\linewidth}{#1}}
 \onehalfspacing
-\setcounter{tocdepth}{5}
-\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+\renewcommand{\baselinestretch}{1.1}
 
 %-------------------------------------------------------------------------------
 % HEADER & FOOTER
@@ -67,6 +71,9 @@
 % TITLE PAGE
 %-------------------------------------------------------------------------------
 \include{glossaries}
+
+\DeclareMathOperator*{\argmin}{argmin} 
+\DeclareMathOperator*{\argmax}{argmax}  
 
 \begin{document}
 	
@@ -97,9 +104,6 @@
 
 %Chapter 5 - conclusion
 \include{chapter-5}
-\cite{ergen2012signal}
-
-I want to cite this paper \cite{cui2015application}
 
 
 
@@ -110,6 +114,7 @@ I want to cite this paper \cite{cui2015application}
 \newpage
 %\section*{References}
 \bibliography{ref} 
+%\bibliographystyle{plainnat}
 \bibliographystyle{ieeetr}
 
 \end{document}
