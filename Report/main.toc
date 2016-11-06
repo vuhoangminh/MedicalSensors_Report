@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {2.5}PET/CT Image Segmentation}{13}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Introduction}{13}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}EM Algorithm}{14}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}MAP Estimation}{15}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.3}MAP Estimation}{16}{subsection.2.5.3}
 \contentsline {chapter}{\numberline {3}Implementation}{17}{chapter.3}
 \contentsline {chapter}{\numberline {4}Result and Discussion}{18}{chapter.4}
 \contentsline {section}{\numberline {4.1}Challenges}{18}{section.4.1}

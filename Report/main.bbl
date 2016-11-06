@@ -69,4 +69,13 @@ H.~Hanzouli, J.~Lapuyade-Lahorgue, E.~Monfrini, G.~Delso, W.~Pieczynski,
 R.~Rangarajan, R.~Venkataramanan, and S.~Shah, ``Image denoising using
   wavelets,'' {\em Wavelet and Time Frequencies}, 2002.
 
+\bibitem{barker1998image}
+S.~A. Barker, {\em Image segmentation using Markov random field models}.
+\newblock PhD thesis, University of Cambridge, 1998.
+
+\bibitem{bordes2007stochastic}
+L.~Bordes, D.~Chauveau, and P.~Vandekerkhove, ``A stochastic em algorithm for a
+  semiparametric mixture model,'' {\em Computational Statistics \& Data
+  Analysis}, vol.~51, no.~11, pp.~5429--5443, 2007.
+
 \end{thebibliography}

@@ -1,7 +1,7 @@
 \section{PET/CT Image Segmentation}
 
 \subsection{Introduction}
-Segmentation is the process of splitting an observed image into its homogeneous or constituent regions . Segmentation may also be thought of as labeling process, where each pixel in a given image is assigned a designating the region or class to which it belongs.
+Segmentation is the process of splitting an observed image into its homogeneous or constituent regions . Segmentation may also be thought of as labeling process, where each pixel in a given image is assigned a designating the region or class to which it belongs. If the observed image y is defined on a rectangular $M \times N$ lattice $\Omega$, indexed  by a pair $(i,j)$ so that \(\Omega={(i,j);1\leq i\leq M and 1 \leq j \leq N}\) and the label x will be defined on the same label. Thus for each pixel site $s=(s_i,s_j)$ there is a label $x_s$ which specifies to which region the pixel $y_s$ belongs. The relationship between  gray scale values and levels is represented by Bayesian Likelihood function.  It is modeled by probability distribution of the pixel values, model parameter and the prior distribution of models. Then segmentation is an optimization problem  of the labels on entire image\cite{barker1998image}.
 
 Graph partitioning methods are an effective tools for image segmentation since they model the impact of pixel neighborhoods on a given cluster of pixels or pixel, under the assumption of homogeneity in images. In these methods, the image is modeled as a weighted, undirected graph. Usually a pixel or a group of pixels are associated with nodes and edge weights define the (dis)similarity between the neighborhood pixels. The graph (image) is then partitioned according to a criterion designed to model "good" clusters. Each partition of the nodes (pixels) output from these algorithms are considered an object segment in the image.\par
 MRFs are completely characterized by their prior probability distributions, marginal probability distributions, cliques, smoothing constraint as well as criterion for updating values. The criterion for image segmentation using MRFs is restated as finding the labeling scheme which has maximum probability for a given set of features. \par
@@ -32,7 +32,8 @@ where \[Pr( y_i \mid X_i,\theta_{x_i})\] is a Gaussian distribution with paramet
 is the parameter set,which is obtained by the EM algorithm.
 
 \subsection{EM Algorithm}
-We use the EM algorithm to estimate the parameter set \(\Theta=\{\theta_l\lvert l \in L\}\). We describe the EM algorithm by the following:\textbf{REFERENCE:REF2:A Stochastic EM algorithm for a semiparametric mixture model and HMRF-EM-image: Implementation of the Hidden Markov Random Field Model and its Expectation-Maximization Algorithm}
+We use the EM algorithm to estimate the parameter set \(\Theta=\{\theta_l\lvert l \in L\}\). We describe the EM algorithm by the following \cite{bordes2007stochastic}:
+
 \begin{enumerate}
 	\item Start: Assume we have an initial parameter set\(\Theta^{(0)}\)
 	\item  E-step: At the \(t^th\) iteration, we have  \(|\Theta^{(t)}\) and we calculate the conditional expectation:
@@ -52,7 +53,7 @@ where $ x \in X$, set of all possible configurations of labels.
 \end{equation}
 Then let \(\Theta^{(t+1)}\) to \(\Theta^{(t)}\) and repeat from the E-step.
 
-The above equations are in general are computationally difficult and here we have assumed the parameters are random processes to simplify our implementation.\textbf{REFERENCE:IMAGE AND SIGNAL RESTORATION USING PAIRWISE MARKOV TREES}   Let \(G(z;\theta_l)\) denote a Gaussian distribution function with parameters \(\theta_l=(\mu_l,\sigma_l)\):
+The above equations are in general are computationally difficult and here we have assumed the parameters are random processes to simplify our implementation\cite{monfrini2003image}. Let \(G(z;\theta_l)\) denote a Gaussian distribution function with parameters \(\theta_l=(\mu_l,\sigma_l)\):
 \begin{equation}
 G(z;\theta_l)= \frac{1}{\sqrt{2\pi\sigma^2}}\exp(-\frac{(z-\mu_l)^2}{2\sigma^2})   
 \end{equation}
