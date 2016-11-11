@@ -3,4 +3,6 @@
 *.log
 *.gz
 *.toc
-
+*.ist
+*.out
+*.glo
