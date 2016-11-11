@@ -1,6 +1,7 @@
 \section{Contourlet Transform}
 
-\subsection{Overview}
+%=====================================================
+\subsection{Background}
 In the field of Geometrical Image Transforms, there are many 1-D transforms designed for detecting or capturing the geometry of image information, such as the \gls{ft} and \gls{wt}. However, the ability of 1-D transform processing of the intrinsic geometrical structures, such as smoothness of curves, is limited in one direction, then more powerful representations are required in higher dimensions. The \gls{ct}, which was proposed in \cite{do2005contourlet}, is a new two-dimensional transform method for image representations.
 
 Contourlets form a multiresolution directional tight frame designed to efficiently approximate images made of smooth regions separated by smooth boundaries. The \gls{ct} has a fast implementation based on a \gls{lp} decomposition followed by \glspl{dfb} applied on each bandpass subband \cite{suresh2014artificial}. The new method as proposed in \cite{lu2006new} uses a multiscale pyramid that can be adjusted by applying low pass or high pass filters for the different levels.
@@ -14,7 +15,9 @@ The \gls{lp} decomposition only produce one bandpass image in a multidimensional
 	\label{fig:contourlet}
 \end{figure}
 
-\subsection{Definition}
+
+%=====================================================
+\subsection{Contourlet Transform}
 
 The \gls{ct} is a directional transform, capable of capturing contours and fine details in images. The Figure \ref{fig:contourlet_2} illustrates the \gls{ct}, in which the input image consists of frequency components like \gls{ll}, \gls{lh}, \gls{hl} and \gls{hh}. 
 

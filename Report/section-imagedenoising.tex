@@ -1,5 +1,6 @@
 \section{PET Image Denoising}
 
+%==================================================
 \subsection{Image Denoising}
 Image noise is a random variation of brightness and visible as grains. It may arise
 by the sensor and circuity of a digital camera during the time of capturing or image
@@ -23,7 +24,7 @@ order to associate both Wavelets and Contourlets coefficients
 to each voxel. An approach combining both \gls{cd} and \gls{wd}, namely \gls{wcd}, was proposed in order to obtain the optimal performance.
 
 
-
+%==================================================
 \subsection{PET Image}
 \gls{pet} is a nuclear medicine, functional imaging technique that is used to observe metabolic processes in the body. The system detects pairs of gamma rays emitted indirectly by a positron-emitting radionuclide (tracer), which is introduced into the body on a biologically active molecule. 
 
@@ -47,15 +48,16 @@ The examples of \gls{pet} system and \gls{pet} brain image can be seen in Figure
 \end{figure}
 
 
+%==================================================
+\subsection{Wavelet Denoising}
 
-\subsection{Wavelet PET Denoising}
-
-\subsubsection{Concept of denoising}
+%--------------------------------------------------
+\subsubsection*{Concept of denoising}
 A more precise explanation of the wavelet denoising
 procedure can be given as follows. Assume that the
 observed data is \cite{rangarajan2002image}:
 \begin{equation}
-	X(t)=S(t)+N(t)
+X(t)=S(t)+N(t)
 \end{equation}
 where $S(t)$ is the uncorrupted signal with additive
 noise $N(t)$. 
@@ -72,10 +74,12 @@ steps:
 	Z &= D(Y,\lambda)\\
 	\hat{S} &= W^{-1}(Z)
 	\end{align}
+	\label{eqn:wavelet_denoise}
 \end{subequations}
 while $D(\cdot,\lambda)$ being the thresholding operator and $\lambda$ being the threshold.
 
-\subsubsection{Thresholding}
+%--------------------------------------------------
+\subsubsection*{Thresholding}
 In fact, small coefficients are dominated by noise, while coefficients with a large absolute value carry more signal information than noise. Replacing noisy coefficients (small coefficients below a certain threshold value) by zero and an inverse wavelet transform may lead to a reconstruction that has lesser noise \cite{rangarajan2002image}.
 
 \begin{figure}[h]
@@ -87,15 +91,59 @@ In fact, small coefficients are dominated by noise, while coefficients with a la
 
 Hard threshold is a "keep or kill" procedure and
 is more intuitively appealing. The alternative, soft
-thresholding (whose transfer function is shown in Fig
-4 ), shrinks coefficients above the threshold in absolute
-value.
+thresholding shrinks coefficients above the threshold in absolute value. See Figure \ref{fig:hard_soft_thresholding} for the transfer functions of hard and soft thresholding, respectively. 
+
+The hard thresholding operator is defined as:
+\begin{equation}
+D(U, \lambda) = 
+\begin{cases}
+U &\text{for all $|U|>\lambda$ }\\
+0 &\text{otherwise}
+\end{cases}	
+\end{equation}
+
+Otherwise, the soft thresholding operator is defined as:
+\begin{equation}
+D(U, \lambda) = sgn(U)max(0, |U| - \lambda)
+\end{equation}
+
+Threshold determination is an important question when denoising. A small threshold
+may yield a result close to the input, but the
+result may still be noisy. A large threshold on the other hand, produces a signal with a large number
+of zero coefficients. This leads to a smooth signal.
+Paying too much attention to smoothness, however,
+destroys details and in image processing may cause
+blur and artifacts \cite{rangarajan2002image}.
+
+In addition to hard and soft thresholding, a thresholding approach, namely Universal Thresholding, is introduced:
+\begin{equation}
+\lambda_{UNIV}=\sqrt{2lnN\sigma}
+\end{equation}
+where $N$ being the signal length, and $\sigma^2$ being the noise variance.
+
+%--------------------------------------------------
+\subsubsection*{Wavelet Denoising based on \glsdesc{hmt} }
 
 
+%==================================================
+\subsection{Contourlet Denoising}
+\cite{po2003directional}
 
-\subsection{Contourlet PET Denoising}
+%==================================================
+\subsection{Wavelet-Contourlet Denoising}
 
-\subsection{Wavelet-Contourlet PET Denoising}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{fig/wavelets_contourlet}
+	\caption{Contourlet and wavelet representations for images. (a) Examples of
+		five 2-D wavelet basis images. (b) Examples of four contourlet basis images.
+		(c) Illustration showing how wavelets having square supports that can only
+		capture point discontinuities, whereas contourlets having elongated supports
+		that can capture linear segments of contours, and thus can effectively represent
+		a smooth contour with fewer coefficients.
+		}
+	\label{fig:wavelets_contourlet}
+\end{figure}
 
 
 \begin{figure}[h]

@@ -1,6 +1,7 @@
-\section{2D Discrete Wavelet Transform}
+\section{Discrete Wavelet Transform}
 
-\subsection{Overview}
+%=================================================
+\subsection{Background}
 A wavelet is a wave-like oscillation with an amplitude that begins at zero, increases, and then decreases back to zero. It can typically be visualized as a "brief oscillation" like one recorded by a seismograph or heart monitor \cite{lipson2010optical}. As a mathematical tool, wavelets can be used to extract information from many different kinds of data, including – but certainly not limited to – audio signals and images \cite{lovis2014ehealth}.
 
 In numerical analysis and functional analysis, a \gls{dwt} is any wavelet transform for which the wavelets are discretely sampled. As with other wavelet transforms, a key advantage it has over \gls{ft} is temporal resolution: it captures both frequency and location information (location in time) \cite{yan2014machinery}.
@@ -9,7 +10,9 @@ In numerical analysis and functional analysis, a \gls{dwt} is any wavelet transf
 
 In signal processing, wavelets make it possible to recover weak signals from noise . This has proven useful especially in the processing of X-ray and magnetic-resonance images in medical applications. Images processed in this way can be "cleaned up" without blurring or muddling the details \cite{leewavelet}.
 
-\subsection{Definition}
+
+%=================================================
+\subsection{Discrete Wavelet Transform}
 In 2-Dimensional dyadic multiresolution, a wavelet orthonormal basis in $L^2(\mathbb{R}^2)$ is built up from (tensor) products involving:
 
 \begin{itemize}[noitemsep,nolistsep]

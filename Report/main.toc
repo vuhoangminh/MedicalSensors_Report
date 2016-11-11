@@ -4,25 +4,23 @@
 \contentsline {section}{\numberline {2.1}HMT}{4}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}General Introduction}{4}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Overview of Hidden Markov Model}{4}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}2D Discrete Wavelet Transform}{6}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Overview}{6}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Definition}{6}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.2}Discrete Wavelet Transform}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Background}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Discrete Wavelet Transform}{6}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}Contourlet Transform}{8}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Overview}{8}{subsection.2.3.1}
-\contentsline {subsection}{\numberline {2.3.2}Definition}{9}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.1}Background}{8}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Contourlet Transform}{9}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}PET Image Denoising}{10}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Image Denoising}{10}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}PET Image}{10}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Wavelet PET Denoising}{10}{subsection.2.4.3}
-\contentsline {subsubsection}{\numberline {2.4.3.1}Concept of denoising}{10}{subsubsection.2.4.3.1}
-\contentsline {subsubsection}{\numberline {2.4.3.2}Thresholding}{11}{subsubsection.2.4.3.2}
-\contentsline {subsection}{\numberline {2.4.4}Contourlet PET Denoising}{12}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Wavelet-Contourlet PET Denoising}{12}{subsection.2.4.5}
-\contentsline {section}{\numberline {2.5}PET/CT Image Segmentation}{13}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Introduction}{13}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}EM Algorithm}{14}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}MAP Estimation}{16}{subsection.2.5.3}
-\contentsline {chapter}{\numberline {3}Implementation}{17}{chapter.3}
-\contentsline {chapter}{\numberline {4}Result and Discussion}{18}{chapter.4}
-\contentsline {section}{\numberline {4.1}Challenges}{18}{section.4.1}
-\contentsline {chapter}{\numberline {5}Conclusion}{19}{chapter.5}
+\contentsline {subsection}{\numberline {2.4.3}Wavelet Denoising}{10}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Contourlet Denoising}{12}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Wavelet-Contourlet Denoising}{12}{subsection.2.4.5}
+\contentsline {section}{\numberline {2.5}PET/CT Image Segmentation}{14}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Introduction}{14}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}EM Algorithm}{15}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}MAP Estimation}{17}{subsection.2.5.3}
+\contentsline {chapter}{\numberline {3}Implementation}{18}{chapter.3}
+\contentsline {chapter}{\numberline {4}Result and Discussion}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Challenges}{19}{section.4.1}
+\contentsline {chapter}{\numberline {5}Conclusion}{20}{chapter.5}

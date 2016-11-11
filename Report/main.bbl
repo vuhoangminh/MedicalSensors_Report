@@ -69,6 +69,11 @@ H.~Hanzouli, J.~Lapuyade-Lahorgue, E.~Monfrini, G.~Delso, W.~Pieczynski,
 R.~Rangarajan, R.~Venkataramanan, and S.~Shah, ``Image denoising using
   wavelets,'' {\em Wavelet and Time Frequencies}, 2002.
 
+\bibitem{po2003directional}
+D.-Y. Po and M.~N. Do, ``Directional multiscale modeling of images using the
+  contourlet transform,'' in {\em Statistical Signal Processing, 2003 IEEE
+  Workshop on}, pp.~262--265, IEEE, 2003.
+
 \bibitem{barker1998image}
 S.~A. Barker, {\em Image segmentation using Markov random field models}.
 \newblock PhD thesis, University of Cambridge, 1998.

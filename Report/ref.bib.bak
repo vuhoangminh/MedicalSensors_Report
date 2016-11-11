@@ -157,13 +157,11 @@
   year    = {2012},
 }
 
-@InProceedings{monfrini2003image,
-  author       = {Monfrini, E and Lecomte, J and Desbouvries, F and Pieczynski, W},
-  title        = {Image and signal restoration using pairwise Markov trees},
-  booktitle    = {Statistical Signal Processing, 2003 IEEE Workshop on},
-  year         = {2003},
-  pages        = {174--177},
-  organization = {IEEE},
+@PhdThesis{barker1998image,
+  author = {Barker, Simon A},
+  title  = {Image segmentation using Markov random field models},
+  school = {University of Cambridge},
+  year   = {1998},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

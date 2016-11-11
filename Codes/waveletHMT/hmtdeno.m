@@ -42,10 +42,3 @@ si2 = si2.*(si2>0)+0.0*(si2<=0);
 ywtmp = shiftdim(repmat(w,[1 1 M]),2);
 yw = squeeze(sum(si2./(si2+sn2).*ywtmp.*P1,1));
 yw(1:J,1:J)=w(1:J,1:J);
-
-
-
-
-
-
-

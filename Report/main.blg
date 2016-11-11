@@ -12,8 +12,12 @@ A level-1 auxiliary file: chapter-4.aux
 A level-1 auxiliary file: chapter-5.aux
 The style file: ieeetr.bst
 Database file #1: ref.bib
+Repeated entry---line 167 of file ref.bib
+ : @inproceedings{po2003directional
+ :                                 ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "monfrini2003image"
 Warning--empty journal in jezicagent
 Warning--empty year in jezicagent
 Warning--empty journal in leewavelet
-(There were 4 warnings)
+(There was 1 error message)

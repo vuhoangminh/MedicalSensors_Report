@@ -17,4 +17,3 @@ image(y*255+1);
 colormap(gray(256));
 axis square;
 title('Denoised image');
-

@@ -113,11 +113,3 @@ else
 end;
 
 y = Iidwt2(yw,h);
-
-
-
-
-
-
-
-

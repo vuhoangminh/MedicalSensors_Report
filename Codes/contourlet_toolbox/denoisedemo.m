@@ -20,8 +20,9 @@ sig = std(im(:));
 sigma = sig / rho;
 nim = im + sigma * randn(size(im));
 
-
-%%%%% Wavelet denoising %%%%%
+%===============================================================
+% Wavelet denoising ============================================
+%===============================================================
 % Wavelet transform using PDFB with zero number of level for DFB
 y = pdfbdec(nim, pfilt, dfilt, zeros(length(nlevs), 1));
 [c, s] = pdfb2vec(y);
@@ -34,8 +35,9 @@ c = c .* (abs(c) > wth);
 y = vec2pdfb(c, s);
 wim = pdfbrec(y, pfilt, dfilt);
 
-
-%%%%% Contourlet Denoising %%%%%
+%===============================================================
+% Contourlet Denoising =========================================
+%===============================================================
 % Contourlet transform
 y = pdfbdec(nim, pfilt, dfilt, nlevs);
 [c, s] = pdfb2vec(y);
@@ -50,7 +52,7 @@ cth = th * sigma * sqrt(nvar);
 
 % Slightly different thresholds for the finest scale
 fs = s(end, 1);
-fssize = sum(prod(s(find(s(:, 1) == fs), 3:4), 2));
+fssize = sum(prod(s(s(:, 1) == fs, 3:4), 2));
 cth(end-fssize+1:end) = (4/3) * cth(end-fssize+1:end);
 
 c = c .* (abs(c) > cth);
@@ -63,23 +65,42 @@ cim = pdfbrec(y, pfilt, dfilt);
 %%%%% Plot: Only the hat!
 range = [0, 1];
 
-subplot(2,2,1), imagesc(im(41:168, 181:308), range); axis image off
+subplot(2,2,1), imshow(im); axis image off
 set(gca, 'FontSize', 8);
 title('Original Image', 'FontSize', 10);
 
-subplot(2,2,2), imagesc(nim(41:168, 181:308), range); axis image off
+subplot(2,2,2), imshow(nim); axis image off
 set(gca, 'FontSize', 8);
 title(sprintf('Noisy Image (SNR = %.2f dB)', ...
               SNR(im, nim)), 'FontSize', 10);
 
-subplot(2,2,3), imagesc(wim(41:168, 181:308), range); axis image off
+subplot(2,2,3), imshow(wim); axis image off
 set(gca, 'FontSize', 8);
 title(sprintf('Denoise using Wavelets (SNR = %.2f dB)', ...
               SNR(im, wim)), 'FontSize', 10);
 
-subplot(2,2,4), imagesc(cim(41:168, 181:308), range); axis image off
+subplot(2,2,4), imshow(cim); axis image off
 set(gca, 'FontSize', 8);
 title(sprintf('Denoise using Contourlets (SNR = %.2f dB)', ...
               SNR(im, cim)), 'FontSize', 10);
 
+%           subplot(2,2,1), imagesc(im(41:168, 181:308), range); axis image off
+% set(gca, 'FontSize', 8);
+% title('Original Image', 'FontSize', 10);
+% 
+% subplot(2,2,2), imagesc(nim(41:168, 181:308), range); axis image off
+% set(gca, 'FontSize', 8);
+% title(sprintf('Noisy Image (SNR = %.2f dB)', ...
+%               SNR(im, nim)), 'FontSize', 10);
+% 
+% subplot(2,2,3), imagesc(wim(41:168, 181:308), range); axis image off
+% set(gca, 'FontSize', 8);
+% title(sprintf('Denoise using Wavelets (SNR = %.2f dB)', ...
+%               SNR(im, wim)), 'FontSize', 10);
+% 
+% subplot(2,2,4), imagesc(cim(41:168, 181:308), range); axis image off
+% set(gca, 'FontSize', 8);
+% title(sprintf('Denoise using Contourlets (SNR = %.2f dB)', ...
+%               SNR(im, cim)), 'FontSize', 10);
+          
 colormap('gray');          
