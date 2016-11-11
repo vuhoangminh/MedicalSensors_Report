@@ -1,6 +1,5 @@
 *.aux
-*.aux
-*.aux
 *.log
 Presentation/main.out
 *.log
+*.gz
