@@ -1,86 +1,132 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{20}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
 
-\bibitem{durand2001statistical}
-J.-B. Durand and P.~Gon{\c{c}}alves, {\em Statistical inference for hidden
-  Markov tree models and application to wavelet trees}.
-\newblock PhD thesis, INRIA, 2001.
-
-\bibitem{jezicagent}
-G.~Jezic, Y.-H.~J. Chen-Burger, R.~J. Howlett, and L.~C. Jain, ``Agent and
-  multi-agent systems: Technology and applications,''
-
-\bibitem{lipson2010optical}
-A.~Lipson, S.~G. Lipson, and H.~Lipson, {\em Optical physics}.
-\newblock Cambridge University Press, 2010.
-
-\bibitem{lovis2014ehealth}
-C.~Lovis, B.~S{\'e}roussi, and A.~Hasman, {\em EHealth-For Continuity of Care:
-  Proceedings of MIE2014}, vol.~205.
-\newblock IOS Press, 2014.
-
-\bibitem{yan2014machinery}
-J.~Yan, {\em Machinery Prognostics and Prognosis Oriented Maintenance
-  Management}.
-\newblock John Wiley \& Sons, 2014.
-
-\bibitem{leewavelet}
-T.-H.~H. Lee, ``Wavelet analysis for image processing,'' 2012.
-
-\bibitem{cui2015application}
-D.~Cui, M.~Liu, L.~Hu, K.~Liu, Y.~Guo, and Q.~Jiao, ``The application of
-  wavelet-domain hidden markov tree model in diabetic retinal image
-  denoising,'' {\em The open biomedical engineering journal}, vol.~9, p.~194,
-  2015.
-
-\bibitem{do2005contourlet}
-M.~N. Do and M.~Vetterli, ``The contourlet transform: an efficient directional
-  multiresolution image representation,'' {\em IEEE Transactions on image
-  processing}, vol.~14, no.~12, pp.~2091--2106, 2005.
-
-\bibitem{suresh2014artificial}
-L.~P. Suresh, S.~S. Dash, and B.~K. Panigrahi, ``Artificial intelligence and
-  evolutionary algorithms in engineering systems,'' {\em Proceedings of
-  ICAEES}, vol.~1, 2014.
-
-\bibitem{lu2006new}
-Y.~Lu and M.~N. Do, ``A new contourlet transform with sharp frequency
-  localization,'' in {\em 2006 International Conference on Image Processing},
-  pp.~1629--1632, IEEE, 2006.
-
-\bibitem{verma2013comparative}
-R.~Verma and D.~J. Ali, ``A comparative study of various types of image noise
-  and efficient noise removal techniques,'' {\em International journal of
-  advanced research in computer science and software engineering}, vol.~3,
-  no.~10, pp.~617--622, 2013.
-
-\bibitem{levin2011natural}
-A.~Levin and B.~Nadler, ``Natural image denoising: Optimality and inherent
-  bounds,'' in {\em Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
-  Conference on}, pp.~2833--2840, IEEE, 2011.
-
-\bibitem{hanzouli2013pet}
-H.~Hanzouli, J.~Lapuyade-Lahorgue, E.~Monfrini, G.~Delso, W.~Pieczynski,
-  D.~Visvikis, and M.~Hatt, ``Pet/ct image denoising and segmentation based on
-  a multi observation and a multi scale markov tree model,'' in {\em 2013 IEEE
-  Nuclear Science Symposium and Medical Imaging Conference (2013 NSS/MIC)},
-  pp.~1--4, IEEE, 2013.
-
-\bibitem{rangarajan2002image}
-R.~Rangarajan, R.~Venkataramanan, and S.~Shah, ``Image denoising using
-  wavelets,'' {\em Wavelet and Time Frequencies}, 2002.
-
-\bibitem{po2003directional}
-D.-Y. Po and M.~N. Do, ``Directional multiscale modeling of images using the
-  contourlet transform,'' in {\em Statistical Signal Processing, 2003 IEEE
-  Workshop on}, pp.~262--265, IEEE, 2003.
-
-\bibitem{barker1998image}
-S.~A. Barker, {\em Image segmentation using Markov random field models}.
+\bibitem[Barker(1998)]{barker1998image}
+Simon~A Barker.
+\newblock \emph{Image segmentation using Markov random field models}.
 \newblock PhD thesis, University of Cambridge, 1998.
 
-\bibitem{bordes2007stochastic}
-L.~Bordes, D.~Chauveau, and P.~Vandekerkhove, ``A stochastic em algorithm for a
-  semiparametric mixture model,'' {\em Computational Statistics \& Data
-  Analysis}, vol.~51, no.~11, pp.~5429--5443, 2007.
+\bibitem[Bordes et~al.(2007)Bordes, Chauveau, and
+  Vandekerkhove]{bordes2007stochastic}
+Laurent Bordes, Didier Chauveau, and Pierre Vandekerkhove.
+\newblock A stochastic em algorithm for a semiparametric mixture model.
+\newblock \emph{Computational Statistics \& Data Analysis}, 51\penalty0
+  (11):\penalty0 5429--5443, 2007.
+
+\bibitem[Cohen(2012)]{cohen2012signal}
+Rami Cohen.
+\newblock Signal denoising using wavelets.
+\newblock \emph{Project Report, Department of Electrical Engineering Technion,
+  Israel Institute of Technology, Haifa}, 2012.
+
+\bibitem[Coifman and Donoho(1995)]{coifman1995translation}
+Ronald~R Coifman and David~L Donoho.
+\newblock \emph{Translation-invariant de-noising}.
+\newblock Springer, 1995.
+
+\bibitem[Cui et~al.(2015)Cui, Liu, Hu, Liu, Guo, and Jiao]{cui2015application}
+Dong Cui, Minmin Liu, Lei Hu, Keju Liu, Yongxin Guo, and Qing Jiao.
+\newblock The application of wavelet-domain hidden markov tree model in
+  diabetic retinal image denoising.
+\newblock \emph{The open biomedical engineering journal}, 9:\penalty0 194,
+  2015.
+
+\bibitem[Dabov et~al.(2007)Dabov, Foi, Katkovnik, and
+  Egiazarian]{dabov2007image}
+Kostadin Dabov, Alessandro Foi, Vladimir Katkovnik, and Karen Egiazarian.
+\newblock Image denoising by sparse 3-d transform-domain collaborative
+  filtering.
+\newblock \emph{IEEE Transactions on image processing}, 16\penalty0
+  (8):\penalty0 2080--2095, 2007.
+
+\bibitem[Do and Vetterli(2005)]{do2005contourlet}
+Minh~N Do and Martin Vetterli.
+\newblock The contourlet transform: an efficient directional multiresolution
+  image representation.
+\newblock \emph{IEEE Transactions on image processing}, 14\penalty0
+  (12):\penalty0 2091--2106, 2005.
+
+\bibitem[Durand and Gon{\c{c}}alves(2001)]{durand2001statistical}
+Jean-Baptiste Durand and Paulo Gon{\c{c}}alves.
+\newblock \emph{Statistical inference for hidden Markov tree models and
+  application to wavelet trees}.
+\newblock PhD thesis, INRIA, 2001.
+
+\bibitem[Hanzouli et~al.(2013)Hanzouli, Lapuyade-Lahorgue, Monfrini, Delso,
+  Pieczynski, Visvikis, and Hatt]{hanzouli2013pet}
+Houda Hanzouli, J{\'e}r{\^o}me Lapuyade-Lahorgue, Emmanuel Monfrini, Gaspar
+  Delso, Wojciech Pieczynski, Dimitris Visvikis, and Mathieu Hatt.
+\newblock Pet/ct image denoising and segmentation based on a multi observation
+  and a multi scale markov tree model.
+\newblock In \emph{2013 IEEE Nuclear Science Symposium and Medical Imaging
+  Conference (2013 NSS/MIC)}, pages 1--4. IEEE, 2013.
+
+\bibitem[Jezic et~al.()Jezic, Chen-Burger, Howlett, and Jain]{jezicagent}
+Gordan Jezic, Yun-Heh~Jessica Chen-Burger, Robert~J Howlett, and Lakhmi~C Jain.
+\newblock Agent and multi-agent systems: Technology and applications.
+
+\bibitem[Lee(2012)]{leewavelet}
+Tzu-Heng~Henry Lee.
+\newblock Wavelet analysis for image processing.
+\newblock 2012.
+
+\bibitem[Levin and Nadler(2011)]{levin2011natural}
+Anat Levin and Boaz Nadler.
+\newblock Natural image denoising: Optimality and inherent bounds.
+\newblock In \emph{Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 2833--2840. IEEE, 2011.
+
+\bibitem[Lipson et~al.(2010)Lipson, Lipson, and Lipson]{lipson2010optical}
+Ariel Lipson, Stephen~G Lipson, and Henry Lipson.
+\newblock \emph{Optical physics}.
+\newblock Cambridge University Press, 2010.
+
+\bibitem[Lovis et~al.(2014)Lovis, S{\'e}roussi, and Hasman]{lovis2014ehealth}
+Christian Lovis, Brigitte S{\'e}roussi, and Arie Hasman.
+\newblock \emph{EHealth-For Continuity of Care: Proceedings of MIE2014}, volume
+  205.
+\newblock IOS Press, 2014.
+
+\bibitem[Lu and Do(2006)]{lu2006new}
+Yue Lu and Minh~N Do.
+\newblock A new contourlet transform with sharp frequency localization.
+\newblock In \emph{2006 International Conference on Image Processing}, pages
+  1629--1632. IEEE, 2006.
+
+\bibitem[Po and Do(2003)]{Po2003}
+DD-Y Po and Minh~N Do.
+\newblock Directional multiscale modeling of images using the contourlet
+  transform.
+\newblock In \emph{Statistical Signal Processing, 2003 IEEE Workshop on}, pages
+  262--265. IEEE, 2003.
+
+\bibitem[Rangarajan et~al.(2002)Rangarajan, Venkataramanan, and
+  Shah]{rangarajan2002image}
+Raghuram Rangarajan, Ramji Venkataramanan, and Siddharth Shah.
+\newblock Image denoising using wavelets.
+\newblock \emph{Wavelet and Time Frequencies}, 2002.
+
+\bibitem[Suresh et~al.(2014)Suresh, Dash, and Panigrahi]{suresh2014artificial}
+L~Padma Suresh, Subhransu~Sekhar Dash, and Bijaya~Ketan Panigrahi.
+\newblock Artificial intelligence and evolutionary algorithms in engineering
+  systems.
+\newblock \emph{Proceedings of ICAEES}, 1, 2014.
+
+\bibitem[Verma and Ali(2013)]{verma2013comparative}
+Rohit Verma and Dr~Jahid Ali.
+\newblock A comparative study of various types of image noise and efficient
+  noise removal techniques.
+\newblock \emph{International journal of advanced research in computer science
+  and software engineering}, 3\penalty0 (10):\penalty0 617--622, 2013.
+
+\bibitem[Yan(2014)]{yan2014machinery}
+Jihong Yan.
+\newblock \emph{Machinery Prognostics and Prognosis Oriented Maintenance
+  Management}.
+\newblock John Wiley \& Sons, 2014.
 
 \end{thebibliography}

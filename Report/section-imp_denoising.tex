@@ -1,0 +1,106 @@
+\section{PET Image Denoising}
+
+
+
+
+
+\iffalse
+\begin{algorithm}
+	\caption{Wavelet Denoising}\label{alg:waveletdenoising2}
+	\begin{algorithmic}[1]
+		\Require $image$
+		\Ensure $denoise\_image$
+		\Procedure{waveletdenoising($image$)}{}
+		\State $\textit{stringlen} \gets \text{length of }\textit{string}$
+		\State $i \gets \textit{patlen}$
+		\BState \emph{top}:
+		\If {$i > \textit{stringlen}$} \Return false
+		\EndIf
+		\State $j \gets \textit{patlen}$
+		\BState \emph{loop}:
+		\If {$\textit{string}(i) = \textit{path}(j)$}
+		\State $j \gets j-1$.
+		\State $i \gets i-1$.
+		\State \textbf{goto} \emph{loop}.
+		\State \textbf{close};
+		\EndIf
+		\State $i \gets i+\max(\textit{delta}_1(\textit{string}(i)),\textit{delta}_2(j))$.
+		\State \textbf{goto} \emph{top}.
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+\fi
+
+\begin{algorithm}
+	\caption{PDFB Decomposition}\label{alg:pdfbdec}
+	\begin{algorithmic}[1]
+		\Require $x, pfilt, dfilt, nlevs$
+		\Ensure $y$
+		\Procedure{pdfbdec($x, pfilt, dfilt, nlevs$)}{}
+			\If {$nlev=0$}  \Comment Wavelet Decomposition
+				\State $y=x$
+			\Else \Comment Contourlet Decomposition
+				\State get the pyramidal filters from the filter name \Comment $h, g$
+					
+			\EndIf
+		\EndProcedure
+	\end{algorithmic}	
+\end{algorithm}
+
+
+%---------------------------------------------------------
+\subsection{Wavelet Denoising}
+The procedure of \gls{cd} is shown in Algorithm \ref{alg:waveletdenoising}.
+
+
+%\lstinputlisting{waveletdenoising.m}
+vector of numbers of directional filter bank decomposition levels at each pyramidal level (from coarse to fine scale).
+If the number of level is 0, a critically sampled 2-D wavelet decomposition step is performed.
+$nlevs = [0, 0, 4, 4, 5]$
+
+\begin{algorithm}
+	\caption{Wavelet Denoising}\label{alg:waveletdenoising}
+	\begin{algorithmic}[1]
+		\Require $input\_image$
+		\Ensure $denoised\_image$
+		\Procedure{waveletdenoising($input\_image$)}{}
+			\State initialize parameters
+			\State define vector of numbers of PDFB decomposition levels  \Comment{$nlevs = [0, 0, 0, 0, 0]$}
+			\State decompose PDFB \Comment{$y = pdfbdec(input\_image, paras)$}
+			\State convert the output of the PDFB into a vector form \Comment{$[c, s] = pdfb2vec(y)$}
+			\State compute threshold \Comment{$wth$}
+			\State compute vector PDFB coefficients \Comment{$c$}
+			\State convert vector form to output structure \Comment{$y = vec2pdfb(c, s)$}
+			\State reconstruct $denoised\_image$ \Comment{$denoised\_image = pdfbrec(y, paras)$}
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+
+%---------------------------------------------------------
+\subsection{Contourlet Denoising}
+The procedure of \gls{cd} is shown in Algorithm \ref{alg:contourletdenoising}.
+
+
+$nlevs = [0, 0, 4, 4, 5]$
+
+\begin{algorithm}
+	\caption{Contourlet Denoising}\label{alg:contourletdenoising}
+	\begin{algorithmic}[1]
+		\Require $input\_image$
+		\Ensure $denoised\_image$
+		\Procedure{contourletdenoising($input\_image$)}{}
+		\State initialize parameters
+		\State define vector of numbers of PDFB decomposition levels  \Comment{$nlevs = [0, 0, 4, 4, 5]$}
+		\State decompose PDFB \Comment{$y = pdfbdec(input\_image, paras)$}
+		\State convert the output of the PDFB into a vector form \Comment{$[c, s] = pdfb2vec(y)$}
+		\State estimate noise standard \Comment{$nvar$}
+		\State compute threshold \Comment{$cth$}
+		\State compute vector PDFB coefficients \Comment{$c$} 
+		\State convert vector form to output structure \Comment{$y = vec2pdfb(c, s)$}
+		\State reconstruct $denoised\_image$ \Comment{$denoised\_image = pdfbrec(y, paras)$}
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+\subsection{Wavelet-Contourlet Denoising}

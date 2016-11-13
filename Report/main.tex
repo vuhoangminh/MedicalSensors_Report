@@ -15,7 +15,12 @@
 \usepackage[parfill]{parskip}
 %\usepackage[default]{lato}
 %\usepackage{kpfonts}%  for math    
+%\usepackage{libertine}%  serif and sans serif
+
+%\usepackage{kpfonts}%  for math    
 \usepackage{libertine}%  serif and sans serif
+%\usepackage[scaled=0.85]{beramono}%% mono
+
 %\usepackage[scaled=0.85]{beramono}%% mono
 
 \usepackage[T1]{fontenc}
@@ -36,6 +41,8 @@
 \usepackage{amsmath}
 \usepackage{float}
 \usepackage[numbers]{natbib}
+%\usepackage[ruled]{algorithm2e}
+
 %\usepackage[round]{natbib}
 
 \usepackage[english]{babel}
@@ -56,6 +63,12 @@
 \setcounter{secnumdepth}{3}
 \renewcommand{\baselinestretch}{1.1}
 
+\usepackage{titlesec}
+\titlespacing*{\section}
+{0pt}{7.5ex plus 1ex minus .2ex}{2ex plus .2ex}
+\titlespacing*{\subsection}
+{0pt}{2ex plus 1ex minus .2ex}{2ex plus .2ex}
+
 %-------------------------------------------------------------------------------
 % HEADER & FOOTER
 %-------------------------------------------------------------------------------
@@ -75,6 +88,48 @@
 \DeclareMathOperator*{\argmin}{argmin} 
 \DeclareMathOperator*{\argmax}{argmax}  
 
+% code listing settings
+\usepackage{listings, color, xcolor}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{%
+	\parbox{\textwidth}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}\vskip-4pt}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\lstset{frame=lrb,xleftmargin=\fboxsep,xrightmargin=-\fboxsep}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
+
+\lstset{language=Matlab,%
+	%basicstyle=\color{red},
+	breaklines=true,%
+	morekeywords={matlab2tikz},
+	keywordstyle=\color{blue},%
+	morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+	identifierstyle=\color{black},%
+	stringstyle=\color{mylilas},
+	commentstyle=\color{mygreen},%
+	showstringspaces=false,%without this there will be a symbol in the places where there is a space
+	numbers=left,%
+	numberstyle={\tiny \color{black}},% size of the numbers
+	numbersep=9pt, % this defines how far the numbers are from the text
+	emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+	%emph=[2]{word1,word2}, emphstyle=[2]{style}, 
+	frame=single, % adds a frame around the code
+	tabsize=2, % sets default tabsize to 2 spaces
+	rulesepcolor=\color{gray},
+	rulecolor=\color{black},   
+}
+
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+\algrenewcommand\textproc{}% Used to be \textsc
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+
 \begin{document}
 	
 	
@@ -84,27 +139,33 @@
 % BODY
 %-------------------------------------------------------------------------------
 
+
 %Chapter 1 - introduction
 \include{chapter-1}
 
 %Chapter 2 - literature review
-\include{chapter-2}
-\include{section-HMT}
-\include{section-wavelet}
-\include{section-contourlet}
-\include{section-imagedenoising}
-\include{section-imagesegmentation}
+\input{chapter-2}
+\input{section-HMT}
+\input{section-wavelet}
+\input{section-contourlet}
+\input{section-imagedenoising}
+\input{section-imagesegmentation}
 
 
 %Chapter 3 - implementation
-\include{chapter-3}
-\include{section-codingstandard}
+\input{chapter-3}
+\input{section-imp_codingstandard}
+\input{section-imp_denoising}
+\input{section-imp_segmentation}
+\input{section-imp_gui}
+
+
 
 %Chapter 4 - result
-\include{chapter-4}
+\input{chapter-4}
 
 %Chapter 5 - conclusion
-\include{chapter-5}
+\input{chapter-5}
 
 
 
@@ -114,8 +175,12 @@
 %-------------------------------------------------------------------------------
 \newpage
 %\section*{References}
-\bibliography{ref} 
+%\bibliography{ref} 
 %\bibliographystyle{plainnat}
-\bibliographystyle{ieeetr}
+%\bibliographystyle{ieeetr}
+
+\bibliographystyle{plainnat}
+\bibliography{ref}
+
 
 \end{document}

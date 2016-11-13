@@ -1,6 +1,6 @@
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 1
 \BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 2
-\BOOKMARK [1][-]{section.2.1}{HMT}{chapter.2}% 3
+\BOOKMARK [1][-]{section.2.1}{Hidden Markov Tree}{chapter.2}% 3
 \BOOKMARK [2][-]{subsection.2.1.1}{General Introduction}{section.2.1}% 4
 \BOOKMARK [2][-]{subsection.2.1.2}{Overview of Hidden Markov Model}{section.2.1}% 5
 \BOOKMARK [1][-]{section.2.2}{Discrete Wavelet Transform}{chapter.2}% 6
@@ -12,15 +12,21 @@
 \BOOKMARK [1][-]{section.2.4}{PET Image Denoising}{chapter.2}% 12
 \BOOKMARK [2][-]{subsection.2.4.1}{Image Denoising}{section.2.4}% 13
 \BOOKMARK [2][-]{subsection.2.4.2}{PET Image}{section.2.4}% 14
-\BOOKMARK [2][-]{subsection.2.4.3}{Wavelet Denoising}{section.2.4}% 15
-\BOOKMARK [2][-]{subsection.2.4.4}{Contourlet Denoising}{section.2.4}% 16
-\BOOKMARK [2][-]{subsection.2.4.5}{Wavelet-Contourlet Denoising}{section.2.4}% 17
+\BOOKMARK [2][-]{subsection.2.4.3}{Wavelet and Contourlet Denoising}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.4}{Wavelet-Contourlet Denoising}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.5}{Proposed denoising method: Sparse 3D Transform-domain Collaborative Filter}{section.2.4}% 17
 \BOOKMARK [1][-]{section.2.5}{PET/CT Image Segmentation}{chapter.2}% 18
 \BOOKMARK [2][-]{subsection.2.5.1}{Introduction}{section.2.5}% 19
 \BOOKMARK [2][-]{subsection.2.5.2}{EM Algorithm}{section.2.5}% 20
 \BOOKMARK [2][-]{subsection.2.5.3}{MAP Estimation}{section.2.5}% 21
 \BOOKMARK [0][-]{chapter.3}{Implementation}{}% 22
 \BOOKMARK [1][-]{section.3.1}{Coding Standard}{chapter.3}% 23
-\BOOKMARK [0][-]{chapter.4}{Result and Discussion}{}% 24
-\BOOKMARK [1][-]{section.4.1}{Challenges}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 26
+\BOOKMARK [1][-]{section.3.2}{PET Image Denoising}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.2.1}{Wavelet Denoising}{section.3.2}% 25
+\BOOKMARK [2][-]{subsection.3.2.2}{Contourlet Denoising}{section.3.2}% 26
+\BOOKMARK [2][-]{subsection.3.2.3}{Wavelet-Contourlet Denoising}{section.3.2}% 27
+\BOOKMARK [1][-]{section.3.3}{PET/CT Image Segmentation}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.4}{Graphical User Interface}{chapter.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Result and Discussion}{}% 30
+\BOOKMARK [1][-]{section.4.1}{Challenges}{chapter.4}% 31
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 32

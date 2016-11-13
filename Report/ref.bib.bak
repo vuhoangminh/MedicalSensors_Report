@@ -66,7 +66,7 @@
   publisher = {IEEE},
 }
 
-@InProceedings{po2003directional,
+@InProceedings{Po2003,
   author       = {Po, DD-Y and Do, Minh N},
   title        = {Directional multiscale modeling of images using the contourlet transform},
   booktitle    = {Statistical Signal Processing, 2003 IEEE Workshop on},
@@ -162,6 +162,31 @@
   title  = {Image segmentation using Markov random field models},
   school = {University of Cambridge},
   year   = {1998},
+}
+
+@Article{cohen2012signal,
+  author  = {Cohen, Rami},
+  title   = {Signal denoising using wavelets},
+  journal = {Project Report, Department of Electrical Engineering Technion, Israel Institute of Technology, Haifa},
+  year    = {2012},
+}
+
+@Book{coifman1995translation,
+  title     = {Translation-invariant de-noising},
+  publisher = {Springer},
+  year      = {1995},
+  author    = {Coifman, Ronald R and Donoho, David L},
+}
+
+@Article{donoho1994ideal,
+  author    = {Donoho, David L and Johnstone, Jain M},
+  title     = {Ideal spatial adaptation by wavelet shrinkage},
+  journal   = {Biometrika},
+  year      = {1994},
+  volume    = {81},
+  number    = {3},
+  pages     = {425--455},
+  publisher = {Biometrika Trust},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

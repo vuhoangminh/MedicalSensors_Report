@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  12 NOV 2016 15:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  13 NOV 2016 11:19
 entering extended mode
 **./main.tex
 (main.tex
@@ -1253,8 +1253,21 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip73
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 50.
+Package hyperref Info: Option `colorlinks' set `true' on input line 57.
 
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.
+sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box37
+\beforetitleunit=\skip74
+\aftertitleunit=\skip75
+\ttl@plus=\dimen163
+\ttl@minus=\dimen164
+\ttl@toksa=\toks39
+\titlewidth=\dimen165
+\titlewidthlast=\dimen166
+\titlewidthfirst=\dimen167
+)
 \@input{glossaries.aux}
 \openout2 = `glossaries.aux'.
 
@@ -1263,68 +1276,156 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 50.
 \glo@main@file=\write4
 \openout4 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 39.
-) (main.aux (titlepage.aux) (chapter-1.aux) (chapter-2.aux)
-(section-HMT.aux) (section-wavelet.aux) (section-contourlet.aux)
-(section-imagedenoising.aux) (section-imagesegmentation.aux) (chapter-3.aux)
-(section-codingstandard.aux) (chapter-4.aux) (chapter-5.aux))
+Package glossaries Info: Writing glossary file main.glo on input line 42.
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+sty"
+\lst@mode=\count157
+\lst@gtempboxa=\box38
+\lst@token=\toks40
+\lst@length=\count158
+\lst@currlwidth=\dimen168
+\lst@column=\count159
+\lst@pos=\count160
+\lst@lostspace=\dimen169
+\lst@width=\dimen170
+\lst@newlines=\count161
+\lst@lineno=\count162
+\lst@maxwidth=\dimen171
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+ty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count163
+\lst@skipnumbers=\count164
+\lst@framebox=\box39
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
+"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+LaTeX Info: Redefining \color on input line 709.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
+sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+hm.sty"
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks41
+\c@algorithm=\count165
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algps
+eudocode.sty"
+Package: algpseudocode 
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algor
+ithmicx.sty"
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count166
+\c@ALG@rem=\count167
+\c@ALG@nested=\count168
+\ALG@tlm=\skip76
+\ALG@thistlm=\skip77
+\c@ALG@Lnr=\count169
+\c@ALG@blocknr=\count170
+\c@ALG@storecount=\count171
+\c@ALG@tmpcounter=\count172
+\ALG@tmplength=\skip78
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (main.aux (titlepage.aux) (chapter-1.aux))
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 78.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 133.
+
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 78.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 78.
-
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 133.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 133
+.
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd
 "
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 78.
-
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 133.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 133
+.
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd
 "
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 78.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 78.
-
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 133.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 133
+.
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd
 "
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
-LaTeX Font Info:    ... okay on input line 78.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 78.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
+LaTeX Font Info:    ... okay on input line 133.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 133.
+
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-\c@mv@tabular=\count157
-\c@mv@boldtabular=\count158
+\c@mv@tabular=\count173
+\c@mv@boldtabular=\count174
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1362,22 +1463,22 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 78.
+(lastpage)             ! on input line 133.
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count159
-\scratchdimen=\dimen163
-\scratchbox=\box37
-\nofMPsegments=\count160
-\nofMParguments=\count161
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count162
-\MPscratchDim=\dimen164
-\MPnumerator=\count163
-\makeMPintoPDFobject=\count164
-\everyMPtoPDFconversion=\toks40
+\scratchcounter=\count175
+\scratchdimen=\dimen172
+\scratchbox=\box40
+\nofMPsegments=\count176
+\nofMParguments=\count177
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count178
+\MPscratchDim=\dimen173
+\MPnumerator=\count179
+\makeMPintoPDFobject=\count180
+\everyMPtoPDFconversion=\toks43
 )
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -1397,8 +1498,9 @@ G,.JBIG2,.JB2,.eps]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 78.
+LaTeX Info: Redefining \microtypecontext on input line 133.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1412,19 +1514,8 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\AtBeginShipoutBox=\box38
-
-("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
-"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
-
-("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
-"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package color Info: Driver file: pdftex.def on input line 147.
-)
-Package hyperref Info: Link coloring ON on input line 78.
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring ON on input line 133.
 
 ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -1434,15 +1525,16 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count165
+\c@section@level=\count181
 )
-LaTeX Info: Redefining \ref on input line 78.
-LaTeX Info: Redefining \pageref on input line 78.
-LaTeX Info: Redefining \nameref on input line 78.
+LaTeX Info: Redefining \ref on input line 133.
+LaTeX Info: Redefining \pageref on input line 133.
+LaTeX Info: Redefining \nameref on input line 133.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
+\c@lstlisting=\count182
 \openout2 = `titlepage.aux'.
 
  (titlepage.tex
@@ -1486,39 +1578,29 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 7.63599pt on input line 4.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 4.
-)
-\tf@toc=\write6
-\openout6 = `main.toc'.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.19 \newpage
-              [1
+l.33 ...{\numberline {5}Conclusion}{23}{chapter.5}
+                                                   [1
 
 ])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [2])
 \openout2 = `chapter-1.aux'.
 
  (chapter-1.tex
 Chapter 1.
-) [2
-
-
-
-]
-\openout2 = `chapter-2.aux'.
-
- (chapter-2.tex
-Chapter 2.
 ) [3
 
 
 
-]
-\openout2 = `section-HMT.aux'.
-
- (section-HMT.tex
+] (chapter-2.tex
+Chapter 2.
+) (section-HMT.tex
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 14.
 
 
@@ -1530,74 +1612,69 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- <fig/Connectivity.PNG, id=155, 377.91188pt x 203.25937pt>
+ [4
+
+
+] <fig/Connectivity.PNG, id=191, 377.91188pt x 203.25937pt>
 File: fig/Connectivity.PNG Graphic file (type png)
 
 <use fig/Connectivity.PNG>
 Package pdftex.def Info: fig/Connectivity.PNG used on input line 22.
 (pdftex.def)             Requested size: 317.07614pt x 170.5382pt.
- [4
-
-
-]) [5 <./fig/Connectivity.PNG>]
-\openout2 = `section-wavelet.aux'.
-
-
-(section-wavelet.tex [6
-
-
-]
-<fig/wavelets_decomposition.png, id=196, 388.45125pt x 343.2825pt>
+ [5 <./fig/Connectivity.PNG>]) (section-wavelet.tex
+[6] <fig/wavelets_decomposition.png, id=221, 388.45125pt x 343.2825pt>
 File: fig/wavelets_decomposition.png Graphic file (type png)
 
 <use fig/wavelets_decomposition.png>
 Package pdftex.def Info: fig/wavelets_decomposition.png used on input line 76.
 (pdftex.def)             Requested size: 181.18439pt x 160.11708pt.
 
-<fig/wavelets_bank.png, id=197, 568.1225pt x 173.64874pt>
+<fig/wavelets_bank.png, id=222, 568.1225pt x 173.64874pt>
 File: fig/wavelets_bank.png Graphic file (type png)
 
 <use fig/wavelets_bank.png>
 Package pdftex.def Info: fig/wavelets_bank.png used on input line 83.
 (pdftex.def)             Requested size: 362.37569pt x 110.76651pt.
-) [7 <./fig/wavelets_decomposition.png> <./fig/wavelets_bank.png (PNG copy)>]
-\openout2 = `section-contourlet.aux'.
-
- (section-contourlet.tex
-<fig/contourlet.png, id=209, 405.76593pt x 295.85532pt>
+) (section-contourlet.tex [7 <./fig/wavelets_decomposition.png>] <fig/contourle
+t.png, id=239, 405.76593pt x 295.85532pt>
 File: fig/contourlet.png Graphic file (type png)
 
 <use fig/contourlet.png>
 Package pdftex.def Info: fig/contourlet.png used on input line 13.
 (pdftex.def)             Requested size: 317.07614pt x 231.19507pt.
- [8
 
 
- <./fig/contourlet.png>]
-<fig/contourlet_2.png, id=220, 620.3175pt x 335.00156pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/contourlet_2.png, id=241, 620.3175pt x 335.00156pt>
 File: fig/contourlet_2.png Graphic file (type png)
 
 <use fig/contourlet_2.png>
 Package pdftex.def Info: fig/contourlet_2.png used on input line 26.
 (pdftex.def)             Requested size: 317.07614pt x 171.23701pt.
 
-<fig/contourlet_mr.png, id=222, 361.35pt x 359.09157pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<fig/contourlet_mr.png, id=243, 361.35pt x 359.09157pt>
 File: fig/contourlet_mr.png Graphic file (type png)
 
 <use fig/contourlet_mr.png>
 Package pdftex.def Info: fig/contourlet_mr.png used on input line 36.
 (pdftex.def)             Requested size: 203.83417pt x 202.55835pt.
-) [9 <./fig/contourlet_2.png> <./fig/contourlet_mr.png>]
-\openout2 = `section-imagedenoising.aux'.
 
- (section-imagedenoising.tex
-<fig/pet_machine.jpg, id=235, 120.45pt x 94.9146pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (section-imagedenoising.tex [8 <./fig/wavelets_bank.png (PNG copy)>] [9 <./fi
+g/contourlet.png>] <fig/pet_machine.jpg, id=266, 120.45pt x 94.9146pt>
 File: fig/pet_machine.jpg Graphic file (type jpg)
- <use fig/pet_machine.jpg>
+
+<use fig/pet_machine.jpg>
 Package pdftex.def Info: fig/pet_machine.jpg used on input line 38.
 (pdftex.def)             Requested size: 203.83417pt x 160.6372pt.
 
-<fig/pet_brain.jpg, id=236, 374.39874pt x 406.51875pt>
+<fig/pet_brain.jpg, id=267, 374.39874pt x 406.51875pt>
 File: fig/pet_brain.jpg Graphic file (type jpg)
  <use fig/pet_brain.jpg>
 Package pdftex.def Info: fig/pet_brain.jpg used on input line 43.
@@ -1606,101 +1683,73 @@ Package pdftex.def Info: fig/pet_brain.jpg used on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10
-
-
-] <fig/hard_soft_thresholding.png, id=250, 543.53062pt x 200.24812pt>
-File: fig/hard_soft_thresholding.png Graphic file (type png)
-
-<use fig/hard_soft_thresholding.png>
-Package pdftex.def Info: fig/hard_soft_thresholding.png used on input line 87.
-(pdftex.def)             Requested size: 362.37569pt x 133.51166pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11 <./fig/pet_machine.jpg> <./fig/pet_brain.jpg>]
-<fig/wavelets_contourlet.png, id=265, 418.56375pt x 420.06938pt>
+[10 <./fig/contourlet_2.png> <./fig/contourlet_mr.png>]
+<fig/wavelets_contourlet.png, id=279, 418.56375pt x 420.06938pt>
 File: fig/wavelets_contourlet.png Graphic file (type png)
 
 <use fig/wavelets_contourlet.png>
-Package pdftex.def Info: fig/wavelets_contourlet.png used on input line 137.
+Package pdftex.def Info: fig/wavelets_contourlet.png used on input line 80.
 (pdftex.def)             Requested size: 317.07614pt x 318.21126pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/wavelets_hmt.png, id=266, 743.77875pt x 417.05812pt>
+[11 <./fig/pet_machine.jpg> <./fig/pet_brain.jpg>] [12 <./fig/wavelets_contourl
+et.png>] <fig/hard_soft_thresholding.png, id=302, 543.53062pt x 200.24812pt>
+File: fig/hard_soft_thresholding.png Graphic file (type png)
+
+<use fig/hard_soft_thresholding.png>
+Package pdftex.def Info: fig/hard_soft_thresholding.png used on input line 130.
+
+(pdftex.def)             Requested size: 362.37569pt x 133.51166pt.
+
+<fig/wavelets_hmt.png, id=305, 743.77875pt x 417.05812pt>
 File: fig/wavelets_hmt.png Graphic file (type png)
 
 <use fig/wavelets_hmt.png>
-Package pdftex.def Info: fig/wavelets_hmt.png used on input line 152.
+Package pdftex.def Info: fig/wavelets_hmt.png used on input line 173.
 (pdftex.def)             Requested size: 362.37569pt x 203.1957pt.
+ [13 <./fig/hard_soft_thresholding.png>]
+Overfull \hbox (14.05919pt too wide) in paragraph at lines 181--181
+|[]\T1/futs/b/n/12 Proposed de-nois-ing method: Sparse 3D Transform-domain Col-
+lab-o-ra-tive Fil-ter| 
+ []
 
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 193.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 193.
+) (section-imagesegmentation.tex [14 <./fig/wavelets_hmt.png>] [15]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [12 <./fig/hard_soft_thresholding.png>] [13 <./fig/wavelets_contourlet.png> <
-./fig/wavelets_hmt.png>]
-\openout2 = `section-imagesegmentation.aux'.
-
- (section-imagesegmentation.tex [14
-
-
-]
-
-Package natbib Warning: Citation `monfrini2003image' on page 15 undefined on in
+Package natbib Warning: Citation `monfrini2003image' on page 16 undefined on in
 put line 56.
 
-[15] [16]
+[16] [17]
 Overfull \hbox (3.33316pt too wide) in paragraph at lines 145--146
 []\T1/futs/m/n/10.95 (-20) In the im-age do-main, we as-sume that one pixel has
  at most 4 neigh-bors: the pix-els in its 4-neighborhood.
  []
 
-) [17]
-\openout2 = `chapter-3.aux'.
-
- (chapter-3.tex
+) (chapter-3.tex [18]
 Chapter 3.
-) [18
-
-
-
-]
-\openout2 = `section-codingstandard.aux'.
-
- (section-codingstandard.tex) [19
-
-
-]
-\openout2 = `chapter-4.aux'.
-
- (chapter-4.tex
-Chapter 4.
-) [20
-
-
-
-]
-\openout2 = `chapter-5.aux'.
-
- (chapter-5.tex
-Chapter 5.
-) [21
-
-
-
-] (main.bbl [22
-
-
-]
-Overfull \hbox (0.89136pt too wide) in paragraph at lines 73--76
-[]\T1/futs/m/n/10.95 (-20) D.-Y. Po and M. N. Do, ``Directional multiscale mode
-ling of images using the contourlet transform,''
- []
-
+) (section-imp_codingstandard.tex) (section-imp_denoising.tex
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 35.
 )
+(section-imp_segmentation.tex) (section-imp_gui.tex) (chapter-4.tex [19
+
+]
+[20] [21]
+Chapter 4.
+) (chapter-5.tex [22
+
+]
+Chapter 5.
+) [23
+
+] (main.bbl [24
+
+])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -1708,27 +1757,28 @@ This document will not have a glossary.
 
 
 AED: lastpage setting LastPage
-[23]
+[25]
+
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 96.
+See the caption package documentation for explanation.
+
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
-(main.aux (titlepage.aux) (chapter-1.aux) (chapter-2.aux) (section-HMT.aux)
-(section-wavelet.aux) (section-contourlet.aux) (section-imagedenoising.aux)
-(section-imagesegmentation.aux) (chapter-3.aux) (section-codingstandard.aux)
-(chapter-4.aux) (chapter-5.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+(main.aux (titlepage.aux) (chapter-1.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2AE566C740728358D58940A1ADCADE13;1718.
+(rerunfilecheck)             Checksum: 69498EE1CB9C82958E1FE9ED69FF7371;2244.
  ) 
 Here is how much of TeX's memory you used:
- 17690 strings out of 493334
- 277488 string characters out of 3130222
- 546820 words of memory out of 3000000
- 20394 multiletter control sequences out of 15000+200000
- 167037 words of font info for 283 fonts, out of 3000000 for 9000
+ 20361 strings out of 493334
+ 314840 string characters out of 3130222
+ 619426 words of memory out of 3000000
+ 23013 multiletter control sequences out of 15000+200000
+ 177263 words of font info for 313 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  53i,17n,92p,1953b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontname/8r
@@ -1742,9 +1792,9 @@ ers/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb
 ><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/put
 r8a.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/uto
 pia/putri8a.pfb>
-Output written on main.pdf (24 pages, 553861 bytes).
+Output written on main.pdf (26 pages, 567740 bytes).
 PDF statistics:
- 417 PDF objects out of 1000 (max. 8388607)
- 126 named destinations out of 1000 (max. 500000)
- 43272 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 138 named destinations out of 1000 (max. 500000)
+ 47928 words of extra memory for PDF output out of 51595 (max. 10000000)
 

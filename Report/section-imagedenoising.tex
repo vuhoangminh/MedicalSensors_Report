@@ -49,10 +49,46 @@ The examples of \gls{pet} system and \gls{pet} brain image can be seen in Figure
 
 
 %==================================================
-\subsection{Wavelet Denoising}
+\subsection{Wavelet and Contourlet Denoising}
+\label{subsection:wavelet_denoising}
+
+%--------------------------------------------------
+\subsubsection*{Wavelet denoising}
+Wavelet thresholding methods for noise removal, in which the wavelet coefficients are
+thresholded in order to remove their noisy part, were first introduced by Donoho in 1993 \cite{coifman1995translation}.
+The theoretical justifications and arguments in their favour are highly compelling. These
+methods do not require any particular assumptions about the nature of the signal, permits
+discontinuities and spatial variation in the signal, and exploits the spatially adaptive
+multiresolution of the wavelet transform \cite{cohen2012signal}.
+
+%--------------------------------------------------
+\subsubsection*{Contourlet Denoising}
+The major drawback for wavelets in two-dimensions is
+their limited ability in capturing directional information. To
+overcome this deficiency, researchers have recently considered multiscale and directional representations that can capture the
+intrinsic geometrical structures such as smooth contours in
+natural images \cite{Po2003}.
+
+The primary goal of the contourlet construction is to obtain a sparse expansion for typical images that
+are piecewise smooth away from smooth contours \cite{do2005contourlet}.
 
 %--------------------------------------------------
 \subsubsection*{Concept of denoising}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{fig/wavelets_contourlet}
+	\caption{Contourlet and wavelet representations for images. (a) Examples of
+		five 2-D wavelet basis images. (b) Examples of four contourlet basis images.
+		(c) Illustration showing how wavelets having square supports that can only
+		capture point discontinuities, whereas contourlets having elongated supports
+		that can capture linear segments of contours, and thus can effectively represent
+		a smooth contour with fewer coefficients.
+	}
+	\label{fig:wavelets_contourlet}
+	
+\end{figure}
+
 A more precise explanation of the wavelet denoising
 procedure can be given as follows. Assume that the
 observed data is \cite{rangarajan2002image}:
@@ -80,7 +116,14 @@ while $D(\cdot,\lambda)$ being the thresholding operator and $\lambda$ being the
 
 %--------------------------------------------------
 \subsubsection*{Thresholding}
-In fact, small coefficients are dominated by noise, while coefficients with a large absolute value carry more signal information than noise. Replacing noisy coefficients (small coefficients below a certain threshold value) by zero and an inverse wavelet transform may lead to a reconstruction that has lesser noise \cite{rangarajan2002image}.
+In fact, small coefficients are dominated by noise, while coefficients with a large absolute value carry more signal information than noise. Replacing noisy coefficients (small coefficients below a certain threshold value) by zero and an inverse wavelet transform may lead to a reconstruction that has lesser noise \cite{rangarajan2002image}. 
+
+There are three kinds of thresholding for denoising:
+\begin{itemize}
+	\item Hard thresholding
+	\item Soft thresholding
+	\item Universal thresholding
+\end{itemize}
 
 \begin{figure}[h]
 	\centering
@@ -115,37 +158,15 @@ Paying too much attention to smoothness, however,
 destroys details and in image processing may cause
 blur and artifacts \cite{rangarajan2002image}.
 
-In addition to hard and soft thresholding, a thresholding approach, namely Universal Thresholding, is introduced:
+In addition to hard and soft thresholding, a thresholding approach, namely universal thresholding, is introduced:
 \begin{equation}
 \lambda_{UNIV}=\sqrt{2lnN\sigma}
 \end{equation}
 where $N$ being the signal length, and $\sigma^2$ being the noise variance.
 
-%--------------------------------------------------
-\subsubsection*{Wavelet Denoising based on \glsdesc{hmt} }
-
-
-%==================================================
-\subsection{Contourlet Denoising}
-\cite{po2003directional}
 
 %==================================================
 \subsection{Wavelet-Contourlet Denoising}
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.7\textwidth]{fig/wavelets_contourlet}
-	\caption{Contourlet and wavelet representations for images. (a) Examples of
-		five 2-D wavelet basis images. (b) Examples of four contourlet basis images.
-		(c) Illustration showing how wavelets having square supports that can only
-		capture point discontinuities, whereas contourlets having elongated supports
-		that can capture linear segments of contours, and thus can effectively represent
-		a smooth contour with fewer coefficients.
-		}
-	\label{fig:wavelets_contourlet}
-	
-\end{figure}
-
 
 \begin{figure}[h]
 	\centering
@@ -154,4 +175,19 @@ where $N$ being the signal length, and $\sigma^2$ being the noise variance.
 	\label{fig:wavelets_hmt}
 \end{figure}
 
-123
+
+
+%==================================================
+\subsection{Proposed denoising method: Sparse 3D Transform-domain Collaborative Filter}
+%--------------------------------------------------
+\subsubsection*{Background}
+Currently, \gls{bm3d} is a well-known
+image denoising algorithm introduced by Dabov et al. in 2007 \cite{dabov2007image}. The basic principles
+of this algorithm is grouping and collaborative Wiener filtering in two-stage
+estimations. There is a number of developed algorithms based on the concepts of
+BM3D; however, BM3D is still the most successful
+approach, especially for low-SNR \gls{pet} image.
+
+\citeauthor{dabov2007image}
+
+\footnote{An example footnote.}
