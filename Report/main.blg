@@ -3,9 +3,13 @@ A level-1 auxiliary file: titlepage.aux
 A level-1 auxiliary file: chapter-1.aux
 The style file: plainnat.bst
 Database file #1: ref.bib
+Repeated entry---line 230 of file ref.bib
+ : @article{rangarajan2002image
+ :                             ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "monfrini2003image"
 Warning--empty journal in jezicagent
 Warning--empty year in jezicagent
 Warning--empty year in jezicagent
 Warning--empty journal in leewavelet
-(There were 5 warnings)
+(There was 1 error message)

@@ -24,23 +24,9 @@ These properties are illustrated in Figure \ref{fig:connectivity} below:
 		here with the 8-connected pixel grid.}
 	\label{fig:connectivity}
 \end{figure}
-%Figure \ref{fig:boat1} shows a boat.
-The notation for image graphs is that the graph $G = (V, E)$ consists of vertices $V =(1, 2, . . . , i, . . . , N)$ corresponding, for example, to the pixels of the image, and a set of edges E where a typical edge is $(i, j)$, $i, j \in V$, and edges are considered to be undirected, so that $(i, j)$ and $(j, i)$ refer to the same edge. In the pixel graph of figure 1, the nodes are pixels, and a pair of pixels forms an edge in E if the two pixels share a common boundary.
 
-The motivation for constructing such a graph is to connect the hidden variables associated with the nodes. For example, for the task of segmenting an image into foreground and background, each node i (pixel) has an associated random variable $X_i$ that may take the value 0 or 1, corresponding to foreground or background, respectively may take the value 0 or 1, corresponding to foreground or background, respectively. In order
-to represent the tendency of matter to be coherent, neighboring sites are likely to have the
-same label. So where $(i, j) \in E$, some kind of probabilistic bias needs to be associated with
-the edge $(i,j)$ such that $X_i$ and $X_J$ tend to have the same label—both 0 or both 1. In fact, any
-pixels that are nearby, not merely adjacent, are likely to have the same label. On the other
-hand, explicitly linking all the pixels in a typical image, whose foreground/background
-labels have correlations, would lead to a densely connected graph. That in turn would
-result in computationally expensive algorithms. Markov models explicitly represent only
-the associations between relatively few pairs of pixels—those pixels that are defined as
-neighbors because of sharing an edge in E. The great attraction of Markov Models is that
-they leverage a knock-on effect—that explicit short-range linkages give rise to implied
-long-range correlations. Thus correlations over long ranges, on the order of the diameters of typical objects, can be obtained without undue computational cost.
+The motivation for constructing such a graph is to connect the hidden variables associated with the nodes. For example, for the task of segmenting an image into foreground and background, each node i (pixel) has an associated random variable $X_i$ that may take the value 0 or 1, corresponding to foreground or background, respectively may take the value 0 or 1, corresponding to foreground or background, respectively. In order to represent the tendency of matter to be coherent, neighboring sites are likely to have the same label. So where $(i, j) \in E$, some kind of probabilistic bias needs to be associated with the edge $(i,j)$ such that $X_i$ and $X_J$ tend to have the same label—both 0 or both 1. In fact, any pixels that are nearby, not merely adjacent, are likely to have the same label\cite{jezicagent}. 
 
-Markov models are particularly useful as prior models for state variables Xi that are to
-be inferred from a corresponding set of measurements or observations z = (z1, z2, . . . ,zi, . . . , zN). The observations z are themselves considered to be instantiations of a random variable Z representing the full space of observations that can arise.
+
 
 123

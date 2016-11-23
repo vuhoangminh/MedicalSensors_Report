@@ -1,8 +1,23 @@
 %---------------------------------------------------------------------------------
 \chapter{Introduction}
 \label{chap:introduction}
+Image denoising and segmentation are essential step in many advanced techniques of image processing. 
 
-%---------------------------------------------------------------------------------
+Image noise is a random variation of brightness and visible as grains. It may arise
+by the sensor and circuity of a digital camera during the time of capturing or image
+transmission that adds spurious and extraneous information \cite{verma2013comparative}. Noise in image
+is defined as pixels showing false or different intensity values instead of true or
+expected values. Natural image denoising is a process of reducing or removing
+noise from an image. In other words, it is defined as a process of estimating an
+original clean version of noise corrupted image \cite{levin2011natural}.
 
+ According to actual image characteristic, noise statistical property and frequency spectrum distribution rule, people have developed many methods of eliminating noises, which approximately are divided into space and transformation fields. the transformations generate some coefficients  and then  processed. Then the aim of eliminating noise is achieved by inverse transformation, like wavelet transform and contourlet transforms \cite{ruikar2011wavelet}\cite{matalon2005image}.Wavelet denoising attempts to remove the noise present in the signal while preserving the signal characteristics, regardless of its frequency content \cite{rangarajan2002image}.
 
-%---------------------------------------------------------------------------------
+Image segmentation is an important early vision task where pixels with similar features are grouped into homogeneous regions in which  class labels are assigned to each pixels in the image according to the properties of a pixel and neighborhood pixels. It is a joint process of detection and estimation of class labels to each pixels and shapes of homogeneous regions. 
+
+These days, Bayesian estimation has become popular method to study the statistical properties of regions of an image to determine the possible number of class labels and to assign pixels to the corresponding label. Most of Bayesian techniques use region models to describe statistics of homogeneous regions of an image. The \gls{mrf} has been extensively in use to model the class labels of the pixels in the image. The image is segmented by estimating the\gls{map}  or\gls{ml} estimate of the pixels\cite{choi1999image} \cite{voisin2014supervised}.
+
+In this paper, we implemented  multi-observation and multi resolution  denoising (contourlet and wavelet) and segmentation tumor in \gls{cti} and \gls{pet} images.
+
+The paper is organized as follows. In Chapter 2, we introduced about \gls{wt}, \gls{ct}, \gls{wd}, \gls{cd}, \gls{wcd}, and \gls{hmt}. Chapter 3 gives the implementation and algorithm of our decisioning and segmentation. Section IV gives the developed method overview. In Chapter 4, we present the denoising and segmentation of CT and PET images, and discussion. Finally, Chapter 5 presents conclusions our implementation.
+

@@ -200,4 +200,47 @@
   publisher = {IEEE},
 }
 
+@InProceedings{buades2005non,
+  author       = {Buades, Antoni and Coll, Bartomeu and Morel, J-M},
+  title        = {A non-local algorithm for image denoising},
+  booktitle    = {2005 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'05)},
+  year         = {2005},
+  volume       = {2},
+  pages        = {60--65},
+  organization = {IEEE},
+}
+
+@Article{ruikar2011wavelet,
+  author    = {Ruikar, Sachin D and Doye, Dharmpal D},
+  title     = {Wavelet based image denoising technique},
+  journal   = {International Journal of Advanced Computer Science and Applications},
+  year      = {2011},
+  volume    = {2},
+  number    = {3},
+  publisher = {Citeseer},
+}
+
+@Article{matalon2005image,
+  author  = {Matalon, Boaz and Elad, Michael and Zibulevsky, Michael},
+  title   = {Image denoising with the contourlet transform},
+  journal = {Proceedings of SPARSE’05},
+  year    = {2005},
+}
+
+@Article{rangarajan2002image,
+  author  = {Rangarajan, Raghuram and Venkataramanan, Ramji and Shah, Siddharth},
+  title   = {Image denoising using wavelets},
+  journal = {Wavelet and Time Frequencies},
+  year    = {2002},
+}
+
+@InProceedings{choi1999image,
+  author       = {Choi, Hyeokho and Baraniuk, Richard G},
+  title        = {Image segmentation using wavelet-domain classification},
+  booktitle    = {SPIE's International Symposium on Optical Science, Engineering, and Instrumentation},
+  year         = {1999},
+  pages        = {306--320},
+  organization = {International Society for Optics and Photonics},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

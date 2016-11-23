@@ -1,4 +1,4 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -22,6 +22,13 @@ Antoni Buades, Bartomeu Coll, and J-M Morel.
 \newblock A non-local algorithm for image denoising.
 \newblock In \emph{2005 IEEE Computer Society Conference on Computer Vision and
   Pattern Recognition (CVPR'05)}, volume~2, pages 60--65. IEEE, 2005.
+
+\bibitem[Choi and Baraniuk(1999)]{choi1999image}
+Hyeokho Choi and Richard~G Baraniuk.
+\newblock Image segmentation using wavelet-domain classification.
+\newblock In \emph{SPIE's International Symposium on Optical Science,
+  Engineering, and Instrumentation}, pages 306--320. International Society for
+  Optics and Photonics, 1999.
 
 \bibitem[Cohen(2012)]{cohen2012signal}
 Rami Cohen.
@@ -103,6 +110,11 @@ Yue Lu and Minh~N Do.
 \newblock In \emph{2006 International Conference on Image Processing}, pages
   1629--1632. IEEE, 2006.
 
+\bibitem[Matalon et~al.(2005)Matalon, Elad, and Zibulevsky]{matalon2005image}
+Boaz Matalon, Michael Elad, and Michael Zibulevsky.
+\newblock Image denoising with the contourlet transform.
+\newblock \emph{Proceedings of SPARSE’05}, 2005.
+
 \bibitem[Po and Do(2003)]{Po2003}
 DD-Y Po and Minh~N Do.
 \newblock Directional multiscale modeling of images using the contourlet
@@ -116,6 +128,12 @@ Raghuram Rangarajan, Ramji Venkataramanan, and Siddharth Shah.
 \newblock Image denoising using wavelets.
 \newblock \emph{Wavelet and Time Frequencies}, 2002.
 
+\bibitem[Ruikar and Doye(2011)]{ruikar2011wavelet}
+Sachin~D Ruikar and Dharmpal~D Doye.
+\newblock Wavelet based image denoising technique.
+\newblock \emph{International Journal of Advanced Computer Science and
+  Applications}, 2\penalty0 (3), 2011.
+
 \bibitem[Suresh et~al.(2014)Suresh, Dash, and Panigrahi]{suresh2014artificial}
 L~Padma Suresh, Subhransu~Sekhar Dash, and Bijaya~Ketan Panigrahi.
 \newblock Artificial intelligence and evolutionary algorithms in engineering
@@ -128,6 +146,15 @@ Rohit Verma and Dr~Jahid Ali.
   noise removal techniques.
 \newblock \emph{International journal of advanced research in computer science
   and software engineering}, 3\penalty0 (10):\penalty0 617--622, 2013.
+
+\bibitem[Voisin et~al.(2014)Voisin, Krylov, Moser, Serpico, and
+  Zerubia]{voisin2014supervised}
+Aur{\'e}lie Voisin, Vladimir~A Krylov, Gabriele Moser, Sebastiano~B Serpico,
+  and Josiane Zerubia.
+\newblock Supervised classification of multisensor and multiresolution remote
+  sensing images with a hierarchical copula-based approach.
+\newblock \emph{IEEE Transactions on Geoscience and remote sensing},
+  52\penalty0 (6):\penalty0 3346--3358, 2014.
 
 \bibitem[Yan(2014)]{yan2014machinery}
 Jihong Yan.
