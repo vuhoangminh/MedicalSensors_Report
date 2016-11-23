@@ -76,7 +76,7 @@ end
 
 figure;
 imshow(waveconImage2);
-title('wcd / 2');
+% title('wcd / 2');
 
 for iRow=1:nRow
     for iColumn=1:nColumn
@@ -89,9 +89,9 @@ for iRow=1:nRow
     end
 end
 
-figure;
-imshow(waveconImage3);
-title('wcd >');
+% figure;
+% imshow(waveconImage3);
+% title('wcd >');
 
 % % Diff image
 % figure;

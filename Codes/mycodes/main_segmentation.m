@@ -7,9 +7,11 @@
 
 clear;clc;close all;
 
-CT_Image = dicomread('C:\Users\minhm\Desktop\Medical Sensors code\dataset\CT_Image');
+CT_Image = dicomread('C:\Users\minhm\Desktop\Medical Sensors code\mycodes\dataset\CT_Image');
+% CT_Image = imread('C:\Users\minhm\Desktop\Medical Sensors code\mycodes\dataset\CT2.png');
+% CT_Image = rgb2gray(CT_Image);
 CT_Image_d = double(CT_Image);
-CT_Image_d = imresize(CT_Image_d, 256/144);
+CT_Image_d = imresize(CT_Image_d, [256 256]);
 CT_Image_i = CT_Image_d / max(max(CT_Image_d));
 
 I=CT_Image_i;
@@ -18,9 +20,11 @@ Z = edge(Y,'canny',0.75);
 
 
 
-PET_Image = dicomread('C:\Users\minhm\Desktop\Medical Sensors code\dataset\PET_image');
+PET_Image = dicomread('C:\Users\minhm\Desktop\Medical Sensors code\mycodes\dataset\PET_image');
+% PET_Image = imread('C:\Users\minhm\Desktop\Medical Sensors code\mycodes\dataset\PET2.png');
+% PET_Image = rgb2gray(PET_Image);
 PET_Image_d = double(PET_Image);
-PET_Image_d = imresize(PET_Image_d, 256/144);
+PET_Image_d = imresize(PET_Image_d, [256 256]);
 PET_Image_i = PET_Image_d / max(max(PET_Image_d));
 
 % imwrite(uint8(Z*255),'edge.png');
@@ -32,11 +36,13 @@ k=2;
 EM_iter=10; % max num of iterations
 MAP_iter=10; % max num of iterations
 
-tic;
+
 fprintf('Performing k-means segmentation\n');
 [X, mu, sigma]=image_kmeans(Y,k);
 imwrite(uint8(X*120),'initial labels.png');
+initial_labels=X;
 
 [X, mu, sigma]=HMRF_EM(X,Y,Z,mu,sigma,k,EM_iter,MAP_iter);
 imwrite(uint8(X*120),'final labels.png');
-toc;
+final_labels=X;
+

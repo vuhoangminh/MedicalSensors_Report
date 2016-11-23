@@ -29,7 +29,7 @@
 		\EndProcedure
 	\end{algorithmic}
 \end{algorithm}
-\fi
+
 
 \begin{algorithm}
 	\caption{PDFB Decomposition}\label{alg:pdfbdec}
@@ -46,17 +46,16 @@
 		\EndProcedure
 	\end{algorithmic}	
 \end{algorithm}
+\fi
 
 
-%---------------------------------------------------------
+
+
+% -------------------------------------------------------------
+% Wavelet Denoising
 \subsection{Wavelet Denoising}
 The procedure of \gls{cd} is shown in Algorithm \ref{alg:waveletdenoising}.
 
-
-%\lstinputlisting{waveletdenoising.m}
-vector of numbers of directional filter bank decomposition levels at each pyramidal level (from coarse to fine scale).
-If the number of level is 0, a critically sampled 2-D wavelet decomposition step is performed.
-$nlevs = [0, 0, 4, 4, 5]$
 
 \begin{algorithm}
 	\caption{Wavelet Denoising}\label{alg:waveletdenoising}
@@ -77,12 +76,11 @@ $nlevs = [0, 0, 4, 4, 5]$
 \end{algorithm}
 
 
-%---------------------------------------------------------
+% -------------------------------------------------------------
+% Contourlet Denoising
 \subsection{Contourlet Denoising}
 The procedure of \gls{cd} is shown in Algorithm \ref{alg:contourletdenoising}.
 
-
-$nlevs = [0, 0, 4, 4, 5]$
 
 \begin{algorithm}
 	\caption{Contourlet Denoising}\label{alg:contourletdenoising}
@@ -103,4 +101,106 @@ $nlevs = [0, 0, 4, 4, 5]$
 	\end{algorithmic}
 \end{algorithm}
 
+
+% -------------------------------------------------------------
+% Wavelet-Contourlet Denoising
 \subsection{Wavelet-Contourlet Denoising}
+
+The pseudo-code of Non-local means is illustrated in Algorithm \ref{alg:waveletcontourletdenoising}.
+
+\begin{algorithm}
+	\caption{Wavelet-Contourlet Denoising}\label{alg:waveletcontourletdenoising}
+	\begin{algorithmic}[1]
+		\Require $input\_image$
+		\Ensure $denoised\_image$
+		\Procedure{waveletcontourletdenoising($input\_image$)}{}
+		\State initialize parameters
+		\State compute waveletdenoising($input\_image$) \Comment{$w\_image$}
+		\State compute contourletdenoising($input\_image$) \Comment{$c\_image$}
+		\For{each pixel in $denoised\_image$}
+		\State $denoised\_image(i,j) =  mean(w\_image(i,j)+c\_image(i,j))$
+		\EndFor
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+
+% -------------------------------------------------------------
+% Non-local Means Filter
+\subsection{Non-local Means Filter}
+
+The pseudo-code of Non-local means is illustrated in Algorithm \ref{alg:nlmdenoising}.
+
+\begin{algorithm}
+	\caption{Non-local Means Filter}\label{alg:nlmdenoising}
+	\begin{algorithmic}[1]
+		\Require $input\_image$
+		\Ensure $denoised\_image$
+		\Procedure{nlmeans($input\_image$)}{}
+		
+		\For {every pixel in the image}
+			\State take a window centered in $x$ with size ($2m+1 \times 2m+1$)
+			\State take a window centered in $x$ with size ($2n+1 \times 2n+1$)
+
+		
+			\For {each pixel $y$ in $A(x,m)$ and $y x$ }
+				\State compute the difference between $W(x,n)$ and $W( y,n)$
+				\If {$w(x, y)> wmax$}
+					\State $w_{max} = w(x, y)$
+				\EndIf
+				\State compute the average of w(x, y)
+				\State compute the sum of weights
+			\EndFor
+		
+			\State give to x the maximum of the other weights
+			\State compute total weights
+			\State compute the restored value
+			\State compute distance
+		\EndFor
+				
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+
+% -------------------------------------------------------------
+% BM3D
+\subsection{Sparse 3D Transform-domain Collaborative Filter}
+
+The pseudo-code of Non-local means is illustrated in Algorithm \ref{alg:bm3ddenoising}.
+
+\begin{algorithm}
+	\caption{Sparse 3D Transform-domain Collaborative Filter}\label{alg:bm3ddenoising}
+	\begin{algorithmic}[1]
+		\Require $input\_image$
+		\Ensure $denoised\_image$
+		\Procedure{bm3dfiltering($input\_image$)}{}
+		\State form blocks
+		
+		\For {each block in the noisy image}
+			\State group matched blocks in 3D array group
+			\State keep $N^{hard}$ blocks closest to processed one
+		\EndFor
+		
+		\State apply 3D isometric linear transform
+		\State apply shrinkage of the transform spectrum
+		\State apply inverse linear transform
+		
+		\For {each block in the noisy image}
+			\State basic estimate
+			\State save in buffer
+		\EndFor	
+		
+		\For {each block in basic estimate}
+			\State group matched blocks in 3D array group
+			\State keep $N^{wien}$ blocks closest to processed one
+		\EndFor
+		
+		\State compute Wiener coefficients
+		
+		\For {each block in basic estimate}
+			\State final estimate
+		\EndFor		
+							
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}

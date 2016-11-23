@@ -15,19 +15,22 @@
 \contentsline {subsection}{\numberline {2.4.2}PET Image}{10}{subsection.2.4.2}
 \contentsline {subsection}{\numberline {2.4.3}Wavelet and Contourlet Denoising}{11}{subsection.2.4.3}
 \contentsline {subsection}{\numberline {2.4.4}Wavelet-Contourlet Denoising}{14}{subsection.2.4.4}
-\contentsline {subsection}{\numberline {2.4.5}Proposed denoising method: Sparse 3D Transform-domain Collaborative Filter}{14}{subsection.2.4.5}
-\contentsline {section}{\numberline {2.5}PET/CT Image Segmentation}{14}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Introduction}{14}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.4.5}Proposed denoising method: Non-local Means}{14}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Proposed denoising method: Sparse 3D Transform-domain Collaborative Filter}{14}{subsection.2.4.6}
+\contentsline {section}{\numberline {2.5}PET/CT Image Segmentation}{15}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Introduction}{15}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}EM Algorithm}{16}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}MAP Estimation}{17}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.3}MAP Estimation}{18}{subsection.2.5.3}
 \contentsline {chapter}{\numberline {3}Implementation}{19}{chapter.3}
 \contentsline {section}{\numberline {3.1}Coding Standard}{19}{section.3.1}
 \contentsline {section}{\numberline {3.2}PET Image Denoising}{19}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Wavelet Denoising}{19}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Contourlet Denoising}{19}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Wavelet-Contourlet Denoising}{21}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.3}Wavelet-Contourlet Denoising}{19}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Non-local Means Filter}{21}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Sparse 3D Transform-domain Collaborative Filter}{21}{subsection.3.2.5}
 \contentsline {section}{\numberline {3.3}PET/CT Image Segmentation}{21}{section.3.3}
 \contentsline {section}{\numberline {3.4}Graphical User Interface}{21}{section.3.4}
-\contentsline {chapter}{\numberline {4}Result and Discussion}{22}{chapter.4}
-\contentsline {section}{\numberline {4.1}Challenges}{22}{section.4.1}
-\contentsline {chapter}{\numberline {5}Conclusion}{23}{chapter.5}
+\contentsline {chapter}{\numberline {4}Result and Discussion}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Challenges}{23}{section.4.1}
+\contentsline {chapter}{\numberline {5}Conclusion}{24}{chapter.5}

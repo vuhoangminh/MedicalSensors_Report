@@ -176,18 +176,32 @@ where $N$ being the signal length, and $\sigma^2$ being the noise variance.
 \end{figure}
 
 
+%==================================================
+\subsection{Proposed denoising method: Non-local Means}
+%--------------------------------------------------
+%\subsubsection*{Background}
+
+\gls{nlm} is a linear smoothing technique introduced by \citeauthor{buades2005non}. \gls{nlm} filtering
+is an algorithm computing average values of all pixels in the image, which are analyzed
+how similar they are to the objective pixel. The main difference between \gls{nlm} and other filters is the meticulous employment of all possible self-predictions
+an image is able to provide.
+
+Compared to local filters, which process pixels within a local square window to aim
+for a reconstruction of the main geometrical configurations, \gls{nlm} is more effective
+in post-filtering intelligibility and preserving details of image and fine structure \cite{buades2005non}.
+
 
 %==================================================
 \subsection{Proposed denoising method: Sparse 3D Transform-domain Collaborative Filter}
 %--------------------------------------------------
-\subsubsection*{Background}
+%\subsubsection*{Background}
 Currently, \gls{bm3d} is a well-known
-image denoising algorithm introduced by Dabov et al. in 2007 \cite{dabov2007image}. The basic principles
+image denoising algorithm introduced by \citeauthor{dabov2007image} in 2007 \cite{dabov2007image}. The basic principles
 of this algorithm is grouping and collaborative Wiener filtering in two-stage
 estimations. There is a number of developed algorithms based on the concepts of
 BM3D; however, BM3D is still the most successful
 approach, especially for low-SNR \gls{pet} image.
 
-\citeauthor{dabov2007image}
 
-\footnote{An example footnote.}
+
+%\footnote{An example footnote.}

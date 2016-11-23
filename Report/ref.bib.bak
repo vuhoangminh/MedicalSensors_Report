@@ -189,4 +189,15 @@
   publisher = {Biometrika Trust},
 }
 
+@Article{dabov2007image,
+  author    = {Dabov, Kostadin and Foi, Alessandro and Katkovnik, Vladimir and Egiazarian, Karen},
+  title     = {Image denoising by sparse 3-D transform-domain collaborative filtering},
+  journal   = {IEEE Transactions on image processing},
+  year      = {2007},
+  volume    = {16},
+  number    = {8},
+  pages     = {2080--2095},
+  publisher = {IEEE},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}

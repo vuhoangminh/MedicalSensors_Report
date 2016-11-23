@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -16,6 +16,12 @@ Laurent Bordes, Didier Chauveau, and Pierre Vandekerkhove.
 \newblock A stochastic em algorithm for a semiparametric mixture model.
 \newblock \emph{Computational Statistics \& Data Analysis}, 51\penalty0
   (11):\penalty0 5429--5443, 2007.
+
+\bibitem[Buades et~al.(2005)Buades, Coll, and Morel]{buades2005non}
+Antoni Buades, Bartomeu Coll, and J-M Morel.
+\newblock A non-local algorithm for image denoising.
+\newblock In \emph{2005 IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition (CVPR'05)}, volume~2, pages 60--65. IEEE, 2005.
 
 \bibitem[Cohen(2012)]{cohen2012signal}
 Rami Cohen.
