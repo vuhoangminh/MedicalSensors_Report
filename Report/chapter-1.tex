@@ -1,17 +1,14 @@
 %---------------------------------------------------------------------------------
 \chapter{Introduction}
 \label{chap:introduction}
-Image denoising and segmentation are essential step in many advanced techniques of image processing. 
 
-Image noise is a random variation of brightness and visible as grains. It may arise
-by the sensor and circuity of a digital camera during the time of capturing or image
-transmission that adds spurious and extraneous information \cite{verma2013comparative}. Noise in image
-is defined as pixels showing false or different intensity values instead of true or
-expected values. Natural image denoising is a process of reducing or removing
-noise from an image. In other words, it is defined as a process of estimating an
-original clean version of noise corrupted image \cite{levin2011natural}.
+\gls {petct} is a nuclear medicine technique which combines, in a single gantry, a \gls {pet} scanner and an x-ray \gls {cti} scanner, to acquire sequential images from both devices in the same session, which are combined into a single superposed (co-registered) image. Thus, functional imaging obtained by PET, which depicts the spatial distribution of metabolic or biochemical activity in the body can be more precisely aligned or correlated with anatomic imaging obtained by \gls {cti} scanning.
 
- According to actual image characteristic, noise statistical property and frequency spectrum distribution rule, people have developed many methods of eliminating noises, which approximately are divided into space and transformation fields. the transformations generate some coefficients  and then  processed. Then the aim of eliminating noise is achieved by inverse transformation, like wavelet transform and contourlet transforms \cite{ruikar2011wavelet}\cite{matalon2005image}.Wavelet denoising attempts to remove the noise present in the signal while preserving the signal characteristics, regardless of its frequency content \cite{rangarajan2002image}.
+\gls {petct} has revolutionized medical diagnosis in many fields, by adding precision of anatomic localization to functional imaging, which was previously lacking from pure PET imaging. For example, many diagnostic imaging procedures in oncology, surgical planning, radiation therapy and cancer staging have been changing rapidly under the influence of PET-CT availability, and centers have been gradually abandoning conventional PET devices and substituting them by \gls {petct}. Although the combined/hybrid device is considerably more expensive, it has the advantage of providing both functions as stand-alone examinations, being, in fact, two devices in one \cite{belohlavek2008role}.
+
+ Digital images have some degree of noise and get corrupted with noise during its acquisition from various sensors, reconstruction and transmission by different media. Image denoising and segmentation are essential step in many advanced techniques of image processing\cite{verma2013comparative}. Noise in image is defined as pixels showing false or different intensity values instead of true or expected values. Natural image denoising is a process of reducing or removing noise from an image. In other words, it is defined as a process of estimating an original clean version of noise corrupted image \cite{levin2011natural}.
+
+ According to actual image characteristic, noise statistical property and frequency spectrum distribution rule, people have developed many methods of eliminating noises, which approximately are divided into space and transformation fields. The transformations generate some coefficients  and then  processed. Then the aim of eliminating noise is achieved by inverse transformation, like wavelet transform and contourlet transforms \cite{ruikar2011wavelet}\cite{matalon2005image}.Wavelet denoising attempts to remove the noise present in the signal while preserving the signal characteristics, regardless of its frequency content \cite{rangarajan2002image}.
 
 Image segmentation is an important early vision task where pixels with similar features are grouped into homogeneous regions in which  class labels are assigned to each pixels in the image according to the properties of a pixel and neighborhood pixels. It is a joint process of detection and estimation of class labels to each pixels and shapes of homogeneous regions. 
 
@@ -19,5 +16,5 @@ These days, Bayesian estimation has become popular method to study the statistic
 
 In this paper, we implemented  multi-observation and multi resolution  denoising (contourlet and wavelet) and segmentation tumor in \gls{cti} and \gls{pet} images.
 
-The paper is organized as follows. In Chapter 2, we introduced about \gls{wt}, \gls{ct}, \gls{wd}, \gls{cd}, \gls{wcd}, and \gls{hmt}. Chapter 3 gives the implementation and algorithm of our decisioning and segmentation. Section IV gives the developed method overview. In Chapter 4, we present the denoising and segmentation of CT and PET images, and discussion. Finally, Chapter 5 presents conclusions our implementation.
+The paper is organized as follows. In Chapter 2, we introduced about \gls{wt}, \gls{ct}, \gls{wd}, \gls{cd}, \gls{wcd}, and \gls{hmt}. Chapter 3 gives the implementation and algorithm of our decisioning and segmentation. Section IV gives the developed method overview. In Chapter 4, we present the denoising and segmentation of CT and PET images, and discussion. Finally, Chapter 5 presents conclusions of our implementation.
 

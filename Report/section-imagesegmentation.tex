@@ -1,7 +1,7 @@
 \section{PET/CT Image Segmentation}
 
 \subsection{Introduction}
-Segmentation is the process of splitting an observed image into its homogeneous or constituent regions . Segmentation may also be thought of as labeling process, where each pixel in a given image is assigned a designating the region or class to which it belongs. If the observed image y is defined on a rectangular $M \times N$ lattice $\Omega$, indexed  by a pair $(i,j)$ so that \(\Omega={(i,j);1\leq i\leq M and 1 \leq j \leq N}\) and the label x will be defined on the same label. Thus for each pixel site $s=(s_i,s_j)$ there is a label $x_s$ which specifies to which region the pixel $y_s$ belongs. The relationship between  gray scale values and levels is represented by Bayesian Likelihood function.  It is modeled by probability distribution of the pixel values, model parameter and the prior distribution of models. Then segmentation is an optimization problem  of the labels on entire image\cite{barker1998image}.
+Segmentation is the process of splitting an observed image into its homogeneous or constituent regions . Segmentation may also be thought of as labeling process, where each pixel in a given image is assigned a designating the region or class to which it belongs. If the observed image y is defined on a rectangular $M \times N$ lattice $\Omega$, indexed  by a pair $(i,j)$ so that \(\Omega = {(i,j); 1\leq i\leq M  and  1 \leq j \leq N}\) and the label x will be defined on the same label. Thus for each pixel site $s=(s_i,s_j)$ there is a label $x_s$ which specifies to which region the pixel $y_s$ belongs. The relationship between  gray scale values and levels is represented by Bayesian Likelihood function.  It is modeled by probability distribution of the pixel values, model parameter and the prior distribution of models. Then segmentation is an optimization problem  of the labels on entire image\cite{barker1998image}.
 
 Graph partitioning methods are an effective tools for image segmentation since they model the impact of pixel neighborhoods on a given cluster of pixels or pixel, under the assumption of homogeneity in images. In these methods, the image is modeled as a weighted, undirected graph. Usually a pixel or a group of pixels are associated with nodes and edge weights define the (dis)similarity between the neighborhood pixels. The graph (image) is then partitioned according to a criterion designed to model "good" clusters. Each partition of the nodes (pixels) output from these algorithms are considered an object segment in the image.\par
 MRFs are completely characterized by their prior probability distributions, marginal probability distributions, cliques, smoothing constraint as well as criterion for updating values. The criterion for image segmentation using MRFs is restated as finding the labeling scheme which has maximum probability for a given set of features. \par
@@ -9,97 +9,97 @@ MRFs are completely characterized by their prior probability distributions, marg
 In terms of image segmentation, the function that MRFs seek to maximize is the probability of identifying a labeling scheme given a particular set of features are detected in the image
 
 
-
+TEXT BELOW TO BE DELETED
 
 where Vc(x) is the clique potential and C is the set of all possible cliques. In the image domain, we assume that one pixel has at most 4 neighbors: the pixels in its 4-neighborhood. Then the clique potential is defined on pairs of neighboring pixels
 %http://www.cs.cmu.edu/~16831-f14/notes/F11/16831_lecture07_bneuman.pdf
 
-The HMRF-EM framework was first proposed for segmentation of brain MR images [9]. Given an image \(Y=(y_1, y_2,..., y_N)\) where each \(y_i\) is the intensity of a pixel, we want to infer a configuration of labels\(X = (x_1,x_2,...,x_N)\) where\(x_i \in L\)  and L is the set of all possible labels which means the hidden process is a finite valued one(REFERENCE:IMAGE AND SIGNAL RESTORATION USING PAIRWISE MARKOV TREES) In a binary segmentation problem, L = \{0,1\} . According to the MAP criterion, we seek the labeling \(x^*\) which satisfies:
+Given an image \(Y=(y_1, y_2,..., y_N)\) where each \(y_i\) is the intensity of a pixel, we want to infer a configuration of labels \(X = (x_1,x_2,...,x_N)\) where\(x_i \in L\)  and L is the set of all possible labels which means the hidden process is a finite valued one\cite {monfrini2003image}. In a binary segmentation problem, L = \{0,1\} . According to the \gls{map} criterion, we seek the labeling \(x^*\) which satisfies:
 \begin{equation}
-X^*=\argmax_x\{\Pr( Y \mid X, \Theta)P(X)\} 
+X^*=\argmax_x  \{ P( Y \mid X, \Theta)P(X)\} 
 \end{equation}
 The prior probability \(P(X)\) is a Gibbs distribution, and the joint likelihood probability is given by:
 
 \begin{equation}\label{eq1}
 \begin{split}
-\Pr( Y \mid X,\Theta) & =\prod_{i}^{ }\Pr( y_i \mid X,\Theta)\\
-& =\prod_{i}^{ }\Pr( y_i \mid X_i,\theta_{x_i})
+P( Y \mid X,\Theta) & =\prod_{i}^{ } P( y_i \mid X,\Theta)\\
+& =\prod_{i}^{ }P( y_i \mid X_i,\theta_{x_i})
 \end{split}
 \end{equation}
 
-where \[Pr( y_i \mid X_i,\theta_{x_i})\] is a Gaussian distribution with parameters
+where \[P( y_i \mid X_i,\theta_{x_i})\] is a Gaussian distribution with parameters
 \(\theta_{x_i}=(\mu_{x_i} , \sigma_{x_i})\) and \(\Theta=\{\theta_l\lvert l \in L\}\)
-is the parameter set,which is obtained by the EM algorithm.
+is the parameter set,which is obtained by the \gls{em} algorithm.
 
-\subsection{EM Algorithm}
+\subsection{Expectation Maximization (EM) Algorithm}
 We use the EM algorithm to estimate the parameter set \(\Theta=\{\theta_l\lvert l \in L\}\). We describe the EM algorithm by the following \cite{bordes2007stochastic}:
 
 \begin{enumerate}
-	\item Start: Assume we have an initial parameter set\(\Theta^{(0)}\)
-	\item  E-step: At the \(t^th\) iteration, we have  \(|\Theta^{(t)}\) and we calculate the conditional expectation:
+	\item Start: Assume we have an initial parameter set \(\Theta^{(0)}\)
+	\item  Estimation(E)-step: At the \(t^{th}\) iteration, we have  \(\Theta^{(t)}\) and we calculate the conditional expectation:
 \end{enumerate}
 \begin{equation}
-Q(\Theta \mid \Theta^{(t)}) = {\sum\limits_{x} }\Pr( x \mid Y,\Theta^{(t)})\ln (\Pr( x,Y \mid \Theta))
+Q(\Theta \mid \Theta^{(t)}) = {\sum\limits_{x} }P( x \mid Y,\Theta^{(t)})\ln (P( x,Y \mid \Theta))
 \end{equation}
 where $ x \in X$, set of all possible configurations of labels.
 
 \begin{enumerate}
 	\setcounter{enumi}{2}
-	\item M-step: Now maximize \(\Pr(\Theta \mid \Theta^{(t)})\) to obtain the next
+	\item Maximization(M)-step: Now maximize \(\Pr(\Theta \mid \Theta^{(t)})\) to obtain the next
 	estimate:
 \end{enumerate}
 \begin{equation}
-\Theta^{(t+1)}==\argmax_x\{\Pr(\Theta \mid \Theta^{(t)})\} 
+\Theta^{(t+1)}=\argmax_x\{\Pr(\Theta \mid \Theta^{(t)})\} 
 \end{equation}
-Then let \(\Theta^{(t+1)}\) to \(\Theta^{(t)}\) and repeat from the E-step.
+Then let \(\Theta^{(t+1)}\) to  \(\Theta^{(t)}\) and repeat from the E-step.
 
 The above equations are in general are computationally difficult and here we have assumed the parameters are random processes to simplify our implementation\cite{monfrini2003image}. Let \(G(z;\theta_l)\) denote a Gaussian distribution function with parameters \(\theta_l=(\mu_l,\sigma_l)\):
 \begin{equation}
 G(z;\theta_l)= \frac{1}{\sqrt{2\pi\sigma^2}}\exp(-\frac{(z-\mu_l)^2}{2\sigma^2})   
 \end{equation}
-We assume that the prior probability can be written as:
+We assume that the prior probability can be written as \cite{sandberg2004markov}:
 \begin{equation}
 P(X)=\frac{1}{Z}\exp{(-U(X))}  
 \end{equation}
-where U(X) is the prior energy function. We also assume that
+where U(X) is the prior energy function, see discription below. We also assume that
 
 
 \begin{equation}\label{eq2}
 \begin{split}
-\Pr( Y \mid X,\Theta) & =\prod_{i=1}^{ }\Pr( y_i \mid x_i,\Theta_{x_i})\\
+P( Y \mid X,\Theta) & =\prod_{i=1}^{ }P( y_i \mid x_i,\Theta_{x_i})\\
 & =\prod_{i}^{ }G(y_i;\theta_{x_i})\\
 & =\frac{1}{Z'}\exp{(-U(Y \mid X)} 
 \end{split}
 \end{equation}
 
-With these assumptions, the HMRF-EM algorithm is given below:
+With these assumptions, the \gls{em} algorithm is given below:
 
 \begin{enumerate}
 	\item Start with initial parameter set \(\Theta^{(0)}\).
 	\item Calculate the likelihood distribution \(P^{(t)}(y_i \mid x_i,\theta_{x_i})\).
 	\item Using current parameter set \(\Theta^{(t)}\) to estimate the labels
-	by MAP estimation:
+	by \gls {map} estimation:
 \end{enumerate}
 
 \begin{equation}
 \begin{split}
-X^{(t)} & =\argmax_{x \in X}\{\Pr( Y \mid X, \Theta^{(t)})P(X)\}\\
+X^{(t)} & =\argmax_{x \in X}\{P( Y \mid X, \Theta^{(t)})P(X)\}\\
 &= \argmin_{x \in X} \{U( Y \mid X, \Theta^{(t)}) + U(X)\}
 \end{split}
 \end{equation}
-The algorithm for the MAP estimation is discussed below.
+The algorithm for the \gls {map} estimation is discussed below.
 
 \begin{enumerate}
 	\setcounter{enumi}{3}
 	\item Calculate the posterior distribution for all  \(l \in L\) and  all pixels \(y_i\):
 \end{enumerate}
 \begin{equation}
-\Pr^{(t)}(l \mid y_i)=\frac{G(y_i;\theta_i)Pr(l \mid x^{(t)}_{N_i})}{P^{(t)(y_i)}}
+\Pr^{(t)}(l \mid y_i)=\frac{G(y_i;\theta_i)P(l \mid x^{(t)}_{N_i})}{P^{(t)(y_i)}}
 \end{equation}
 where \(x^{(t)}_{N_i}\) is the neighborhood configuration of \(x^{(t)}_i\)
 and
 \begin{equation}
-P^{(t)}(y_i)={\sum\limits_{l \epsilon L} }G(y_i;\theta_i)Pr(l \mid x^{(t)}_{N_i})
+P^{(t)}(y_i)={\sum\limits_{l \epsilon L} }G(y_i;\theta_i)P(l \mid x^{(t)}_{N_i})
 \end{equation}
 
 Note here we have
@@ -120,7 +120,7 @@ Pr(l \mid x^{(t)}_{N_i})=\frac{1}{Z}\exp(-{\sum\limits_{j \epsilon N_i}}V_c(l,x^
 \end{split}
 \end{equation}
 
-\subsection{MAP Estimation}
+\subsection{Maximum A Posteriori (MAP) Estimation}
 In the EM algorithm, we need to solve for x? that minimizes
 the total posterior energy
 \begin{equation}\label{eq:MAp}
