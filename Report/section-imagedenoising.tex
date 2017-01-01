@@ -168,6 +168,23 @@ where $N$ being the signal length, and $\sigma^2$ being the noise variance.
 %==================================================
 \subsection{Wavelet-Contourlet Denoising}
 
+On the one hand, Wavelet based methods exploit observation-based transforms at different resolutions in order to better describe the whole observed information. The major drawback of Wavelets is their limited ability in
+capturing directional information. 
+
+On the other hand, the \gls{ct} has emerged as an efficient tool able
+to capture the intrinsic geometrical structures such as smooth
+contours thanks to a high degree of directionality and
+anisotropy. This transform is however not optimal for isotropic
+structures, contrary to Wavelets.
+
+Consequently, an approach combining both transforms may
+lead to optimal performance. In this work the multiobservation
+aspect of the proposed \gls{hmt} was exploited in
+order to associate both Wavelets and Contourlets coefficients
+to each voxel, leading to a Wavelet-Contourlet
+Denoising (WCD).
+
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.8\textwidth]{fig/wavelets_hmt}

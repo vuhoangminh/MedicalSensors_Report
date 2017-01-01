@@ -2,6 +2,7 @@
 \chapter{Introduction}
 \label{chap:introduction}
 
+\section{Overview}
 \gls {petct} is a nuclear medicine technique which combines, in a single gantry, a \gls {pet} scanner and an x-ray \gls {cti} scanner, to acquire sequential images from both devices in the same session, which are combined into a single superposed (co-registered) image. Thus, functional imaging obtained by PET, which depicts the spatial distribution of metabolic or biochemical activity in the body can be more precisely aligned or correlated with anatomic imaging obtained by \gls {cti} scanning.
 
 \gls {petct} has revolutionized medical diagnosis in many fields, by adding precision of anatomic localization to functional imaging, which was previously lacking from pure PET imaging. For example, many diagnostic imaging procedures in oncology, surgical planning, radiation therapy and cancer staging have been changing rapidly under the influence of PET-CT availability, and centers have been gradually abandoning conventional PET devices and substituting them by \gls {petct}. Although the combined/hybrid device is considerably more expensive, it has the advantage of providing both functions as stand-alone examinations, being, in fact, two devices in one \cite{belohlavek2008role}.
@@ -16,5 +17,13 @@ These days, Bayesian estimation has become popular method to study the statistic
 
 In this paper, we implemented  multi-observation and multi resolution  denoising (contourlet and wavelet) and segmentation tumor in \gls{cti} and \gls{pet} images.
 
-The paper is organized as follows. In Chapter 2, we introduced about \gls{wt}, \gls{ct}, \gls{wd}, \gls{cd}, \gls{wcd}, and \gls{hmt}. Chapter 3 gives the implementation and algorithm of our decisioning and segmentation. Section IV gives the developed method overview. In Chapter 4, we present the denoising and segmentation of CT and PET images, and discussion. Finally, Chapter 5 presents conclusions of our implementation.
 
+\section{Structure of Document}
+
+After the Introduction in \textbf{Chapter 1}, In \textbf{Chapter 2}, \gls{wt}, \gls{ct}, \gls{wd}, \gls{cd}, \gls{wcd}, and \gls{hmt} are presented.
+
+\textbf{Chapter 3} examines the implementation, algorithm of denoising and segmentation and the developed method overview.
+ 
+In \textbf{Chapter 4}, the denoising and segmentation of CT and PET images, and discussion are included. 
+
+Finally, \textbf{Chapter 5} presents conclusion of our implementation.

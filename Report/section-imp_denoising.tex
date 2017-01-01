@@ -68,7 +68,7 @@ This decomposition is repeated with the purpose of increasing the frequency reso
 Overall, the procedure of \gls{cd} is shown in Algorithm \ref{alg:waveletdenoising}.
 
 
-\begin{algorithm}
+\begin{algorithm}[h]
 	\caption{Wavelet Denoising}\label{alg:waveletdenoising}
 	\begin{algorithmic}[1]
 		\Require $input\_image$
@@ -90,10 +90,15 @@ Overall, the procedure of \gls{cd} is shown in Algorithm \ref{alg:waveletdenoisi
 % -------------------------------------------------------------
 % Contourlet Denoising
 \subsection{Contourlet Denoising}
-The procedure of \gls{cd} is shown in Algorithm \ref{alg:contourletdenoising}.
 
 
-\begin{algorithm}
+As mentioned in \ref{sec:contourtransform}, the \gls{ct} is a directional transform, capable of capturing contours and fine details in images. The \gls{lp} at each level generates a Low pass output (LL) and a Band pass output (LH, HL, and HH). The Band pass output is then passed into \gls{dfb}, which
+results in contourlet coefficients. The Low pass output is again passed through the \gls{lp} to obtain more coefficients and this is done till the fine details of the image are obtained. Figure \ref{fig:contourlet_mr} shows the decomposition of brain MR Image. 
+
+In summary, the procedure of \gls{cd} is shown in Algorithm \ref{alg:contourletdenoising}.
+
+
+\begin{algorithm}[h]
 	\caption{Contourlet Denoising}\label{alg:contourletdenoising}
 	\begin{algorithmic}[1]
 		\Require $input\_image$
@@ -117,9 +122,13 @@ The procedure of \gls{cd} is shown in Algorithm \ref{alg:contourletdenoising}.
 % Wavelet-Contourlet Denoising
 \subsection{Wavelet-Contourlet Denoising}
 
-The pseudo-code of Non-local means is illustrated in Algorithm \ref{alg:waveletcontourletdenoising}.
+The implementation of \gls{wcd} examines the advantage of Wavelet based method, in which the whole observed information, is better described, and the ability to capture the intrinsic geometrical structures such as smooth
+contours thanks to a high degree of directionality and
+anisotropy of Contourlet based one.
 
-\begin{algorithm}
+Consequently, an approach combining both transforms gives the optimal performance. The pseudo-code of \gls{wcd} is illustrated in Algorithm \ref{alg:waveletcontourletdenoising}.
+
+\begin{algorithm}[h]
 	\caption{Wavelet-Contourlet Denoising}\label{alg:waveletcontourletdenoising}
 	\begin{algorithmic}[1]
 		\Require $input\_image$
@@ -142,7 +151,7 @@ The pseudo-code of Non-local means is illustrated in Algorithm \ref{alg:waveletc
 
 The pseudo-code of Non-local means is illustrated in Algorithm \ref{alg:nlmdenoising}.
 
-\begin{algorithm}
+\begin{algorithm}[h]
 	\caption{Non-local Means Filter}\label{alg:nlmdenoising}
 	\begin{algorithmic}[1]
 		\Require $input\_image$
@@ -179,7 +188,7 @@ The pseudo-code of Non-local means is illustrated in Algorithm \ref{alg:nlmdenoi
 
 The pseudo-code of Non-local means is illustrated in Algorithm \ref{alg:bm3ddenoising}.
 
-\begin{algorithm}
+\begin{algorithm}[h]
 	\caption{Sparse 3D Transform-domain Collaborative Filter}\label{alg:bm3ddenoising}
 	\begin{algorithmic}[1]
 		\Require $input\_image$
