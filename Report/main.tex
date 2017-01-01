@@ -129,12 +129,20 @@
 \def\BState{\State\hskip-\ALG@thistlm}
 \makeatother
 
+%\usepackage[toc,page]{appendix}
+
+\usepackage{appendix}
+
+
 
 \begin{document}
 	
 	
 \include{titlepage}
-
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+\listofalgorithms
+\addcontentsline{toc}{chapter}{List of Algorithms}
 %-------------------------------------------------------------------------------
 % BODY
 %-------------------------------------------------------------------------------
@@ -181,6 +189,13 @@
 
 \bibliographystyle{plainnat}
 \bibliography{ref}
+\addcontentsline{toc}{chapter}{Bibliography}
+
+%\appendix
+%\appendixpage
+%\addappheadtotoc
+\include{appendix}
+%\addcontentsline{toc}{chapter}{Appendix}
 
 
 \end{document}

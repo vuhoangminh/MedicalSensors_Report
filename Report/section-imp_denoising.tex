@@ -54,7 +54,18 @@
 % -------------------------------------------------------------
 % Wavelet Denoising
 \subsection{Wavelet Denoising}
-The procedure of \gls{cd} is shown in Algorithm \ref{alg:waveletdenoising}.
+
+From Section \ref{sec:Discrete Wavelet Transform} at page \pageref{sec:Discrete Wavelet Transform}, we can derive the wavelet coefficient \(\gamma\) of a signal \(x(t)\) is
+the projection of \(x(t)\) onto a wavelet. In other words, in the case of a child wavelet in the discrete family, we obtain:
+\begin{equation}
+\gamma_{jk} = \int_{-\infty}^{\infty} x(t)  \frac{1}{\sqrt{2^j}} \psi \left( \frac{t - k 2^j}{2^j} \right) dt
+\end{equation}
+
+
+This decomposition is repeated with the purpose of increasing the frequency resolution and the approximation coefficients decomposed with high and low pass filters. Next, a binary tree with nodes representing a sub-space with a different time-frequency localisation can be seen in Figure \ref{fig:wavelets_bank}.
+
+
+Overall, the procedure of \gls{cd} is shown in Algorithm \ref{alg:waveletdenoising}.
 
 
 \begin{algorithm}
