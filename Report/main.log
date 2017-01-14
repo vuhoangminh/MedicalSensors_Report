@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.12)  23 NOV 2016 23:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.9.19)  5 JAN 2017 10:48
 entering extended mode
 **./main.tex
 (main.tex
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\report.cls"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,33 +22,41 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\parskip.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ltxmisc\parskip.st
+y"
 Package: parskip 2001/04/09 non-zero parskip adjustments
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\libertine\libertine.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\libertin
+e.sty"
 Package: libertine 2014/11/25 (Bob Tennent) Supports Libertine and Biolinum fon
 ts for all LaTeX engines.
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.st
+y"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.
+tex"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\xkvutils
+.tex"
 \XKV@toks=\toks14
 \XKV@tempa@toks=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\keyval.tex"))
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xkeyval\keyval.t
+ex"))
 \XKV@depth=\count88
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2016/06/19 v1.99m Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -62,8 +70,7 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 )
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -130,7 +137,8 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\mweights\mweights.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mweights\mweights.
+sty"
 Package: mweights 2016/08/15 (Bob Tennent) Support package for multiple-weight 
 font packages. 
 LaTeX Info: Redefining \bfseries on input line 22.
@@ -139,10 +147,11 @@ LaTeX Info: Redefining \rmfamily on input line 36.
 LaTeX Info: Redefining \sffamily on input line 54.
 LaTeX Info: Redefining \ttfamily on input line 72.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fontaxes\fontaxes.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fontaxes\fontaxes.
+sty"
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -151,27 +160,27 @@ LaTeX Info: Redefining \scshape on input line 37.
 )
 LaTeX Info: Redefining \oldstylenums on input line 478.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\libertine\LinLibertine_I.tex"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\libertine\LinLiber
+tine_I.tex"))
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -408,7 +417,7 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -449,7 +458,7 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -465,7 +474,7 @@ Now handling font encoding U ...
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
 File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -548,13 +557,16 @@ File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
 Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
+sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
@@ -571,50 +583,61 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks18
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\base\glossaries.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
+cfg"))
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\gl
+ossaries.sty"
 Package: glossaries 2016/10/12 v4.26 (NLCT)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\mfirstuc\mfirstuc.
+sty"
 Package: mfirstuc 2016/07/31 v2.04 (NLCT)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
+sty"
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count92
 )
 \@glsmfirst=\toks19
 \@glsmrest=\toks20
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\textcase\textcase.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\textcase\textcase.
+sty"
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
+) ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xfor\xfor.sty"
 Package: xfor 2009/02/05 v1.05 (NLCT)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\datatool\datatool-base.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-
+base.sty"
 Package: datatool-base 2016/07/28 v2.27 (NLCT)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsmath.st
+y"
 Package: amsmath 2016/06/28 v2.15d AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amstext.st
+y"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty
+"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
 \ex@=\dimen111
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty
+"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen112
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty
+"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count93
@@ -655,22 +678,20 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\substr\substr.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\substr\substr.sty"
 Package: substr 2009/10/20 v1.2 Handle substrings
 \c@su@anzahl=\count105
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\datatool\datatool-fp.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\datatool\datatool-
+fp.sty"
 Package: datatool-fp 2016/07/28 v2.27 (NLCT)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp.sty"
+ ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp.sty"
 Package: fp 1995/04/02
-
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\defpattern.sty"
 Package: defpattern 1994/10/12
 \actioncount=\count106
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
+) ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-basic.sty"
 Package: fp-basic 1996/05/13
 \FP@xs=\count107
 \FP@xia=\count108
@@ -681,33 +702,30 @@ Package: fp-basic 1996/05/13
 \FP@regb=\count113
 \FP@regs=\count114
 \FP@times=\count115
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-addons.sty"
+) ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-addons.sty
+"
 Package: fp-addons 1995/03/15
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
+) ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-snap.sty"
 Package: fp-snap 1995/04/05
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
+) ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-exp.sty"
 Package: fp-exp 1995/04/03
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-trigo.sty"
 Package: fp-trigo 1995/04/14
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-pas.sty"
 Package: fp-pas 1994/08/29
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-random.sty"
 Package: fp-random 1995/02/23
 \FPseed=\count116
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
+) ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eqn.sty"
 Package: fp-eqn 1995/04/03
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-upn.sty"
 Package: fp-upn 1996/10/21
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fp\fp-eval.sty"
 Package: fp-eval 1995/04/03
 )))
 \@dtl@toks=\toks26
@@ -720,8 +738,8 @@ Package: fp-eval 1995/04/03
 \dtl@codeB=\count122
 \@dtl@foreach@level=\count123
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\base\glossaries-compatible-3
-07.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\base\gl
+ossaries-compatible-307.sty"
 Package: glossaries-compatible-307 2016/10/12 v4.26 (NLCT)
 )
 \gls@level=\count124
@@ -732,16 +750,21 @@ Package: glossaries-compatible-307 2016/10/12 v4.26 (NLCT)
 \glsshorttok=\toks30
 \glslongtok=\toks31
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-hypernav.sty
-"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-hypernav.sty"
 Package: glossary-hypernav 2016/10/12 v4.26 (NLCT)
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-list.sty"
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-list.sty"
 Package: glossary-list 2016/10/12 v4.26 (NLCT)
 \glslistdottedwidth=\skip48
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-long.sty"
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-long.sty"
 Package: glossary-long 2016/10/12 v4.26 (NLCT)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.st
+y"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip49
 \LTright=\skip50
@@ -762,10 +785,12 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \glsdescwidth=\skip53
 \glspagelistwidth=\skip54
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-super.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-super.sty"
 Package: glossary-super 2016/10/12 v4.26 (NLCT)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\supertabular\super
+tabular.sty"
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \c@tracingst=\count130
 \ST@wd=\dimen121
@@ -784,15 +809,18 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@dimen=\dimen131
 \ST@pbox=\box32
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\glossaries\styles\glossary-tree.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\glossaries\styles\
+glossary-tree.sty"
 Package: glossary-tree 2016/10/12 v4.26 (NLCT)
 \glstreeindent=\skip58
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\preprint\fullpage.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\preprint\fullpage.
+sty"
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip59
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
+sty"
 Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \fancy@headwidth=\skip60
 \f@ncyO@elh=\skip61
@@ -804,30 +832,37 @@ Package: fancyhdr 2016/09/06 3.8 Extensive control of page headers and footers
 \f@ncyO@olf=\skip67
 \f@ncyO@orf=\skip68
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lastpage\lastpage.
+sty"
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+sty"
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+sty"
 Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\graphics.
+cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
 File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count131
@@ -835,7 +870,8 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen132
 \Gin@req@width=\dimen133
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.st
+y"
 \wrapoverhang=\dimen134
 \WF@size=\dimen135
 \c@WF@wrappedlines=\count132
@@ -843,10 +879,12 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \WF@everypar=\toks33
 Package: wrapfig 2003/01/31  v 3.6
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+y"
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+ty"
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen136
@@ -860,21 +898,25 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \c@ContinuedFloat=\count133
 Package caption Info: longtable package is loaded.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.
+sty"
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: wrapfig package is loaded.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\subcaption
+.sty"
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count134
 \c@subtable=\count135
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\setspace\setspace.
+sty"
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\booktabs\booktabs.
+sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen143
 \lightrulewidth=\dimen144
@@ -894,7 +936,8 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count139
 \@thisrulewidth=\dimen155
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fourier.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fourier.st
+y"
 Package: fourier 2005/01/01 1.4 fourier-GUTenberg package
 Now handling font encoding FML ...
 ... no UTF-8 mapping file for font encoding FML
@@ -902,15 +945,14 @@ Now handling font encoding FMS ...
 ... no UTF-8 mapping file for font encoding FMS
 Now handling font encoding FMX ...
 ... no UTF-8 mapping file for font encoding FMX
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+ ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2016/06/19 v1.99m Standard LaTeX package
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+ ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2016/06/19 v1.99m Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fourier-orns.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fourier-or
+ns.sty"
 Package: fourier-orns 2004/01/30 1.1 fourier-ornaments package
 )
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 50.
@@ -1013,7 +1055,8 @@ LaTeX Font Info:    Redeclaring math accent \dot on input line 255.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 256.
 \symUfutm=\mathgroup5
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microtyp
+e.sty"
 Package: microtype 2016/05/14 v2.6a Micro-typographical refinements (RS)
 \MT@toks=\toks34
 \MT@count=\count140
@@ -1022,7 +1065,8 @@ LaTeX Info: Redefining \textls on input line 774.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1310.
 \MT@listname@count=\count141
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype-pdftex.def"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microtyp
+e-pdftex.def"
 File: microtype-pdftex.def 2016/05/14 v2.6a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 916.
@@ -1031,23 +1075,24 @@ LaTeX Info: Redefining \lslig on input line 916.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\microtype.cfg"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\microtype\microtyp
+e.cfg"
 File: microtype.cfg 2016/05/14 v2.6a microtype main configuration file (RS)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2016/04/23 3.9r The Babel package
-
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\babel-english\engl
+ish.ldf"
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\babel\babel.def"
 File: babel.def 2016/04/23 3.9r Babel common definitions
 \babel@savecnt=\count142
 \U@D=\dimen157
@@ -1056,19 +1101,20 @@ File: babel.def 2016/04/23 3.9r Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\sectsty\sectsty.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\sectsty\sectsty.st
+y"
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
 les
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+) ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count143
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\enumitem\enumitem.
+sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enitkv@toks@=\toks35
 \labelindent=\skip70
@@ -1077,7 +1123,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box34
 \enitdp@description=\count144
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count145
 \float@exts=\toks37
@@ -1085,21 +1131,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks38
 \@floatcapt=\box36
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip71
 \bibsep=\skip72
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count146
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
+sty"
 Package: hyperref 2016/06/24 v6.83q Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1136,24 +1185,28 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
+ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen159
 \Hy@linkcounter=\count147
 \Hy@pagecounter=\count148
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
+f"
 File: pd1enc.def 2016/06/24 v6.83q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count149
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
+cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4486.
@@ -1185,21 +1238,25 @@ LaTeX Info: Redefining \pageref on input line 6416.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
+ef"
 File: hpdftex.def 2016/06/24 v6.83q Hyperref driver for pdfTeX
 \Fld@listcount=\count155
 \c@bookmark@seq@number=\count156
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
+check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip73
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 57.
+Package hyperref Info: Option `colorlinks' set `true' on input line 59.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.
+sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box37
 \beforetitleunit=\skip74
@@ -1219,8 +1276,10 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \glo@main@file=\write4
 \openout4 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 48.
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+Package glossaries Info: Writing glossary file main.glo on input line 50.
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+sty"
 \lst@mode=\count157
 \lst@gtempboxa=\box38
 \lst@token=\toks40
@@ -1233,29 +1292,34 @@ Package glossaries Info: Writing glossary file main.glo on input line 48.
 \lst@newlines=\count161
 \lst@lineno=\count162
 \lst@maxwidth=\dimen171
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
+ty"
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count163
 \lst@skipnumbers=\count164
 \lst@framebox=\box39
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
+cfg"
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.sty
+"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\color.cfg
+"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -1270,19 +1334,23 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
+sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithms\algorithm.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
+hm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
 nment
 \@float@every@algorithm=\toks41
 \c@algorithm=\count165
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algpseudocode.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algps
+eudocode.sty"
 Package: algpseudocode 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\algorithmicx\algorithmicx.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithmicx\algor
+ithmicx.sty"
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -1298,63 +1366,132 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \ALG@tmplength=\skip78
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
-) (main.aux (titlepage.aux) (chapter-1.aux))
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\appendix\appendix.
+sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count173
+\c@@ppsavesec=\count174
+\c@@ppsaveapp=\count175
+) (main.aux (titlepage.aux) (chapter-1.aux)
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub1' multiply defined.
+
+
+LaTeX Warning: Label `fig:sub2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:sub2' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 133.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 140.
 
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+ ("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 133.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 133
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 140.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 140
 .
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutm.fd
+"
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 133.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 133
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 140.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 140
 .
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmsfutm.fd
+"
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 133.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 133
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 140.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 140
 .
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmxfutm.fd
+"
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 133.
-LaTeX Font Info:    ... okay on input line 133.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 133.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
+LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 140.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\t1futs.fd"
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 )
-\c@mv@tabular=\count173
-\c@mv@boldtabular=\count174
+\c@mv@tabular=\count176
+\c@mv@boldtabular=\count177
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1392,24 +1529,29 @@ File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 133.
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(lastpage)             ! on input line 140.
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count175
+\scratchcounter=\count178
 \scratchdimen=\dimen172
 \scratchbox=\box40
-\nofMPsegments=\count176
-\nofMParguments=\count177
+\nofMPsegments=\count179
+\nofMParguments=\count180
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count178
+\MPscratchCnt=\count181
 \MPscratchDim=\dimen173
-\MPnumerator=\count179
-\makeMPintoPDFobject=\count180
+\MPnumerator=\count182
+\makeMPintoPDFobject=\count183
 \everyMPtoPDFconversion=\toks43
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+)
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -1424,7 +1566,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 133.
+LaTeX Info: Redefining \microtypecontext on input line 140.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1439,32 +1581,34 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 \AtBeginShipoutBox=\box41
-Package hyperref Info: Link coloring ON on input line 133.
+Package hyperref Info: Link coloring ON on input line 140.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
+ty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
+estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count181
+\c@section@level=\count184
 )
-LaTeX Info: Redefining \ref on input line 133.
-LaTeX Info: Redefining \pageref on input line 133.
-LaTeX Info: Redefining \nameref on input line 133.
-
-(main.out) (main.out)
+LaTeX Info: Redefining \ref on input line 140.
+LaTeX Info: Redefining \pageref on input line 140.
+LaTeX Info: Redefining \nameref on input line 140.
+ (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
-\c@lstlisting=\count182
+\c@lstlisting=\count185
 \openout2 = `titlepage.aux'.
 
  (titlepage.tex
 LaTeX Font Info:    Try loading font information for FML+futmi on input line 18
 .
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.fd"
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\fmlfutmi.f
+d"
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1486,176 +1630,298 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] (main.toc
+{C:/Users/minhm/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+(main.toc
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 4.
+(Font)              scaled to size 10.07397pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 4.
+(Font)              scaled to size 7.63599pt on input line 5.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 4.
+(Font)              scaled to size 5.51999pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 10.07397pt on input line 4.
+(Font)              scaled to size 10.07397pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.63599pt on input line 4.
+(Font)              scaled to size 7.63599pt on input line 5.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 4.
+(Font)              scaled to size 5.51999pt on input line 5.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 ...e {4}Result and Discussion}{24}{chapter.4}
+l.32 ...ontourlet Denoising}{23}{subsection.3.1.3}
                                                    [1
 
 ])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [2])
+ [2]) (main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+
+[3
+
+
+] (main.loa)
+\tf@loa=\write8
+\openout8 = `main.loa'.
+
+ [4
+
+]
 \openout2 = `chapter-1.aux'.
 
  (chapter-1.tex
 Chapter 1.
-[3
+[5
 
 
+]
+Overfull \hbox (5.61607pt too wide) in paragraph at lines 27--28
+[]\T1/futs/m/n/10.95 (-20) In \T1/futs/b/n/10.95 Chap-ter 4\T1/futs/m/n/10.95 (
+-20) , the de-nois-ing and seg-men-ta-tion of CT and PET im-ages, and dis-cus-s
+ion are in-cluded. 
+ []
 
-]) [4] (chapter-2.tex
+) [6] (chapter-2.tex
 Chapter 2.
 ) (section-HMT.tex
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 14.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd"
+
+("C:\Users\minhm\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fourier\ts1futs.fd
+"
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-[5
+ [7
 
 
-] <fig/Connectivity.PNG, id=224, 377.91188pt x 203.25937pt>
+] <fig/Connectivity.PNG, id=297, 377.91188pt x 203.25937pt>
 File: fig/Connectivity.PNG Graphic file (type png)
 
 <use fig/Connectivity.PNG>
 Package pdftex.def Info: fig/Connectivity.PNG used on input line 22.
 (pdftex.def)             Requested size: 317.07614pt x 170.5382pt.
-) (section-wavelet.tex [6 <./fig/Connectivity.PNG>]
-[7] <fig/wavelets_decomposition.png, id=261, 388.45125pt x 343.2825pt>
+) (section-wavelet.tex [8 <./fig/Connectivity.PNG>]
+<fig/wavelets_decomposition.png, id=316, 388.45125pt x 343.2825pt>
 File: fig/wavelets_decomposition.png Graphic file (type png)
 
 <use fig/wavelets_decomposition.png>
 Package pdftex.def Info: fig/wavelets_decomposition.png used on input line 76.
 (pdftex.def)             Requested size: 181.18439pt x 160.11708pt.
-
-<fig/wavelets_bank.png, id=262, 568.1225pt x 173.64874pt>
+ [9]
+<fig/wavelets_bank.png, id=334, 568.1225pt x 173.64874pt>
 File: fig/wavelets_bank.png Graphic file (type png)
 
 <use fig/wavelets_bank.png>
 Package pdftex.def Info: fig/wavelets_bank.png used on input line 83.
 (pdftex.def)             Requested size: 362.37569pt x 110.76651pt.
-) (section-contourlet.tex [8 <./fig/wavelets_decomposition.png> <./fig/wavelets
-_bank.png (PNG copy)>]
-<fig/contourlet.png, id=274, 405.76593pt x 295.85532pt>
+) (section-contourlet.tex [10 <./fig/wavelets_decomposition.png> <./fig/wavelet
+s_bank.png (PNG copy)>]
+<fig/contourlet.png, id=344, 405.76593pt x 295.85532pt>
 File: fig/contourlet.png Graphic file (type png)
 
 <use fig/contourlet.png>
-Package pdftex.def Info: fig/contourlet.png used on input line 13.
+Package pdftex.def Info: fig/contourlet.png used on input line 14.
 (pdftex.def)             Requested size: 317.07614pt x 231.19507pt.
 
-<fig/contourlet_2.png, id=276, 620.3175pt x 335.00156pt>
+<fig/contourlet_2.png, id=346, 620.3175pt x 335.00156pt>
 File: fig/contourlet_2.png Graphic file (type png)
 
 <use fig/contourlet_2.png>
-Package pdftex.def Info: fig/contourlet_2.png used on input line 26.
+Package pdftex.def Info: fig/contourlet_2.png used on input line 27.
 (pdftex.def)             Requested size: 317.07614pt x 171.23701pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<fig/contourlet_mr.png, id=278, 361.35pt x 359.09157pt>
+<fig/contourlet_mr.png, id=348, 361.35pt x 359.09157pt>
 File: fig/contourlet_mr.png Graphic file (type png)
 
 <use fig/contourlet_mr.png>
-Package pdftex.def Info: fig/contourlet_mr.png used on input line 36.
+Package pdftex.def Info: fig/contourlet_mr.png used on input line 37.
 (pdftex.def)             Requested size: 203.83417pt x 202.55835pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (section-imagedenoising.tex [9 <./fig/contourlet.png>] [10 <./fig/contourlet_
-2.png> <./fig/contourlet_mr.png>]
-<fig/pet_machine.jpg, id=299, 120.45pt x 94.9146pt>
+) (section-imagedenoising.tex [11 <./fig/contourlet.png>] [12 <./fig/contourlet
+_2.png> <./fig/contourlet_mr.png>]
+<fig/pet_machine.jpg, id=366, 120.45pt x 94.9146pt>
 File: fig/pet_machine.jpg Graphic file (type jpg)
  <use fig/pet_machine.jpg>
 Package pdftex.def Info: fig/pet_machine.jpg used on input line 38.
 (pdftex.def)             Requested size: 203.83417pt x 160.6372pt.
 
-<fig/pet_brain.jpg, id=300, 374.39874pt x 406.51875pt>
+<fig/pet_brain.jpg, id=367, 374.39874pt x 406.51875pt>
 File: fig/pet_brain.jpg Graphic file (type jpg)
  <use fig/pet_brain.jpg>
 Package pdftex.def Info: fig/pet_brain.jpg used on input line 43.
 (pdftex.def)             Requested size: 158.54152pt x 172.14478pt.
 
-[11 <./fig/pet_machine.jpg> <./fig/pet_brain.jpg>]
-<fig/wavelets_contourlet.png, id=312, 418.56375pt x 420.06938pt>
+[13 <./fig/pet_machine.jpg> <./fig/pet_brain.jpg>]
+<fig/wavelets_contourlet.png, id=378, 418.56375pt x 420.06938pt>
 File: fig/wavelets_contourlet.png Graphic file (type png)
 
 <use fig/wavelets_contourlet.png>
 Package pdftex.def Info: fig/wavelets_contourlet.png used on input line 80.
 (pdftex.def)             Requested size: 317.07614pt x 318.21126pt.
- [12 <./fig/wavelets_contourlet.png>]
-<fig/hard_soft_thresholding.png, id=324, 543.53062pt x 200.24812pt>
+ [14 <./fig/wavelets_contourlet.png>]
+<fig/hard_soft_thresholding.png, id=388, 543.53062pt x 200.24812pt>
 File: fig/hard_soft_thresholding.png Graphic file (type png)
 
 <use fig/hard_soft_thresholding.png>
 Package pdftex.def Info: fig/hard_soft_thresholding.png used on input line 130.
 
 (pdftex.def)             Requested size: 362.37569pt x 133.51166pt.
- [13 <./fig/hard_soft_thresholding.png>]
-<fig/wavelets_hmt.png, id=338, 743.77875pt x 417.05812pt>
+ [15 <./fig/hard_soft_thresholding.png>]
+<fig/wavelets_hmt.png, id=401, 743.77875pt x 417.05812pt>
 File: fig/wavelets_hmt.png Graphic file (type png)
 
 <use fig/wavelets_hmt.png>
-Package pdftex.def Info: fig/wavelets_hmt.png used on input line 173.
+Package pdftex.def Info: fig/wavelets_hmt.png used on input line 190.
 (pdftex.def)             Requested size: 362.37569pt x 203.1957pt.
- [14 <./fig/wavelets_hmt.png>]
-Overfull \hbox (14.05919pt too wide) in paragraph at lines 195--195
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16]
+Overfull \hbox (14.05919pt too wide) in paragraph at lines 212--212
 |[]\T1/futs/b/n/12 Proposed de-nois-ing method: Sparse 3D Transform-domain Col-
 lab-o-ra-tive Fil-ter| 
  []
 
-) (section-imagesegmentation.tex [15] [16]
-
-Package natbib Warning: Citation `monfrini2003image' on page 17 undefined on in
-put line 56.
-
-[17]
-Overfull \hbox (3.33316pt too wide) in paragraph at lines 145--146
+) (section-imagesegmentation.tex [17 <./fig/wavelets_hmt.png>] [18] [19]
+Overfull \hbox (3.33316pt too wide) in paragraph at lines 139--140
 []\T1/futs/m/n/10.95 (-20) In the im-age do-main, we as-sume that one pixel has
  at most 4 neigh-bors: the pix-els in its 4-neighborhood.
  []
 
-[18]) (chapter-3.tex [19]
+[20]) (chapter-3.tex [21]
 Chapter 3.
 ) (section-imp_codingstandard.tex) (section-imp_denoising.tex
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 61.
- [20
+put line 72.
+ [22
 
-] [21])
-(section-imp_segmentation.tex) (section-imp_gui.tex) (chapter-4.tex [22]
-[23]
+] [23]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (section-imp_segmentation.tex) (section-imp_gui.tex
+<fig/gui.PNG, id=497, 851.43094pt x 538.26094pt>
+File: fig/gui.PNG Graphic file (type png)
+ <use fig/gui.PNG>
+Package pdftex.def Info: fig/gui.PNG used on input line 8.
+(pdftex.def)             Requested size: 452.9679pt x 286.36108pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (chapter-4.tex [24] [25] [26 <./fig/gui.PNG>]
 Chapter 4.
-) (chapter-5.tex [24
+<fig/pet1.png, id=514, 185.19188pt x 187.45032pt>
+File: fig/pet1.png Graphic file (type png)
+ <use fig/pet1.png>
+Package pdftex.def Info: fig/pet1.png used on input line 13.
+(pdftex.def)             Requested size: 181.18784pt x 183.39972pt.
 
-]
+<fig/ct1.png, id=515, 185.94469pt x 186.6975pt>
+File: fig/ct1.png Graphic file (type png)
+ <use fig/ct1.png>
+Package pdftex.def Info: fig/ct1.png used on input line 19.
+(pdftex.def)             Requested size: 181.18784pt x 181.92534pt.
+
+<fig/pet2.png, id=516, 354.57469pt x 355.3275pt>
+File: fig/pet2.png Graphic file (type png)
+ <use fig/pet2.png>
+Package pdftex.def Info: fig/pet2.png used on input line 31.
+(pdftex.def)             Requested size: 181.18784pt x 181.57788pt.
+
+<fig/ct2.png, id=517, 354.57469pt x 355.3275pt>
+File: fig/ct2.png Graphic file (type png)
+ <use fig/ct2.png>
+Package pdftex.def Info: fig/ct2.png used on input line 37.
+(pdftex.def)             Requested size: 181.18784pt x 181.57788pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27
+
+ <./fig/pet1.png> <./fig/ct1.png>]
+<fig/wavelet.jpg, id=524, 356.0803pt x 355.3275pt>
+File: fig/wavelet.jpg Graphic file (type jpg)
+ <use fig/wavelet.jpg>
+Package pdftex.def Info: fig/wavelet.jpg used on input line 66.
+(pdftex.def)             Requested size: 181.18784pt x 180.80255pt.
+
+<fig/contourlet.jpg, id=525, 356.0803pt x 356.0803pt>
+File: fig/contourlet.jpg Graphic file (type jpg)
+ <use fig/contourlet.jpg>
+Package pdftex.def Info: fig/contourlet.jpg used on input line 72.
+(pdftex.def)             Requested size: 181.18784pt x 181.18561pt.
+
+<fig/wavecon.jpg, id=526, 356.83313pt x 357.58594pt>
+File: fig/wavecon.jpg Graphic file (type jpg)
+ <use fig/wavecon.jpg>
+Package pdftex.def Info: fig/wavecon.jpg used on input line 84.
+(pdftex.def)             Requested size: 181.18784pt x 181.56978pt.
+
+<fig/bm3d.jpg, id=527, 355.3275pt x 354.57469pt>
+File: fig/bm3d.jpg Graphic file (type jpg)
+ <use fig/bm3d.jpg>
+Package pdftex.def Info: fig/bm3d.jpg used on input line 90.
+(pdftex.def)             Requested size: 181.18784pt x 180.80905pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28 <./fig/pet2.png> <./fig/ct2.png> <./fig/wavelet.jpg> <./fig/contourlet.jpg>
+] <fig/pet1_marked.png, id=536, 192.72pt x 197.23688pt>
+File: fig/pet1_marked.png Graphic file (type png)
+
+<use fig/pet1_marked.png>
+Package pdftex.def Info: fig/pet1_marked.png used on input line 114.
+(pdftex.def)             Requested size: 181.18784pt x 185.43275pt.
+
+<fig/ct1_marked.png, id=537, 188.20313pt x 197.98969pt>
+File: fig/ct1_marked.png Graphic file (type png)
+
+<use fig/ct1_marked.png>
+Package pdftex.def Info: fig/ct1_marked.png used on input line 120.
+(pdftex.def)             Requested size: 181.18784pt x 190.62381pt.
+
+<fig/pet2_marked.png, id=538, 356.83313pt x 353.82187pt>
+File: fig/pet2_marked.png Graphic file (type png)
+
+<use fig/pet2_marked.png>
+Package pdftex.def Info: fig/pet2_marked.png used on input line 132.
+(pdftex.def)             Requested size: 181.18784pt x 179.65852pt.
+
+<fig/ct2_marked.png, id=539, 354.57469pt x 356.0803pt>
+File: fig/ct2_marked.png Graphic file (type png)
+
+<use fig/ct2_marked.png>
+Package pdftex.def Info: fig/ct2_marked.png used on input line 138.
+(pdftex.def)             Requested size: 181.18784pt x 181.96259pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (chapter-5.tex [29 <./fig/wavecon.jpg> <./fig/bm3d.jpg> <./fig/pet1_marked.pn
+g> <./fig/ct1_marked.png>] [30 <./fig/pet2_marked.png> <./fig/ct2_marked.png>]
 Chapter 5.
-) [25
+) [31
 
-] (main.bbl [26
+] (main.bbl [32
 
-])
+] [33])
 
 Package glossaries Warning: No \printglossary or \printglossaries found. 
 (Remove \makeglossaries if you don't want any glossaries.) 
@@ -1663,41 +1929,45 @@ This document will not have a glossary.
 
 
 AED: lastpage setting LastPage
-[27]
+[34]
 
-Package caption Warning: Unused \captionsetup[lstlisting] on input line 96.
+Package caption Warning: Unused \captionsetup[lstlisting] on input line 98.
 See the caption package documentation for explanation.
 
-
-Package natbib Warning: There were undefined citations.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 203.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 203.
 (main.aux (titlepage.aux) (chapter-1.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 203.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 203.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8B236EAA4A8C38680E6BC1A5014B9819;2520.
+(rerunfilecheck)             Checksum: DF12B27C5234A631EB2BC85F56D563ED;2738.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 20526 strings out of 493334
- 310826 string characters out of 3139245
- 624382 words of memory out of 3000000
- 23151 multiletter control sequences out of 15000+200000
- 171132 words of font info for 319 fonts, out of 3000000 for 9000
+ 20800 strings out of 493334
+ 321516 string characters out of 3130222
+ 623176 words of memory out of 3000000
+ 23379 multiletter control sequences out of 15000+200000
+ 171654 words of font info for 322 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,17n,92p,1953b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/fourier/fourier-bb.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/fourier/fourier-mex.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/fourier/fourier-ml.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/fourier/fourier-mlit.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
-ic/fourier/fourier-ms.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia
-/putb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putr8a.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/adobe/utopia/putri8a.pfb>
-Output written on main.pdf (28 pages, 580315 bytes).
+ 53i,17n,92p,1953b,567s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/fontname/8r
+.enc}<C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/fouri
+er/fourier-bb.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/fourier/fourier-mex.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/fourier/fourier-ml.pfb><C:/Users/minhm/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/fourier/fourier-mlit.pfb><C:/Users/minhm/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/fourier/fourier-ms.pfb><C:/Us
+ers/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/putb8a.pfb
+><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/utopia/put
+r8a.pfb><C:/Users/minhm/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/adobe/uto
+pia/putri8a.pfb>
+Output written on main.pdf (35 pages, 1305849 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 149 named destinations out of 1000 (max. 500000)
- 47440 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 631 PDF objects out of 1000 (max. 8388607)
+ 170 named destinations out of 1000 (max. 500000)
+ 47529 words of extra memory for PDF output out of 51595 (max. 10000000)
 

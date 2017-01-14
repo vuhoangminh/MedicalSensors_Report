@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -9,6 +9,13 @@
 Simon~A Barker.
 \newblock \emph{Image segmentation using Markov random field models}.
 \newblock PhD thesis, University of Cambridge, 1998.
+
+\bibitem[Belohlavek et~al.(2008)Belohlavek, Carrio, Danna, Deniaud-Alexandre,
+  and Inoue]{belohlavek2008role}
+O~Belohlavek, I~Carrio, M~Danna, E~Deniaud-Alexandre, and T~Inoue.
+\newblock The role of pet/ct in radiation treatment planning for cancer patient
+  treatment.
+\newblock \emph{International Atomic Energy Agency, Vienna}, 2008.
 
 \bibitem[Bordes et~al.(2007)Bordes, Chauveau, and
   Vandekerkhove]{bordes2007stochastic}
@@ -115,6 +122,13 @@ Boaz Matalon, Michael Elad, and Michael Zibulevsky.
 \newblock Image denoising with the contourlet transform.
 \newblock \emph{Proceedings of SPARSE’05}, 2005.
 
+\bibitem[Monfrini et~al.(2003)Monfrini, Lecomte, Desbouvries, and
+  Pieczynski]{monfrini2003image}
+E~Monfrini, J~Lecomte, F~Desbouvries, and W~Pieczynski.
+\newblock Image and signal restoration using pairwise markov trees.
+\newblock In \emph{Statistical Signal Processing, 2003 IEEE Workshop on}, pages
+  174--177. IEEE, 2003.
+
 \bibitem[Po and Do(2003)]{Po2003}
 DD-Y Po and Minh~N Do.
 \newblock Directional multiscale modeling of images using the contourlet
@@ -133,6 +147,11 @@ Sachin~D Ruikar and Dharmpal~D Doye.
 \newblock Wavelet based image denoising technique.
 \newblock \emph{International Journal of Advanced Computer Science and
   Applications}, 2\penalty0 (3), 2011.
+
+\bibitem[Sandberg(2004)]{sandberg2004markov}
+Oskar Sandberg.
+\newblock Markov random fields and gibbs measures.
+\newblock \emph{Chalmers University of Technology, Goteborg, Sweden}, 2004.
 
 \bibitem[Suresh et~al.(2014)Suresh, Dash, and Panigrahi]{suresh2014artificial}
 L~Padma Suresh, Subhransu~Sekhar Dash, and Bijaya~Ketan Panigrahi.

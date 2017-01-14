@@ -1,0 +1,6 @@
+\contentsline {algorithm}{\numberline {1}{\ignorespaces Wavelet Denoising\relax }}{22}{algorithm.1}
+\contentsline {algorithm}{\numberline {2}{\ignorespaces Contourlet Denoising\relax }}{23}{algorithm.2}
+\contentsline {algorithm}{\numberline {3}{\ignorespaces Wavelet-Contourlet Denoising\relax }}{23}{algorithm.3}
+\contentsline {algorithm}{\numberline {4}{\ignorespaces Non-local Means Filter\relax }}{24}{algorithm.4}
+\contentsline {algorithm}{\numberline {5}{\ignorespaces Sparse 3D Transform-domain Collaborative Filter\relax }}{25}{algorithm.5}
+\contentsline {algorithm}{\numberline {6}{\ignorespaces \gls {petct} image segmentation \relax }}{25}{algorithm.6}

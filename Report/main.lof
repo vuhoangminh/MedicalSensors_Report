@@ -1,0 +1,23 @@
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Graphs for Markov models in vision. (a) Simple 4-connected grid of image pixels. (b) Grids with greater connectivity here with the 8-connected pixel grid.\relax }}{8}{figure.caption.4}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Wavelet Transform - Coefficients arrangement}}{10}{figure.caption.5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Wavelet Transform - Three-level filter bank}}{10}{figure.caption.6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Contourlet Transform - Filter Bank}}{11}{figure.caption.7}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Contourlet Transform - Decomposition of Filter Bank}}{12}{figure.caption.8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Contourlet Transform - Decomposition of brain MR Image}}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces PET Denoising - \gls {pet} system and \gls {pet} brain image}}{13}{figure.caption.10}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces PET Denoising - Comparison between Wavelet and Contourlet}}{14}{figure.caption.11}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces PET Denoising - Hard and Soft Thresholding}}{15}{figure.caption.12}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces \glsdesc {dwt} and \glsdesc {hmt} models\relax }}{17}{figure.caption.13}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Graphical User Interface\relax }}{26}{figure.caption.14}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces PET and CT images\relax }}{27}{figure.caption.15}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces PET and CT images\relax }}{28}{figure.caption.16}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Wavelet and Contourlet Denoising\relax }}{28}{figure.caption.17}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Wavelet-Contourlet and BM3D Denoising\relax }}{29}{figure.caption.18}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces PET and CT images\relax }}{29}{figure.caption.19}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces PET and CT images\relax }}{30}{figure.caption.20}
+\addvspace {10\p@ }

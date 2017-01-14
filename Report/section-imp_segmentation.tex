@@ -1,1 +1,22 @@
 \section{PET/CT Image Segmentation}
+
+The pseudo-code for \gls{petct} image segmentation is given below.
+
+\begin{algorithm}
+	\caption{\gls{petct} image segmentation }\label{alg:pattern}
+	\begin{algorithmic}[1]
+		\Require $Input\ image$
+		\Ensure $Segmented \ PET \ and \ CT \ Image$
+		\Procedure{ image segmentation($Input\ image$)}{}
+		\State Compute Initial segmentation \Comment{Using K-Means}
+		\For{ the number of number of iterations set}
+			\State Compute parameters ($\mu \ and \ \lambda$) 
+			\State Compute the likelyhood estimate of the labels that minimizes a posterior energy
+			\State Compute a posterior distribution of labels
+			\State Repeat
+		\EndFor 
+		
+		\EndProcedure
+	\end{algorithmic}
+\end{algorithm}
+

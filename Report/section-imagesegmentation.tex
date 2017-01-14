@@ -6,13 +6,7 @@ Segmentation is the process of splitting an observed image into its homogeneous 
 Graph partitioning methods are an effective tools for image segmentation since they model the impact of pixel neighborhoods on a given cluster of pixels or pixel, under the assumption of homogeneity in images. In these methods, the image is modeled as a weighted, undirected graph. Usually a pixel or a group of pixels are associated with nodes and edge weights define the (dis)similarity between the neighborhood pixels. The graph (image) is then partitioned according to a criterion designed to model "good" clusters. Each partition of the nodes (pixels) output from these algorithms are considered an object segment in the image.\par
 MRFs are completely characterized by their prior probability distributions, marginal probability distributions, cliques, smoothing constraint as well as criterion for updating values. The criterion for image segmentation using MRFs is restated as finding the labeling scheme which has maximum probability for a given set of features. \par
 
-In terms of image segmentation, the function that MRFs seek to maximize is the probability of identifying a labeling scheme given a particular set of features are detected in the image
-
-
-TEXT BELOW TO BE DELETED
-
-where Vc(x) is the clique potential and C is the set of all possible cliques. In the image domain, we assume that one pixel has at most 4 neighbors: the pixels in its 4-neighborhood. Then the clique potential is defined on pairs of neighboring pixels
-%http://www.cs.cmu.edu/~16831-f14/notes/F11/16831_lecture07_bneuman.pdf
+In terms of image segmentation, the function that MRFs seek to maximize is the probability of identifying a labeling scheme given a particular set of features are detected in the image.
 
 Given an image \(Y=(y_1, y_2,..., y_N)\) where each \(y_i\) is the intensity of a pixel, we want to infer a configuration of labels \(X = (x_1,x_2,...,x_N)\) where\(x_i \in L\)  and L is the set of all possible labels which means the hidden process is a finite valued one\cite {monfrini2003image}. In a binary segmentation problem, L = \{0,1\} . According to the \gls{map} criterion, we seek the labeling \(x^*\) which satisfies:
 \begin{equation}
